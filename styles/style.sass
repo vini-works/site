@@ -1,32 +1,20 @@
 @import './helpers/_variables'
+@import './bases/_navbar'
 
 @import './animations/_loader'
 @import './animations/_cursor'
 
-@import './bases/_btn'
 @import './bases/_text'
 @import './bases/_grids'
+@import './bases/_images'
 @import './bases/_video'
 @import './bases/_zoom'
 
-@import './layout/_header'
-
 body
   background: $primary-bg
-  font-family: 'Helvetica Now Text'
-  -webkit-touch-callout: none // iOS Safari
-  -webkit-user-select: none // Safari
-  -khtml-user-select: none // Konqueror HTML
-  -moz-user-select: none // Old versions of Firefox
-  -ms-user-select: none // Internet Explorer/Edge
-  user-select: none // Non-prefixed version, currently
-  overflow: hidden
-  margin: 0px 5px
+  font-family: Menlo Regular
+  margin: 5px 5px 5px 5px
   cursor: crosshair
-
-@media screen and ( min-width: 1080px)
-  body
-    margin: 15px
 
 @media screen and (prefers-reduced-motion: no-preference)
   html
@@ -36,3 +24,13 @@ body
   display: none
   -ms-overflow-style: none // IE and Edge
   scrollbar-width: none // Firefox
+
+img,
+video
+  border-radius: 3px !important
+
+@font-face
+  font-family: 'Menlo Regular'
+  font-style: normal
+  font-weight: normal
+  src: local('Menlo Regular'), url('Menlo-Regular.woff') format('woff')

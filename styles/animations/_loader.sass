@@ -1,7 +1,35 @@
-.loader-wrapper
+
+#loader__wrapper
     width: 100%
     height: 100%
     position: absolute
+    text-align: right
+    padding: 5px
     top: 0
     left: 0
     background-color: $primary-bg
+
+.page__content .content
+    padding-top: 5px
+
+span:before
+    content: '\007C'
+    animation: linkstyle infinite 0.8s
+
+@keyframes linkstyle
+
+    0%
+        contain: '\007C'
+
+    25%
+        content: '\002F'
+
+    50%
+        content: '\002D'
+
+    75%
+        content: '\005C'
+
+    100%
+        content: '\007C'
+   

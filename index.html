@@ -27,7 +27,11 @@
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.3/dist/js/splide.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.3/dist/css/splide.min.css">
+  <script
+    src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.5.3/dist/js/splide-extension-auto-scroll.min.js"></script>
 
   <link rel="stylesheet" href="/styles/style.css" />
 
@@ -46,195 +50,203 @@
     gtag("js", new Date());
     gtag("config", "UA-180535428-1");
   </script>
-
 </head>
 
 <body>
-  <script src="/js/menuFade.js"></script>
+  <section class="splide">
+    <div class="splide__track">
+      <ul class="splide__list">
 
-  <div class="conteudo" style="display: none;">
-    <div class="d-flex" id="header">
-      <div class="mr-auto p-2">
-        <h4><a href="/">Vinícius Queiróz</a></h4>
-      </div>
-      <div class="p-2">
-        <h4><a href="/sobre">Sobre</a></h4>
-      </div>
-      <div class="p-2">
-        <h4><a href="/lab">●<span style="font-size: 25% !important;">⠀</span>Lab</a></h4>
-      </div>
+        <li class="splide__slide"> <img src="/images/covers/yas.jpg" width="100%" />
+          <figcaption><span></span> Yas [SOON]</figcaption>
+        </li>
+
+        <li class="splide__slide"> <a href="https://www.behance.net/gallery/154269771/GreenKitchen" target="_blank"><img
+              src="/images/covers/gk.jpg.webp" width="100%" />
+            <figcaption><span></span> GreenKitchen [BEHANCE]</figcaption>
+          </a>
+        </li>
+
+        <li class="splide__slide"> <a href="/calendario22"><img src="/images/calendario2022/IMG_1014.webp"
+              width="100%" />
+            <figcaption><span></span> Calendário 2022</figcaption>
+          </a>
+        </li>
+
+        <li class="splide__slide"> <a href="/turbo"><img src="/images/covers/turbo.png" width="100%" />
+            <figcaption><span></span> Turbo</figcaption>
+          </a>
+        </li>
+
+        <li class="splide__slide"> <a href="/arquivo"><img src="/images/covers/lvxz.png" width="100%" />
+            <figcaption><span></span> Arquivo</figcaption>
+          </a>
+        </li>
+
+        <li class="splide__slide"> <a href=""><img src="/images/covers/lab.png" width="100%" />
+            <figcaption><span></span> Ilustrações</figcaption>
+          </a>
+        </li>
+
+        <li class="splide__slide"> <a href="/RR"><img src="/images/covers/studiorr-cover.png" width="100%" />
+            <figcaption><span></span> Studio Ronaldo Rezende</figcaption>
+          </a>
+        </li>
+
+      </ul>
+    </div>
+  </section>
+
+  <div class="fixed__content">
+    <div class="display__grid__2">
+      <section Class="column__1">
+        <h5 class>
+          Vinícius Queiróz é um visual designer
+          que está procurando fazer barulho ao redor.
+          interessado em design editorial, interfaces, branding e tipográfia.
+        </h5>
+      </section>
+
+      <section class="column__3">
+        <div id="about" class="link">
+          <h5><span></span> Sobre</h5>
+          <h5>+ Detalhes</h5>
+        </div>
+
+        <div class="about__content">
+          <br>
+          <a href="https://www.instagram.com/vviniciusqueiroz/" target="_blank"> 
+          <div class="link">
+            <h5>@vviniciusqueiroz</h5>
+          </div>
+        </a>
+        <a href="mailto:vnsqzs@gmail.com"> 
+          <div class="link">
+            <h5>vnsqzs@gmail.com</h5>
+          </div>
+        </a>
+          <br>
+          <h5> Colaborou com <a class="link" target="_blank" href="https://valkiriaic.com.br/">Valkiria Inteligência
+              Criativa</a>, Estúdio Biabum e músicos independentes.</h5>
+          <br>
+          <h5>
+            Desenvolve sua carreira como designer e diretor de arte, além de apoiar-se em conceitos que
+            aprendeu durante a faculdade de Sistemas de Informação pela Universidade Federal de Mato Grosso. Busca,
+            com o seu trabalho, usar de pensamentos sistêmicos para criar soluções visuais envolventes e
+            culturalmente orientadas para projetos transformadores.
+          </h5>
+
+          <br>
+
+          <div>
+            <h5>--------------------------------------------</h5>
+            <h5>EXPERIÊNCIAS</h5>
+            <h5>--------------------------------------------</h5>
+
+
+            <h5>
+              Designer Júnior
+              <br>
+              <a href="https://www.estudiogole.com/" class="link" target="_blank">Estúdio Gole</a>
+              <br>
+              Mar. 2022 até Presente
+              <br>
+              ----
+            </h5>
+
+            <h5>
+              Freelancing
+              <br>
+              Jun. 2021 até Fev. 2022
+              <br>
+              ----
+            </h5>
+
+            <h5>
+              Diretor de Arte (Estágio)
+              <br>
+              Instituto Euvaldo Lodi Mato Grosso
+              <br>
+              Out. 2019 até Mai. 2021
+              <br>
+              ----
+            </h5>
+            <h5>
+              Desenvolvedor Frontend (Júnior)
+              <br>
+              Código5 Web
+              <br>
+              Ago. 2018 até Ago. 2019
+            </h5>
+            <br>
+          </div>
+
+          <div>
+            <h5>--------------------------------------------</h5>
+            <h5>Educação</h5>
+            <h5>--------------------------------------------</h5>
+
+            <h5>
+              Decodificando Identidades
+              <br>
+              Aprender Design
+              <br>
+              Carlos Bocai e Julia B. Aguiar
+              <br>
+              Ago. 2021
+              <br>
+              <a class="link" target="_blank"
+                href="https://www.aprender.design/certificado/c7XXMcJhnaF1hG9PJ74HwL">→Credencial</a>
+              <br>
+              ----
+            </h5>
+
+            <h5>
+              Building an immersive creative website from scratch without frameworks
+              <br>
+              Awwwards Academy
+              <br>
+              Jun. 2021
+              <br>
+              <a class="link" target="_blank"
+                href="https://drive.google.com/file/d/1aNn6M5r0DtNPSDlwLDlpnMw_VP5bxw2N/view">→ Credencial</a>
+              <br>
+              ----
+            </h5>
+            <h5>
+              Sistemas de Informação
+              <br>
+              Universidade Federal do Estado de Mato Grosso
+              <br>
+              Mai. 2019 - Descontinuado
+              <br>
+            </h5>
+          </div>
+          <br>
+          <div>
+            <h5>--------------------------------------------</h5>
+            <h5>Aparições</h5>
+            <h5>--------------------------------------------</h5>
+            <h5>
+              Brasil Design Awards 2022 @Shorlist
+              <br>
+              GreenKitchen
+            </h5>
+          </div>
+        </div>
+      </section>
     </div>
   </div>
 
-  <div class="row">
-    <div class="col-lg-12 col-sm-12">
-      <h5 class="animate__animated animate__fadeIn animate__slower">Vinícius Queiróz é um Visual Designer que está
-        procurando fazer barulho ao redor.
-        Interessado em design editorial, interfaces, branding e ilustração.
-        <a class="link" href="/sobre">●<span style="font-size: 50% !important;">⠀</span>Sobre</a>
-        <a class="link" href="mailto:vnsqzs@gmail.com">●<span style="font-size: 50% !important;">⠀</span>Contato</a>
-        <a class="link" href="https://www.linkedin.com/in/vviniciusqueiroz/" target="_blank">●<span
-            style="font-size: 50% !important;">⠀</span>LinkedIn</a>
-        <a class="link" href="https://www.instagram.com/vviniciusqueiroz/" target="_blank">●<span
-            style="font-size: 50% !important;">⠀</span>Instagram</a>
-        <a class="link" href="/lab">●<span style="font-size: 50% !important;">⠀</span>Visitar
-          Laboratório</a>
-      </h5>
-    </div>
-  </div>
-
-  <div class="block-header"></div>
-
-  <div class="row section-padding">
-    <div class="col-lg-6">
-      <img src="/images/covers/pixel-font-extended.png" width="100%" height="100%"
-        alt="Calendário fotografado ao fundo de concreto" />
-    </div>
-    <div class="col-lg-6">
-      <img src="/images/covers/vintage-tee-back.png" width="100%" height="100%"
-        alt="Layout de calendário em formato vetorial" />
-    </div>
-
-    <div class="p-sub space-between col-lg-6 col-12">
-      <h6>Custom Typeface [Unnamed]</h6>
-      <p>Jan, 2022</p>
-    </div>
-
-    <div class="p-sub col-lg-6 col-12">
-      <p>[Unnamed Typeface] é uma tipo pixelada e condensada que retrata uma divertida e estranha web distopia, seu
-        esqueleto inicial tem inspirações em tipografias Mono Slab. Projeto colaborativo com <a class="link"
-          href="https://www.v1town.com.br/" target="_blank">Vitor Pêgo</a>, ainda em produção.
-      </p>
-
-    </div>
-  </div>
-
-  <div class="row section-padding">
-    <div class="col-lg-6">
-      <a class="homeImage" href="/calendario22"><img src="/images/calendario2022/IMG_1014.webp" width="100%"
-          height="100%" alt="Calendário fotografado ao fundo de concreto" data-hover="Visualizar" /></a>
-    </div>
-    <div class="col-lg-6">
-      <a class="homeImage" href="/calendario22"><img src="/images/calendario2022/calendario-vetor.webp" width="100%"
-          height="100%" alt="Layout de calendário em formato vetorial" data-hover="Visualizar" /></a>
-    </div>
-
-    <div class="p-sub space-between col-lg-6 col-12">
-      <a href="/calendario22">
-        <h6>Calendário 2022</h6>
-      </a>
-      <p>Nov, 2021</p>
-    </div>
-
-    <div class="p-sub col-lg-6 col-12">
-      <p>Inspirado no trabalho de Heinrich Fleischhacker, que frequentemente utilizava números binários, código Baudot e
-        impressora de impacto (dot matrix printer) em suas peças.
-        <br>
-        <br>
-        <a class="link" href="/calendario22">→ Mais</a>
-      </p>
-    </div>
-  </div>
-
-
-  <div class="row section-padding">
-    <div class="col-lg-12">
-      <a class="homeImage" href="/studiorr"><img src="/images/studiorr/studiorr-cover.webp" width="100%" height="100%"
-          alt="Página prinicpal de site minimalista" data-hover="Visualizar" /></a>
-    </div>
-
-    <div class="p-sub space-between col-lg-6 col-12">
-      <a href="/studiorr">
-        <h6>Studio Ronaldo Rezende</h6>
-      </a>
-      <p>Out, 2021</p>
-    </div>
-
-    <div class="p-sub col-lg-6 col-12">
-      <p>O Design Escandinavo foi o principal guia da equipe, com uso de cores sóbrias, formas geométricas e limpeza
-        visual, que se refletiu também para a estética do site.
-        <br>
-        <br>
-        <a class="link" href="/studiorr">→ Mais</a>
-      </p>
-    </div>
-  </div>
-
-
-  <div class="row section-padding">
-    <div class="col-lg-6">
-      <a class="homeImage" href="/turbojv"><img src="/images/turbojv/Player.png" width="100%" height="100%"
-          alt="Parte da frente de encarte musical" data-hover="Visualizar" /></a>
-    </div>
-    <div class="col-lg-6">
-      <a class="homeImage" href="/turbojv"><img src="/images/turbojv/turbo-back.webp" width="100%" height="100%"
-          alt="Parte de trás de encarte musical" data-hover="Visualizar" /></a>
-    </div>
-
-    <div class="p-sub space-between col-lg-6 col-12">
-      <a href="/turbojv">
-        <h6>Turbo — J.V.</h6>
-      </a>
-      <p>Set, 2021</p>
-    </div>
-
-    <div class="p-sub col-lg-6 col-12">
-      <p>JV Alberton AKA J.V. é um músico e compositor Pop que mistura influências do Art pop e Dance pop em seus
-        trabalhos.
-        <br>
-        <br>
-        <a class="link" href="/turbojv">→ Mais</a>
-      </p>
-    </div>
-  </div>
-
-
-  <div class="row section-padding">
-    <div class="col-lg-12">
-      <a class="homeImage" href="/melissa"><img src="/images/melissa/billboard-melissa.webp" width="100%" height="100%"
-          alt="Anúncio em outdoor" data-hover="Visualizar" /></a>
-    </div>
-
-    <div class="p-sub space-between col-lg-6 col-12">
-      <a href="/melissa">
-        <h6>Melissa x Lazy Oaf</h6>
-      </a>
-      <p>Mai, 2021</p>
-    </div>
-
-    <div class="p-sub col-lg-6 col-12">
-      <p>O collab entre as duas marcas resultou na repaginação da Kick Off Sandal e da City Bag, até então, já
-        comercializadas pela Melissa.
-        <br>
-        <br>
-        <a class="link" href="/melissa">→ Mais</a>
-      </p>
-    </div>
-  </div>
 
   <!--  //Html Generation -->
-  <div class="loader-wrapper"></div>
-  <div class="cursors">
-    <div>
-      <span></span>
-    </div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
+  <div id="loader__wrapper">
+    <h5>Vini.works</h5>
   </div>
 
-  <!--  //Body Scripts -->
+  <script src="/js/scriptSplide.js"></script>
   <script src="/js/loader.js"></script>
-  <script src="/js/cursorHome.js"></script>
+  <script src="/js/about.js"></script>
 </body>
 
 </html>
