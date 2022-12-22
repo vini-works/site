@@ -8,6 +8,7 @@ if (window.matchMedia("(min-width: 766px)").matches) {
 
     });
   })
+  
 } else {
 
   $('#about').click(function () {
