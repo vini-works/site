@@ -38,15 +38,16 @@
   <!-- SplideJS CDN -->
   <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.3/dist/js/splide.min.js"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.3/dist/css/splide.min.css">
-  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.5.3/dist/js/splide-extension-auto-scroll.min.js"></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.5.3/dist/js/splide-extension-auto-scroll.min.js"></script>
 
   <!-- Sass Compilado -->
   <link rel="stylesheet" href="/styles/style.css" />
 
   <!-- Componentes -->
-  <script src="/components/sobre.js"></script>
+  <script src="/components/proj.js"></script>
+  <script src="/components/header.js"></script>
   <script src="/components/slider.js"></script>
-
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-180535428-1"></script>
@@ -61,7 +62,9 @@
 </head>
 
 <body>
-  <sobre-header></sobre-header>
+  
+  <main-header></main-header>
+
   <main>
     <slider-from-splider></slider-from-splider>
   </main>
@@ -70,12 +73,14 @@
   <div id="loader__wrapper">
     <h5>Vini.works</h5>
   </div>
-  
+
 </body>
 
-<!-- Scripts -->
+<!-- Splide -->
 <script src="/js/scriptSplide.js"></script>
-<script src="/js/details.js"></script>
+
+<!-- Scripts -->
+<script src="/js/plusDetails.js"></script>
 <script src="/js/loader.js"></script>
 <script src="/js/about.js"></script>
 

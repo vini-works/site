@@ -10,36 +10,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vinícius Queiróz | Visual Designer</title>
 
-    <meta name="description" content="Visual Designer e Frontend Developer">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="vini — works | Vinícius Queiróz">
-    <meta name="twitter:description" content="Visual Designer e Frontend Developer">
-    <meta name="twitter:image" content="https://vini.works/images/ogp-home.png">
-
-    <meta property="og:locale" content="pt_BR">
-    <meta property="og:title" content="vini — works | Vinícius Queiróz">
-    <meta property="og:description" content="Visual Designer e Frontend Developer">
-    <meta property="og:url" content="https://vini.works/">
-    <meta property="og:image" content="https://vini.works/images/ogp-home.png">
-    <meta property="og:type" content="website">
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
-
-    <link rel="stylesheet" href="/styles/style.css" />
-    <script src="/components/projetos.js"></script>
+    <!-- Image Zoom -->
     <script src="https://cdn.jsdelivr.net/gh/mvoloskov/fast-image-zoom/dist/fast-image-zoom.min.js"></script>
 
+    <!-- JQuery CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- Bootstrap CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
 
     <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png" />
     <link rel="manifest" href="favicon/site.webmanifest" />
+
+    <!-- Sass Compilado -->
+    <link rel="stylesheet" href="/styles/style.css" />
+
+    <!-- Componentes -->
+    <script src="/components/projetos.js"></script>
+
 </head>
 
 <body>
+
+    <proj-header></proj-header>
+
     <div class="display__grid__descricao">
         <h5>Calendário 2022</h5>
         <h5>
@@ -95,13 +92,14 @@
         </div>
     </section>
 
-    <proj-header></proj-header>
+    <!--  //Html Generation -->
+    <div id="loader__wrapper"></div>
 
 </body>
 
-<!--  //Body Scripts -->
+<!-- Scripts -->
+<script src="/js/plusDetails.js"></script>
+<script src="/js/loader.js"></script>
 <script src="/js/about.js"></script>
-<script src="/js/scriptSplide.js"></script>
-<script src="/js/imageZoom.js"></script>
 
 </html>

@@ -3,7 +3,7 @@ if (window.matchMedia("(min-width: 766px)").matches) {
   $('#about').mouseenter(function () {
     $('.about__content').animate({
       height: "toggle"
-    }, 300, function () {
+    }, 1000, function () {
       // Animation complete.
 
     });
@@ -13,7 +13,7 @@ if (window.matchMedia("(min-width: 766px)").matches) {
   $('#about').click(function () {
     $('.about__content').animate({
       height: "toggle"
-    }, 300, function () {
+    }, 1000, function () {
       // Animation complete.
 
     });
