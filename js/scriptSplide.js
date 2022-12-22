@@ -2,17 +2,17 @@ const splide = new Splide('.splide', {
     arrows: false,
     pagination: false,
     drag: 'free',
-    type: 'loop',
-    perPage: 3,
+    perPage: 4,
     gap: 5,
-    fixedHeight: '80vh',
+    fixedHeight: '95vh',
     autoScroll: {
-      speed: 0.5,
+      speed: 0.2,
       pauseOnHover: false,
     },
     breakpoints: {
       720: {
         perPage: 1,
+        fixedHeight: '95vh',
       },
     },
   });

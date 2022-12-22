@@ -1,38 +1,50 @@
-.display__grid__2,
-.display__grid__3,
-.display__grid__4,
-.display__grid__5,
-.display__grid__6
-
+.display__grid__75_25,
+.display__grid__100,
+.display__grid__50_50,
+.display__grid__descricao,
+.display__grid__6fr,
+.page__content
     display: grid
+    grid-gap: 5px
+    grid-template-columns: 1fr
+
+.display__grid__descricao h5
+    padding-bottom: 2vh
 
 @media screen and ( min-width: 720px)
-    .display__grid__2
+    .display__grid__75_25
         display: grid
         grid-gap: 5px
         grid-template-columns: 3fr 1fr
         
-    .display__grid__3
+    .display__grid__100
         display: grid
         grid-gap: 5px
         grid-template-columns: 1fr
 
-    .display__grid__4
-        padding-top: 5px
+    .display__grid__50_50
         display: grid
         grid-gap: 5px
         grid-template-columns: 1fr 1fr
 
-    .display__grid__5
+    .display__grid__descricao
         display: grid
         grid-gap: 5px
         grid-template-columns: 1fr 2fr 1fr
         padding-bottom: 5vh
 
-    .display__grid__6
+        h5
+            padding-bottom: 0.5vh
+
+    .display__grid__arquivo
         display: grid
         grid-gap: 5px
-        grid-template-columns: repeat(6, 1fr)
+        grid-template-columns: repeat(4, 1fr)
         padding-top: 5px
         padding-bottom: 5px
+
+    .display__grid__menu
+        display: grid
+        grid-gap: 5px
+        grid-template-columns: 1fr 1fr
 

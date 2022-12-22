@@ -3,46 +3,36 @@
 
 <head>
   <meta charset="UTF-8" />
-
   <meta property="og:title" content="vini — works | Vinícius Queiróz" />
-  <meta property="og:locale" content="pt_br" />
-
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Vinícius Queiróz | Visual Designer</title>
 
-  <meta name="description" content="Visual Designer e Frontend Developer">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="vini — works | Vinícius Queiróz">
-  <meta name="twitter:description" content="Visual Designer e Frontend Developer">
-  <meta name="twitter:image" content="https://vini.works/images/ogp-home.png">
+    <!-- Image Zoom -->
+    <script src="https://cdn.jsdelivr.net/gh/mvoloskov/fast-image-zoom/dist/fast-image-zoom.min.js"></script>
 
-  <meta property="og:locale" content="pt_BR">
-  <meta property="og:title" content="vini — works | Vinícius Queiróz">
-  <meta property="og:description" content="Visual Designer e Frontend Developer">
-  <meta property="og:url" content="https://vini.works/">
-  <meta property="og:image" content="https://vini.works/images/ogp-home.png">
-  <meta property="og:type" content="website">
+    <!-- JQuery CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/gh/mvoloskov/fast-image-zoom/dist/fast-image-zoom.min.js"></script>
+    <!-- Bootstrap CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
 
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png" />
+    <link rel="manifest" href="favicon/site.webmanifest" />
 
-  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.3/dist/js/splide.min.js"></script>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.3/dist/css/splide.min.css">
-  <script
-    src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.5.3/dist/js/splide-extension-auto-scroll.min.js"></script>
-  <link rel="stylesheet" href="/styles/style.css" />
+    <!-- Sass Compilado -->
+    <link rel="stylesheet" href="/styles/style.css" />
 
-  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png" />
-  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png" />
-  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png" />
-  <link rel="manifest" href="favicon/site.webmanifest" />
+    <!-- Componentes -->
+    <script src="/components/projetos.js"></script>
+    
 </head>
 
 <body>
-  <div class="display__grid__5">
+
+  <div class="display__grid__descricao">
     <h5>Studio Ronaldo Rezende</h5>
 
     <h5>O Design Escandinavo foi o principal guia da equipe, com uso de cores sóbrias, formas geométricas e limpeza
@@ -108,6 +98,7 @@
     </div>
   </section>
 
+  <proj-header></proj-header>
 
   <!--  //Body Scripts -->
   <script src="/js/about.js"></script>

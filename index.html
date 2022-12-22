@@ -23,22 +23,30 @@
   <meta property="og:image" content="https://vini.works/images/ogp-home.png">
   <meta property="og:type" content="website">
 
+  <!-- JQuery CDN -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
+  <!-- Bootstrap CDN -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
-
-  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.3/dist/js/splide.min.js"></script>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.3/dist/css/splide.min.css">
-  <script
-    src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.5.3/dist/js/splide-extension-auto-scroll.min.js"></script>
-
-  <link rel="stylesheet" href="/styles/style.css" />
 
   <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png" />
   <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png" />
   <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png" />
   <link rel="manifest" href="favicon/site.webmanifest" />
+
+  <!-- SplideJS CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.3/dist/js/splide.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.3/dist/css/splide.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.5.3/dist/js/splide-extension-auto-scroll.min.js"></script>
+
+  <!-- Sass Compilado -->
+  <link rel="stylesheet" href="/styles/style.css" />
+
+  <!-- Componentes -->
+  <script src="/components/sobre.js"></script>
+  <script src="/components/slider.js"></script>
+
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-180535428-1"></script>
@@ -53,200 +61,22 @@
 </head>
 
 <body>
-  <section class="splide">
-    <div class="splide__track">
-      <ul class="splide__list">
-
-        <li class="splide__slide"> <img src="/images/covers/yas.jpg" width="100%" />
-          <figcaption><span></span> Yas [SOON]</figcaption>
-        </li>
-
-        <li class="splide__slide"> <a href="https://www.behance.net/gallery/154269771/GreenKitchen" target="_blank"><img
-              src="/images/covers/gk.jpg.webp" width="100%" />
-            <figcaption><span></span> GreenKitchen [BEHANCE]</figcaption>
-          </a>
-        </li>
-
-        <li class="splide__slide"> <a href="/calendario22"><img src="/images/calendario2022/IMG_1014.webp"
-              width="100%" />
-            <figcaption><span></span> Calendário 2022</figcaption>
-          </a>
-        </li>
-
-        <li class="splide__slide"> <a href="/turbo"><img src="/images/covers/turbo.png" width="100%" />
-            <figcaption><span></span> Turbo</figcaption>
-          </a>
-        </li>
-
-        <li class="splide__slide"> <a href="/arquivo"><img src="/images/covers/lvxz.png" width="100%" />
-            <figcaption><span></span> Arquivo</figcaption>
-          </a>
-        </li>
-
-        <li class="splide__slide"> <a href=""><img src="/images/covers/lab.png" width="100%" />
-            <figcaption><span></span> Ilustrações</figcaption>
-          </a>
-        </li>
-
-        <li class="splide__slide"> <a href="/RR"><img src="/images/covers/studiorr-cover.png" width="100%" />
-            <figcaption><span></span> Studio Ronaldo Rezende</figcaption>
-          </a>
-        </li>
-
-      </ul>
-    </div>
-  </section>
-
-  <div class="fixed__content">
-    <div class="display__grid__2">
-      <section Class="column__1">
-        <h5 class>
-          Vinícius Queiróz é um visual designer
-          que está procurando fazer barulho ao redor.
-          interessado em design editorial, interfaces, branding e tipográfia.
-        </h5>
-      </section>
-
-      <section class="column__3">
-        <div id="about" class="link">
-          <h5><span></span> Sobre</h5>
-          <h5>+ Detalhes</h5>
-        </div>
-
-        <div class="about__content">
-          <br>
-          <a href="https://www.instagram.com/vviniciusqueiroz/" target="_blank"> 
-          <div class="link">
-            <h5>@vviniciusqueiroz</h5>
-          </div>
-        </a>
-        <a href="mailto:vnsqzs@gmail.com"> 
-          <div class="link">
-            <h5>vnsqzs@gmail.com</h5>
-          </div>
-        </a>
-          <br>
-          <h5> Colaborou com <a class="link" target="_blank" href="https://valkiriaic.com.br/">Valkiria Inteligência
-              Criativa</a>, Estúdio Biabum e músicos independentes.</h5>
-          <br>
-          <h5>
-            Desenvolve sua carreira como designer e diretor de arte, além de apoiar-se em conceitos que
-            aprendeu durante a faculdade de Sistemas de Informação pela Universidade Federal de Mato Grosso. Busca,
-            com o seu trabalho, usar de pensamentos sistêmicos para criar soluções visuais envolventes e
-            culturalmente orientadas para projetos transformadores.
-          </h5>
-
-          <br>
-
-          <div>
-            <h5>--------------------------------------------</h5>
-            <h5>EXPERIÊNCIAS</h5>
-            <h5>--------------------------------------------</h5>
-
-
-            <h5>
-              Designer Júnior
-              <br>
-              <a href="https://www.estudiogole.com/" class="link" target="_blank">Estúdio Gole</a>
-              <br>
-              Mar. 2022 até Presente
-              <br>
-              ----
-            </h5>
-
-            <h5>
-              Freelancing
-              <br>
-              Jun. 2021 até Fev. 2022
-              <br>
-              ----
-            </h5>
-
-            <h5>
-              Diretor de Arte (Estágio)
-              <br>
-              Instituto Euvaldo Lodi Mato Grosso
-              <br>
-              Out. 2019 até Mai. 2021
-              <br>
-              ----
-            </h5>
-            <h5>
-              Desenvolvedor Frontend (Júnior)
-              <br>
-              Código5 Web
-              <br>
-              Ago. 2018 até Ago. 2019
-            </h5>
-            <br>
-          </div>
-
-          <div>
-            <h5>--------------------------------------------</h5>
-            <h5>Educação</h5>
-            <h5>--------------------------------------------</h5>
-
-            <h5>
-              Decodificando Identidades
-              <br>
-              Aprender Design
-              <br>
-              Carlos Bocai e Julia B. Aguiar
-              <br>
-              Ago. 2021
-              <br>
-              <a class="link" target="_blank"
-                href="https://www.aprender.design/certificado/c7XXMcJhnaF1hG9PJ74HwL">→Credencial</a>
-              <br>
-              ----
-            </h5>
-
-            <h5>
-              Building an immersive creative website from scratch without frameworks
-              <br>
-              Awwwards Academy
-              <br>
-              Jun. 2021
-              <br>
-              <a class="link" target="_blank"
-                href="https://drive.google.com/file/d/1aNn6M5r0DtNPSDlwLDlpnMw_VP5bxw2N/view">→ Credencial</a>
-              <br>
-              ----
-            </h5>
-            <h5>
-              Sistemas de Informação
-              <br>
-              Universidade Federal do Estado de Mato Grosso
-              <br>
-              Mai. 2019 - Descontinuado
-              <br>
-            </h5>
-          </div>
-          <br>
-          <div>
-            <h5>--------------------------------------------</h5>
-            <h5>Aparições</h5>
-            <h5>--------------------------------------------</h5>
-            <h5>
-              Brasil Design Awards 2022 @Shorlist
-              <br>
-              GreenKitchen
-            </h5>
-          </div>
-        </div>
-      </section>
-    </div>
-  </div>
-
+  <sobre-header></sobre-header>
+  <main>
+    <slider-from-splider></slider-from-splider>
+  </main>
 
   <!--  //Html Generation -->
   <div id="loader__wrapper">
     <h5>Vini.works</h5>
   </div>
-
-  <script src="/js/scriptSplide.js"></script>
-  <script src="/js/loader.js"></script>
-  <script src="/js/about.js"></script>
+  
 </body>
+
+<!-- Scripts -->
+<script src="/js/scriptSplide.js"></script>
+<script src="/js/details.js"></script>
+<script src="/js/loader.js"></script>
+<script src="/js/about.js"></script>
 
 </html>
