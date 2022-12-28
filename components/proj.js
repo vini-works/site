@@ -10,10 +10,11 @@ class Proj extends HTMLElement {
 
         <section class="column__1">
 
-            <div id="about">
-                <a class="wrapper__about__content_interna">
+            <div id="about" onclick="detailsSwtich()">
+                <a class="wrapper__about__content_interna link">
                     <h5><span></span> Projetos</h5>
-                    <h5 id="Switch__Text">+ Detalhes</h5>
+                    <h5  id="switch__text">+ Detalhes</h5>
+                    <h5><span></span></h5>
                 </a>
             </div>
 
@@ -84,6 +85,7 @@ class Proj extends HTMLElement {
             </div>
         </section>
     </div>
+
 
       `;
   }

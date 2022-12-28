@@ -6,16 +6,20 @@ class Header extends HTMLElement {
     connectedCallback() {
       this.innerHTML = `
 
+      
+  
       <div class="fixed__content">
+      
       <div class="display__grid__75_25">
-        <section>
+      
+      <section>
           <h5>
             Vinícius Queiróz é um visual designer
             que está procurando fazer barulho ao redor.
             interessado em design editorial, interfaces e sinalização.
           </h5>
         </section>
-  
+        
         <section>
           <div id="about" onclick="detailsSwtich()" class="link wrapper__about__content_interna">
             <h5><span></span> Sobre</h5>

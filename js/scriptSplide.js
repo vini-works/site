@@ -4,7 +4,6 @@ const splide = new Splide('.splide', {
     drag: 'free',
     perPage: 4,
     gap: 5,
-    fixedHeight: '95vh',
     autoScroll: {
       speed: 0.2,
       pauseOnHover: false,
