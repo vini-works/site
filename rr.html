@@ -111,3 +111,126 @@
 <script src="/js/about.js"></script>
 
 </html>
+
+
+class Header extends HTMLElement {
+  constructor() {
+      super();
+  }
+
+  connectedCallback() {
+    this.innerHTML = `
+    
+      
+      <section id="about" class="">
+        
+        <div class="display__grid__custom">
+          <img src="/images/me.jpeg" width="25px" alt="">
+          <h5>Interactive Designer interessado em interfaces, design editorial e sinalização.</h5>
+          </div>
+        
+        <div class="about__content">
+
+          <div class="coluna__2">
+           
+            <div class="display__grid__custom">
+
+                <h5>EXPERIÊNCIAS</h5>
+                <div>
+                  <h5>
+                    Designer Júnior
+                    <br>
+                    <a href="https://www.estudiogole.com/" class="link" target="_blank">Estúdio Gole</a>
+                    <br>
+                    Mar. 2022 até Presente          
+                  </h5>
+                  
+                  <br>
+
+                  <h5>
+                    Freelancing
+                    <br>
+                    Jun. 2021 até Fev. 2022          
+                  </h5>
+
+                  <br>
+
+                  <h5>
+                    Diretor de Arte (Estágio)
+                    <br>
+                    Instituto Euvaldo Lodi
+                    <br>
+                    Out. 2019 até Mai. 2021          
+                  </h5>
+
+                  <br>
+
+                  <h5>
+                    Desenvolvedor Frontend (Júnior)
+                    <br>
+                    Código5 Web
+                    <br>
+                    Ago. 2018 até Ago. 2019
+                  </h5>
+
+                </div>
+              </div>
+              
+              <div class="display__grid__custom">
+              <h5>Educação</h5>
+
+              <div class="ed">
+                <div>
+                  <h5>
+                    Decodificando Identidades
+                    <br>
+                    Aprender Design
+                    <br>
+                    Ago. 2021
+                    <br>
+                    <a href="https://www.aprender.design/certificado/c7XXMcJhnaF1hG9PJ74HwL" target="_blank">
+                      <div class="link">
+                        <h5>→ Credencial</h5>
+                      </div>
+                    </a>
+                    <br>
+                  </h5>
+        
+                  <h5>
+                    Building an immersive creative website from scratch without frameworks
+                    <br>
+                    Awwwards Academy
+                    <br>
+                    Jun. 2021
+                    <br>
+                    <a href="https://drive.google.com/file/d/1aNn6M5r0DtNPSDlwLDlpnMw_VP5bxw2N/view" target="_blank">
+                      <div class="link">
+                        <h5>→ Credencial</h5>
+                      </div>
+                    </a>
+                    <br>
+                  </h5>
+        
+                  <h5>
+                    Sistemas de Informação
+                    <br>
+                    Universidade Federal do Estado de Mato Grosso
+                    <br>
+                    Mai. 2019 - Descontinuado
+                    <br>
+                  </h5>
+        
+                </div>
+              <div>
+              </div>
+        
+          </div>
+
+        </div>
+      </section>
+
+
+    `;
+}
+
+}

@@ -9,13 +9,7 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vinícius Queiróz | Visual Designer</title>
-
-    <!-- Image Zoom -->
-    <script src="https://cdn.jsdelivr.net/gh/mvoloskov/fast-image-zoom/dist/fast-image-zoom.min.js"></script>
-
-    <!-- JQuery CDN -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-
+    
     <!-- Bootstrap CDN -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
@@ -28,28 +22,24 @@
     <!-- Sass Compilado -->
     <link rel="stylesheet" href="/styles/style.css" />
 
-    <!-- Componentes -->
-    <script src="/components/proj.js"></script>
-
 </head>
 
 <body>
 
-    <proj-header></proj-header>
 
     <div class="display__grid__descricao">
-        <h5>Calendário 2022</h5>
-        <h5>
+        <p>Calendário 2022</p>
+        <p>
             Inspirado no trabalho de Heinrich Fleischhacker, que frequentemente utilizava números binários, código
             Baudot e impressora de impacto (dot matrix printer) em suas peças.
-        </h5>
-        <h5>
+        </p>
+        <p>
             O material utiliza os elementos tradicionais de um calendário (datas, feriados e dias da semana), somados ao
             uso da orientação vertical e horizontal, o calendário propõe um ruído visual e utilização não convencional.
             Cada pontinho amarelo representa um dos 12 feriados nacionais para o ano de 2022.
-        </h5>
+        </p>
         <div>
-            <h5>
+            <p>
                 Tipo em uso: Neue Montreal por <a class="link" href="https://pangrampangram.com/"
                     target="_blank">Pangram Foundry</a>
                 <br>
@@ -60,23 +50,23 @@
                 Impressão: Digital com laminação fosca
                 <br>
                 Cores: Preto e Amarelo CMYK
-            </h5>
+            </p>
         </div>
-        <h5>
+        <p>
             Cliente —
             <br>
             Projeto Pessoal
-        </h5>
-        <h5>
+        </p>
+        <p>
             Competências —
             <br>
             Design Gráfico
-        </h5>
-        <h5>
+        </p>
+        <p>
             Data —
             <br>
             Dez, 2021
-        </h5>
+        </p>
 
     </div>
 
@@ -92,14 +82,15 @@
         </div>
     </section>
 
+    <div id="data__container"></div>
+
     <!--  //Html Generation -->
     <div id="loader__wrapper"></div>
 
 </body>
 
 <!-- Scripts -->
-<script src="/js/plusDetails.js"></script>
-<script src="/js/loader.js"></script>
-<script src="/js/about.js"></script>
+<script src="/js/homeDataTemplate.js"></script>
+
 
 </html>

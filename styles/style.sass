@@ -1,27 +1,26 @@
-@import './helpers/_variables'
-@import './bases/_navbar'
+*
+  padding: 0
+  margin: 0
+  vertical-align: baseline
+  list-style: none
+  border: 0
 
-@import './animations/_loader'
-@import './animations/_cursor'
+@import './helpers/_variables'
 
 @import './bases/_text'
 @import './bases/_grids'
 @import './bases/_video'
-@import './bases/_imageZoom'
 
 body
-  background: $primary-bg
+  background-color: $cor-principal
+  color: invert($cor-principal)
   font-family: 'basier_square_monoregular'
   margin: 5px
-  cursor: crosshair
-  letter-spacing: -1px
-                                  
-.splide
-  cursor: grab
+  overflow-y: scroll
 
 @font-face
   font-family: 'basier_square_monoregular'
-  src: url('basiersquaremono-regular-webfont-webfont.woff2') format('woff2'), url('basiersquaremono-regular-webfont-webfont.woff') format('woff')
+  src: url('bases/basiersquaremono-regular-webfont-webfont.woff2') format('woff2'), url('bases/basiersquaremono-regular-webfont-webfont.woff') format('woff')
   font-weight: normal
   font-style: normal
 
@@ -33,7 +32,3 @@ body
   display: none
   -ms-overflow-style: none // IE and Edge
   scrollbar-width: none // Firefox
-
-img,
-video
-  border-radius: 3px

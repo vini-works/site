@@ -23,65 +23,33 @@
   <meta property="og:image" content="https://vini.works/images/ogp-home.png">
   <meta property="og:type" content="website">
 
-  <!-- JQuery CDN -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-
-  <!-- Bootstrap CDN -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
-
-  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png" />
-  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png" />
-  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png" />
-  <link rel="manifest" href="favicon/site.webmanifest" />
-
-  <!-- SplideJS CDN -->
-  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.3/dist/js/splide.min.js"></script>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.3/dist/css/splide.min.css">
-  <script
-    src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.5.3/dist/js/splide-extension-auto-scroll.min.js"></script>
-
   <!-- Sass Compilado -->
   <link rel="stylesheet" href="/styles/style.css" />
-
-  <!-- Componentes -->
-  <script src="/components/proj.js"></script>
-  <script src="/components/header.js"></script>
-  <script src="/components/slider.js"></script>
-
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-180535428-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag("js", new Date());
-    gtag("config", "UA-180535428-1");
-  </script>
+  <link rel="stylesheet" href="https://use.typekit.net/uov8ssz.css">
 </head>
 
+
 <body>
-  
-<main-header></main-header>
 
-  <main>
-    <slider-from-splider></slider-from-splider>
-  </main>
+  <div id="project__container"></div>
 
-
-  <!--  //Html Generation -->
-  <div id="loader__wrapper">
-    <h5>Vini.works</h5>
+  <div class="bio__data__container">
+    <div class="bio__data"><img src="/images/me.jpeg" width="25px" alt=""></div>
+    <div class="bio__data">
+      <p>[bio]</p>
+      <p class="bio__text">Interactive Designer interessado em interfaces, design editorial e sinalização. Busca, com o seu trabalho, usar de pensamentos sistêmicos para criar soluções envolventes e culturalmente orientadas.</p>
+      <p>[Download] <br> CV_vinicius.pdf 1.3mb</p>
+    </div>
+    <div id="personal__data__container"></div>
+    <div style="min-height: 100vh; display: flex; justify-content: center; align-items: center; background-color: pink;"><p>sidjaidsjaisdjaiisa</p></div>
   </div>
+  
 
 </body>
 
-<!-- Splide -->
-<script src="/js/scriptSplide.js"></script>
 
 <!-- Scripts -->
-<script src="/js/loader.js"></script>
-<script src="/js/about.js"></script>
+<script src="js/personalDataTemplate.js"></script>
+<script src="js/homeDataTemplate.js"></script>
 
 </html>

@@ -1,35 +1,30 @@
 a
-    color: $primary-color
-
-a:hover
-    color: $primary-color
+    color: invert($cor-principal)
     text-decoration: none
 
+a:hover
+    color: $secundary-color
+    text-decoration: none
 
-.link:hover
-    background: $p-main-color
-    padding-left: 15px
-    transition: 0.2s
-    border-radius: 3px
-
-h5,
-figcaption
+p
     font-size: 12px
     letter-spacing: 0.01em
     text-transform: uppercase
     margin-bottom: 0px
-    color: $primary-color
-
-.link__item:hover > h5
-    background: $p-main-color
-    padding-left: 15px
-    transition: 0.2s
-    border-radius: 3px
-
-.link__item__image
-    margin-bottom: 5px
+    line-height: 130%
 
 hr
-    border: dashed 0.5px $primary-color
+    border: dashed 0.5px invert($cor-principal)
     padding: 0
     margin: 5px 0
+
+.no__link
+    color: $disabled_link
+    cursor: default
+
+.no__link:hover
+    color: $disabled_link
+    cursor: default
+
+.no
+    color: $secundary-color

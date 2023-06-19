@@ -1,0 +1,111 @@
+[
+    {
+        "year": "[Ano]",
+        "project": "[Projeto]",
+        "type": "[Competências]",
+        "client": "[Estúdio/Agência]",
+        "more": "[↓]"
+    },
+    {
+        "year": "2023",
+        "project": "Danki",
+        "type": "Digital Design System, E-commerce",
+        "client": "estúdio gole"
+    },
+    {
+        "year": "2023",
+        "project": "Sometimes V+V Work",
+        "type": "Identidade Visual, Website",
+        "client": "[-]"
+    },
+    {
+        "year": "2023",
+        "project": "Humans At Computer",
+        "type": "Tipografia, Website",
+        "client": "[-]"
+    },
+    {
+        "year": "2023",
+        "project": "GrupoPlanta",
+        "type": "Identidade Visual, Website",
+        "client": "estúdio gole",
+        "link": "/calendario22.html",
+        "more": "→"
+    },
+    {
+        "year": "2023",
+        "project": "Estúdio Gole",
+        "type": "Digital Design System, Website",
+        "client": "estúdio gole",
+        "link": "/calendario22.html",
+        "more": "→"
+    },
+    {
+        "year": "2023",
+        "project": "Utrail",
+        "type": "Digital Design System, Iconografia, Identidade Visual, Website",
+        "client": "estúdio gole",
+        "link": "/calendario22.html",
+        "more": "→"
+    },
+    {
+        "year": "2023",
+        "project": "B&B",
+        "type": "3d, Website",
+        "client": "Agência B&B",
+        "link": "/calendario22.html",
+        "more": "→"
+    },
+    {
+        "year": "2022",
+        "project": "Centopeia Vendèe",
+        "type": "E-commerce, Identidade Visual",
+        "client": "estúdio gole"
+    },
+    {
+        "year": "2022",
+        "project": "Shakti Yoga",
+        "type": "Digital Design System, E-commerce",
+        "client": "estúdio gole"
+    },
+    {
+        "year": "2022",
+        "project": "GreenKitchen",
+        "type": "Identidade Visual",
+        "client": "estúdio gole"
+    },
+    {
+        "year": "2022",
+        "project": "Fábula: Mundão Miudinho",
+        "type": "Campanha, Key Visual",
+        "client": "estúdio biabum"
+    },
+    {
+        "year": "2021",
+        "project": "Yas",
+        "type": "Identidade Visual",
+        "link": "/calendario22.html",
+        "client": "[-]",
+        "more": "→"
+    },
+    {
+        "year": "2021",
+        "project": "Ronaldo Rezende Studio",
+        "type": "Website",
+        "client": "Valkiria Inteligência Criativa"
+    },
+    {
+        "year": "2021",
+        "project": "Turbo",
+        "type": "Identidade Visual",
+        "client": "[-]"
+    },
+    {
+        "year": "2021",
+        "project": "Calendário",
+        "type": "Projeto gráfico",
+        "client": "[-]",
+        "link": "/calendario22",
+        "more": "→"
+    }
+]
