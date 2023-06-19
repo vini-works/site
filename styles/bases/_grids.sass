@@ -20,12 +20,14 @@
             justify-content: flex-end
 
 .bio__data__container
-    position: relative
 
-    .bio__data
+    & .bio__data
         @extend %dividers__gap
         display: grid
         grid-template-columns: 4fr 6fr 3fr
+        position: sticky
+        top: 5px
+        z-index: -1
 
     .bio__text
         max-width: 80%
