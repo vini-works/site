@@ -12,6 +12,7 @@ function renderTemplate__Personal(data) {
 
     // Exibir o nome do bloco
       let blocoNameElement = document.createElement("p");
+      blocoNameElement.classList.add("block__name")
       blocoNameElement.textContent = blocoKey;
       div__block.appendChild(blocoNameElement);
 

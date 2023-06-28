@@ -3,13 +3,12 @@
     padding: 0.6rem 0
     background-color: $cor-principal
 
+// CONTEÚDO DE PROJETOS ↓
 #project__container
     .project__list
         @extend %dividers__gap
         display: grid
         grid-template-columns: 1fr 3fr 6fr 2fr 1fr
-        position: sticky
-        top: 5px
 
         &:first-child
             border-top: none
@@ -19,40 +18,73 @@
             display: flex
             justify-content: flex-end
 
-.bio__data__container
+    @media (max-width: 600px)
+        .project__list
+            grid-template-columns: 1fr 2fr 2fr
 
+            .item__project__list__studio, .item__project__list__more
+                display: none
+
+// CONTEÚDO DE INFORMAÇÕES PESSOAS ↓
+.child__personal__data
+    @extend %dividers__gap
+    display: grid
+    grid-template-columns: 1fr 4fr
+    position: sticky
+    top: 5px
+
+    & > *
+        grid-column-start: 2
+
+    .block__name
+        padding-bottom: 2rem
+
+.bio__data__container
     & .bio__data
         @extend %dividers__gap
         display: grid
-        grid-template-columns: 4fr 6fr 3fr
+        grid-template-columns: 1fr 4fr
         position: sticky
         top: 5px
         z-index: -1
 
-    .bio__text
-        max-width: 80%
+        & :last-child
+            display: none
 
-    #personal__data__container
-        min-height: 100vh
+    .bio__text
+        max-width: 95%
+
+    .block__list
+        padding-bottom: 0.8rem
+
+        &:last-child
+            padding-bottom: 0
+
+@media (min-width: 600px)
+    .bio__data__container
+        & .bio__data
+            grid-template-columns: 4fr 6fr 3fr
+
+            & :last-child
+                display: block
+
+        .bio__text
+            max-width: 80%
 
         .child__personal__data
-            @extend %dividers__gap
-            display: grid
             grid-template-columns: 4fr 6fr 3fr
-            position: sticky
-            top: 5px
+
+            &:last-child
+                min-height: 30vh
 
             & > p
                 grid-column-start: 2
 
-        .child__personal__data:last-child
-            min-height: 30vh
+            & > *
+                grid-column-start: auto
 
-.block__list
-    padding-bottom: 0.8rem
-
-    &:last-child
-        padding-bottom: 0
+            .block__name
+                 padding-bottom: 0
 
 .display__grid__100,
 .display__grid__50_50,

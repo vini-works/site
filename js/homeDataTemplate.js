@@ -46,6 +46,7 @@ function renderTemplate(data) {
     projectElement.classList.add("item__project__list");
     typeElement.classList.add("item__project__list");
     clientElement.classList.add("item__project__list");
+    clientElement.classList.add("item__project__list__studio");
     moreElement.classList.add("item__project__list");
     moreElement.classList.add("item__project__list__more");
 
