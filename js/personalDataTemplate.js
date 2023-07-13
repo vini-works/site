@@ -11,10 +11,10 @@ function renderTemplate__Personal(data) {
     div__block.classList.add("child__personal__data");
 
     // Exibir o nome do bloco
-      let blocoNameElement = document.createElement("p");
-      blocoNameElement.classList.add("block__name")
-      blocoNameElement.textContent = blocoKey;
-      div__block.appendChild(blocoNameElement);
+    let blocoNameElement = document.createElement("p");
+    blocoNameElement.classList.add("block__name")
+    blocoNameElement.textContent = blocoKey;
+    div__block.appendChild(blocoNameElement);
 
     // Criar uma ul para cada bloco de informações
     var ul__tag = document.createElement("ul");
@@ -31,7 +31,7 @@ function renderTemplate__Personal(data) {
         pElement.textContent = item[key];
         pElement.classList.add("item__list");
         li__tag.appendChild(pElement);
-        
+
 
         if (key === "period") {
           pElement.classList.add("no");

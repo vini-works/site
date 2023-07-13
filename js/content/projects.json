@@ -8,6 +8,18 @@
     },
     {
         "year": "2023",
+        "project": "Kyraly",
+        "type": "Digital Design System, Website",
+        "client": "estúdio gole"
+    },
+    {
+        "year": "2023",
+        "project": "Monti Content",
+        "type": "Website",
+        "client": "estúdio gole"
+    },
+    {
+        "year": "2023",
         "project": "Danki",
         "type": "Digital Design System, E-commerce",
         "client": "estúdio gole"
@@ -30,7 +42,8 @@
         "type": "Identidade Visual, Website",
         "client": "estúdio gole",
         "link": "/calendario22.html",
-        "more": "→"
+        "more": "→",
+        "image": "./images/arquivo/03.png"
     },
     {
         "year": "2023",
@@ -46,7 +59,9 @@
         "type": "Digital Design System, Iconografia, Identidade Visual, Website",
         "client": "estúdio gole",
         "link": "/utrail.html",
-        "more": "→"
+        "more": "→",
+        "image": "./images/covers/studiorr-cover.png"
+
     },
     {
         "year": "2023",
