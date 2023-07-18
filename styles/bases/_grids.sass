@@ -24,7 +24,7 @@
         .project__list
             grid-template-columns: 1fr 2fr 2fr
 
-            .item__project__list__studio, .item__project__list__more
+            .item__project__list__client, .item__project__list__more
                 display: none
 
 //CONTEÚDO DE INFORMAÇÕES PESSOAS ↓
@@ -32,8 +32,6 @@
     @extend %dividers__gap
     display: grid
     grid-template-columns: 1fr 4fr
-    position: sticky
-    top: 5px
 
     & > *
         grid-column-start: 2
@@ -46,8 +44,6 @@
         @extend %dividers__gap
         display: grid
         grid-template-columns: 1fr 4fr
-        position: sticky
-        top: 5px
         z-index: -1
 
         & :last-child
@@ -60,7 +56,7 @@
         padding-bottom: 0.8rem
 
         &:last-child
-            padding-bottom: 0
+            padding-bottom: 5vh
 
 @media (min-width: 600px)
     .bio__data__container
@@ -75,9 +71,6 @@
 
         .child__personal__data
             grid-template-columns: 4fr 6fr 3fr
-
-            &:last-child
-                min-height: 30vh
 
             & > p
                 grid-column-start: 2

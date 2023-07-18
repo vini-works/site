@@ -16,12 +16,13 @@ a:hover {
   text-decoration: none;
 }
 
-p {
-  font-size: 12px;
+p, a {
+  font-size: 10px;
   letter-spacing: 0.01em;
   text-transform: uppercase;
   margin-bottom: 0px;
-  line-height: 130%;
+  line-height: 140%;
+  display: block;
 }
 
 .no__link {
@@ -36,6 +37,12 @@ p {
 
 .no {
   color: #3a3a3a;
+}
+
+.heading__teste {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
 }
 
 .bio__data__container .bio__data, .child__personal__data, #project__container .project__list {
@@ -62,7 +69,7 @@ p {
   #project__container .project__list {
     grid-template-columns: 1fr 2fr 2fr;
   }
-  #project__container .project__list .item__project__list__studio, #project__container .project__list .item__project__list__more {
+  #project__container .project__list .item__project__list__client, #project__container .project__list .item__project__list__more {
     display: none;
   }
 }
@@ -70,8 +77,6 @@ p {
 .child__personal__data {
   display: grid;
   grid-template-columns: 1fr 4fr;
-  position: sticky;
-  top: 5px;
 }
 .child__personal__data > * {
   grid-column-start: 2;
@@ -83,8 +88,6 @@ p {
 .bio__data__container .bio__data {
   display: grid;
   grid-template-columns: 1fr 4fr;
-  position: sticky;
-  top: 5px;
   z-index: -1;
 }
 .bio__data__container .bio__data :last-child {
@@ -97,7 +100,7 @@ p {
   padding-bottom: 0.8rem;
 }
 .bio__data__container .block__list:last-child {
-  padding-bottom: 0;
+  padding-bottom: 5vh;
 }
 
 @media (min-width: 600px) {
@@ -112,9 +115,6 @@ p {
   }
   .bio__data__container .child__personal__data {
     grid-template-columns: 4fr 6fr 3fr;
-  }
-  .bio__data__container .child__personal__data:last-child {
-    min-height: 30vh;
   }
   .bio__data__container .child__personal__data > p {
     grid-column-start: 2;

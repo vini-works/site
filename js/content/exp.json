@@ -1,24 +1,24 @@
 {
     "[Experiência]": [
         {
+            "period": "[Mar.2022] até [Presente]",
             "position": "Designer de Interação",
-            "company": "Estúdio Gole",
-            "period": "Mar.2022 até Presente"
+            "company": "Estúdio Gole"
         },
         {
+            "period": "[Jun.2021] até [Fev.2022]",
             "position": "Designer Visual",
-            "company": "Freelancing",
-            "period": "Jun.2021 até Fev.2022"
+            "company": "Freelancing"
         },
         {
+            "period": "[Out.2019] até [Mai.2021]",
             "position": "Estágio em Direção de Arte",
-            "company": "Instituto Euvaldo Lodi",
-            "period": "Out.2019 até Mai.2021"
+            "company": "Instituto Euvaldo Lodi"
         },
         {
+            "period": "[Ago.2018] até [Ago.2019]",
             "position": "Estágio em Desenvolvimento Front-end",
-            "company": "Código5 Web Software House",
-            "period": "Ago.2018 até Ago.2019"
+            "company": "Código5 Web Software House"
         }
     ],
 
@@ -31,24 +31,24 @@
 
     "[Educação]": [
         {
+            "period": "[Mai.2023]",
             "course": "Base - Design de produtos digitais",
-            "school": "Aprender Design",
-            "period": "Mai.2023"
+            "school": "Aprender Design"
         },
         {
+            "period": "[Ago.2021]",
             "course": "Decodificando Identidades",
-            "school": "Aprender Design",
-            "period": "Ago.2021"
+            "school": "Aprender Design"
         },
         {
+            "period": "[Jun.2021]",
             "course": "Building an immersive creative website from scratch without frameworks",
-            "school": "Awwwards Academy",
-            "period": "Jun.2021"
+            "school": "Awwwards Academy"
         },
         {
+            "period": "[Mai.2019 - Descontinuado]",
             "course": "Bacharel em Sistemas de Informação",
-            "school": "Universidade Federal do Estado de Mato Grosso",
-            "period": "Mai.2019 - Descontinuado"
+            "school": "Universidade Federal do Estado de Mato Grosso"
         }
     ],
 

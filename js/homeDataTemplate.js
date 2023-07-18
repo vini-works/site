@@ -31,6 +31,9 @@ function renderTemplate(data) {
       if (elements[j] === 'more') {
         element.classList.add("item__project__list__more");
       }
+      if (elements[j] === 'client') {
+        element.classList.add("item__project__list__client");
+      }
     }
 
     // Adicionar a projectList ao container
