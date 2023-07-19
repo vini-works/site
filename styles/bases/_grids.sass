@@ -13,8 +13,6 @@
         &:first-child
             border-top: none
             color: invert($cor-principal) !important
-            position: sticky
-            top: 0
 
         .item__project__list__more
             display: flex
@@ -80,29 +78,3 @@
 
             .block__name
                 padding-bottom: 0
-
-//GRID DE EXIBIÇÃO DAS PÁGINAS DE CASES ↓
-.display__grid__100,
-.display__grid__50_50,
-.display__grid__descricao,
-.page__content
-    display: grid
-    grid-gap: 5px
-    grid-template-columns: 1fr
-
-@media screen and ( min-width: 720px)
-    .display__grid__100
-        display: grid
-        grid-gap: 5px
-        grid-template-columns: 1fr
-
-    .display__grid__50_50
-        display: grid
-        grid-gap: 5px
-        grid-template-columns: 1fr 1fr
-
-    .display__grid__descricao
-        display: grid
-        grid-gap: 5px
-        grid-template-columns: 1fr 1fr 1fr
-        padding-bottom: 5vh
