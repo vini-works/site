@@ -42,8 +42,7 @@
         "type": "Identidade Visual, Website",
         "client": "estúdio gole",
         "link": "/calendario22.html",
-        "more": "→",
-        "image": "./images/arquivo/03.png"
+        "more": "→"
     },
     {
         "year": "2023",
@@ -59,9 +58,7 @@
         "type": "Digital Design System, Iconografia, Identidade Visual, Website",
         "client": "estúdio gole",
         "link": "/utrail.html",
-        "more": "→",
-        "image": "./images/covers/studiorr-cover.png"
-
+        "more": "→"
     },
     {
         "year": "2023",
@@ -120,7 +117,8 @@
         "project": "Calendário",
         "type": "Projeto gráfico",
         "client": "[-]",
-        "link": "/calendario22",
-        "more": "→"
+        "link": "/calendario22.html",
+        "more": "→",
+        "info": "Inspirado no trabalho de Heinrich Fleischhacker, que frequentemente utilizava números binários, código Baudot e impressora de impacto (dot matrix printer) em suas peças. O material utiliza os elementos tradicionais de um calendário (datas, feriados e dias da semana), somados ao uso da orientação vertical e horizontal, o calendário propõe um ruído visual e utilização não convencional. Cada pontinho amarelo representa um dos 12 feriados nacionais para o ano de 2022."
     }
 ]

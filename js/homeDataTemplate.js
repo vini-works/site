@@ -23,17 +23,14 @@ function renderTemplate(data) {
     }
 
     // Criar os elementos HTML usando os dados do JSON e aplicar as classes CSS correspondentes
-    let elements = ['year', 'project', 'type', 'client', 'more'];
+    let elements = ['year', 'project', 'type', 'client', 'more', 'info'];
     for (let j = 0; j < elements.length; j++) {
       let element = document.createElement("p");
       element.textContent = projectList[elements[j]];
       wrapperElement.appendChild(element);
-      if (elements[j] === 'more') {
-        element.classList.add("item__project__list__more");
-      }
-      if (elements[j] === 'client') {
-        element.classList.add("item__project__list__client");
-      }
+
+      // Adicionar a classe correspondente para cada chave
+      element.classList.add(`item__project__list__${elements[j]}`);
     }
 
     // Adicionar a projectList ao container

@@ -11,19 +11,10 @@
 </head>
 
 <body>
+    <!-- Informações do case -->
     <div id="caseData"></div>
 
     <div class="display__grid__descricao">
-        <p>Calendário 2022</p>
-        <p>
-            Inspirado no trabalho de Heinrich Fleischhacker, que frequentemente utilizava números binários, código
-            Baudot e impressora de impacto (dot matrix printer) em suas peças.
-        </p>
-        <p>
-            O material utiliza os elementos tradicionais de um calendário (datas, feriados e dias da semana), somados ao
-            uso da orientação vertical e horizontal, o calendário propõe um ruído visual e utilização não convencional.
-            Cada pontinho amarelo representa um dos 12 feriados nacionais para o ano de 2022.
-        </p>
         <div>
             <p>
                 Tipo em uso: Neue Montreal por <a class="link" href="https://pangrampangram.com/"
@@ -53,12 +44,15 @@
         </div>
     </section>
 
+    <!-- Container de projetos -->
     <div id="project__container"></div>
 </body>
 
 <!-- Scripts -->
-<script src="/js/homeDataTemplate.js"></script>
 <script src="js/template/caseDataTemplate.js"></script>
+<script src="/js/homeDataTemplate.js"></script>
+
+<!-- Chamando a função e atribuíndo um valor ao (projectKeyIdentifier) como argumento -->
 <script>jsonKey("Calendário")</script>
 
 </html>

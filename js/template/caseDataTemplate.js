@@ -7,32 +7,37 @@ function jsonKey(projectKeyIdentifier) {
     fetch('js/content/projects.json')
         .then(response => response.json())
         .then(jsonData => {
-            var foundedKey = null;
-
-            for (var i = 0; i < jsonData.length; i++) {
-                if (jsonData[i].project === projectKeyIdentifier) {
-                    foundedKey = jsonData[i];
-                    break;
-                }
-            }
+            var foundedKey = jsonData.find(item => item.project === projectKeyIdentifier);
 
             if (foundedKey) {
-                //Estruturando as informações de para saida HTML
+                // Criar uma div para as informações do projeto
                 var divData = document.createElement('div');
-                divData.classList.add("display__grid__descricao")
+                divData.classList.add("display__grid__descricao");
+
+                // Adicionar as informações do projeto na div
                 for (var key in foundedKey) {
-                    if (foundedKey.hasOwnProperty(key) && key !== "link" && key !== "more" && key !== "image") {
+                    if (foundedKey.hasOwnProperty(key) && key !== "link" && key !== "more" && key !== "info") {
                         var value = foundedKey[key];
                         var element = document.createElement('p');
-                        element.textContent = value;
+                        element.textContent = key + ': ' + value;
                         divData.appendChild(element);
                     }
                 }
 
-                // Atualizar o conteúdo do elemento HTML
+                // Atualizar o conteúdo do elemento HTML "caseData"
                 var elementData = document.getElementById("caseData");
                 elementData.innerHTML = '';
                 elementData.appendChild(divData);
+
+                // Criar uma div apenas para o elemento "info"
+                if (foundedKey["info"]) {
+                    var divInfo = document.createElement("div");
+                    divInfo.innerHTML = '<p>[info]</p><p>' + foundedKey["info"] + '</p>';
+                    elementData.appendChild(divInfo);
+                }
+
+            } else {
+                console.log("Projeto não encontrado.");
             }
         })
         .catch(error => console.log(error));
