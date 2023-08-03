@@ -41,7 +41,6 @@
         "project": "GrupoPlanta",
         "type": "Identidade Visual, Website",
         "client": "estúdio gole",
-        "link": "/calendario22.html",
         "more": "→"
     },
     {
@@ -49,7 +48,6 @@
         "project": "Estúdio Gole",
         "type": "Digital Design System, Website",
         "client": "estúdio gole",
-        "link": "/calendario22.html",
         "more": "→"
     },
     {
@@ -57,7 +55,6 @@
         "project": "Utrail",
         "type": "Digital Design System, Iconografia, Identidade Visual, Website",
         "client": "estúdio gole",
-        "link": "/utrail.html",
         "more": "→"
     },
     {
@@ -65,7 +62,6 @@
         "project": "B&B",
         "type": "3d, Website",
         "client": "Agência B&B",
-        "link": "/calendario22.html",
         "more": "→"
     },
     {
@@ -96,7 +92,6 @@
         "year": "2021",
         "project": "Yas",
         "type": "Identidade Visual",
-        "link": "/calendario22.html",
         "client": "[-]",
         "more": "→"
     },
@@ -117,8 +112,16 @@
         "project": "Calendário",
         "type": "Projeto gráfico",
         "client": "[-]",
-        "link": "/calendario22.html",
+        "link": "/calendario",
         "more": "→",
-        "info": "Inspirado no trabalho de Heinrich Fleischhacker, que frequentemente utilizava números binários, código Baudot e impressora de impacto (dot matrix printer) em suas peças. O material utiliza os elementos tradicionais de um calendário (datas, feriados e dias da semana), somados ao uso da orientação vertical e horizontal, o calendário propõe um ruído visual e utilização não convencional. Cada pontinho amarelo representa um dos 12 feriados nacionais para o ano de 2022."
+        "info": {
+            "block": "Inspirado no trabalho de Heinrich Fleischhacker, que frequentemente utilizava números binários, código Baudot e impressora de impacto (dot matrix printer) em suas peças.",
+            "block-2": "O material utiliza os elementos tradicionais de um calendário (datas, feriados e dias da semana), somados ao uso da orientação vertical e horizontal, o calendário propõe um ruído visual e utilização não convencional. Cada pontinho amarelo representa um dos 12 feriados nacionais para o ano de 2022."
+        },
+        "credits": {
+            "direção": "",
+            "motion": "",
+            "full": "Todos os projetos rotulados com o nome de uma agência foram projetados e criados durante meu emprego/posição. Não sou um show de um homem só. Os créditos estão disponiveis em domínio dos pertencentes."
+        }
     }
 ]

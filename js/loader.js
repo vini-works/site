@@ -2,7 +2,7 @@ function startLoader() {
     var loaderOverlay = document.getElementById("loader-overlay");
     var loader = document.getElementById("loader");
     var progress = 0;
-    var duration = 3000; // Duração do carregamento em milissegundos
+    var duration = 2000; // Duração do carregamento em milissegundos
     var intervalTime = duration / 100; // Intervalo de tempo para atualizar o progresso
   
     // Desabilitar rolagem da página

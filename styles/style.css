@@ -214,7 +214,24 @@ video {
     display: grid;
     grid-gap: 5px;
     grid-template-columns: 1fr 3fr 6fr 3fr;
+    padding: 0.6rem 0;
+    border-bottom: 0.5px solid #191919;
+    background-color: #101010;
+    margin-bottom: 30vh;
+    position: sticky;
+    top: 0;
+  }
+  .display__grid__info {
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: 1fr 3fr 9fr;
     padding-bottom: 5vh;
+  }
+  .display__grid__info__block {
+    max-width: 80%;
+  }
+  .display__grid__info__block p {
+    padding-bottom: 1rem;
   }
 }
 body {
