@@ -33,7 +33,7 @@
     {
         "year": "2023",
         "project": "Humans At Computer",
-        "type": "Tipografia, Website",
+        "type": "Código, Tipografia, Website",
         "client": "[-]"
     },
     {
@@ -115,13 +115,13 @@
         "link": "/calendario",
         "more": "→",
         "info": {
-            "block": "Inspirado no trabalho de Heinrich Fleischhacker, que frequentemente utilizava números binários, código Baudot e impressora de impacto (dot matrix printer) em suas peças.",
-            "block-2": "O material utiliza os elementos tradicionais de um calendário (datas, feriados e dias da semana), somados ao uso da orientação vertical e horizontal, o calendário propõe um ruído visual e utilização não convencional. Cada pontinho amarelo representa um dos 12 feriados nacionais para o ano de 2022."
-        },
-        "credits": {
-            "direção": "",
-            "motion": "",
-            "full": "Todos os projetos rotulados com o nome de uma agência foram projetados e criados durante meu emprego/posição. Não sou um show de um homem só. Os créditos estão disponiveis em domínio dos pertencentes."
+            "descrição": {
+                "block": "Inspirado no trabalho de Heinrich Fleischhacker, que frequentemente utilizava números binários, código Baudot e impressora de impacto (dot matrix printer) em suas peças.",
+                "block-2": "O material utiliza os elementos tradicionais de um calendário (datas, feriados e dias da semana), somados ao uso da orientação vertical e horizontal, o calendário propõe um ruído visual e utilização não convencional. Cada pontinho amarelo representa um dos 12 feriados nacionais para o ano de 2022."
+            },
+            "créditos": {
+                "type": "Tipo em uso: Neue Montreal por Pangram Pangram"
+            }
         }
     }
 ]

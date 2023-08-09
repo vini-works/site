@@ -1,42 +1,42 @@
+
+
 //GRID DE EXIBIÇÃO DAS PÁGINAS DE CASES
 .display__grid__100,
 .display__grid__50_50,
 .display__grid__descricao,
 .page__content
-    display: grid
-    grid-gap: 5px
     grid-template-columns: 1fr
+    @extend %grid__settings__large
 
 @media screen and ( min-width: 720px)
-    .display__grid__100
+    %grid__settings__large
         display: grid
         grid-gap: 5px
+
+    .display__grid__100
+        @extend %grid__settings__large
         grid-template-columns: 1fr
 
     .display__grid__50_50
-        display: grid
-        grid-gap: 5px
+        @extend %grid__settings__large
         grid-template-columns: 1fr 1fr
 
     .display__grid__descricao
-        display: grid
-        grid-gap: 5px
+        @extend %grid__settings__large
         grid-template-columns: 1fr 3fr 6fr 3fr
         padding: 0.6rem 0
         border-bottom: 0.5px solid $border-color
-        background-color: $cor-principal
-        margin-bottom: 30vh
-        position: sticky
-        top: 0
-        
+
     .display__grid__info
-        display: grid
-        grid-gap: 5px
-        grid-template-columns: 1fr 3fr 9fr
-        padding-bottom: 5vh
+        @extend %grid__settings__large
+        grid-template-columns: 10fr 3fr
+        padding: 0.6rem 0
+        border-bottom: 0.5px solid $border-color
 
-    .display__grid__info__block
-        max-width: 80%
+        .display__grid__credits__descrip
+            display: grid
+            grid-gap: 2rem
 
-        p
-            padding-bottom: 1rem
+        .display__grid__info__block
+            display: grid
+            grid-gap: 0.6rem

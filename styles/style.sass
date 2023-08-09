@@ -14,8 +14,6 @@
 @import './bases/_footer'
 @import './bases/_cases'
 
-
-
 body
   background-color: $cor-principal
   color: invert($cor-principal)
@@ -37,3 +35,11 @@ body
   display: none
   -ms-overflow-style: none // IE and Edge
   scrollbar-width: none // Firefox
+
+::-moz-selection // Code for Firefox
+    color: $cor-principal
+    background: $selection
+
+::selection
+  color: $cor-principal
+  background: $selection

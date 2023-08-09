@@ -64,5 +64,32 @@
             "project": "Centopeia Vendèe",
             "awards": "Destaque no Behance"
         }
+    ],
+
+
+
+    
+    "[Social]" : [
+        {
+            "rede": "Instagram",
+            "link": "instagram.com/vviniciusqueiroz"
+        },
+        {
+            "rede": "LinkedIn",
+            "link": ""
+        },
+        {
+            "rede": "Github",
+            "link": ""
+        },
+        {
+            "rede": "Figma Profile",
+            "link": ""
+        },
+        {
+            "rede": "vnsqzs@gmail.com",
+            "link": "mailto:vnsqzs@gmail.com"
+        }
+        
     ]
 }

@@ -27,16 +27,25 @@ function renderTemplate__Personal(data) {
       li__tag.classList.add("block__list");
 
       keys.forEach(function (key) {
-        let pElement = document.createElement("p");
-        pElement.textContent = item[key];
-        pElement.classList.add("item__list");
-        li__tag.appendChild(pElement);
+        if (key !== "link") {
+          let pElement = document.createElement("p");
+          pElement.classList.add("item__list");
+          li__tag.appendChild(pElement);
 
+          if (key === "period") {
+            pElement.classList.add("no");
+          }
 
-        if (key === "period") {
-          pElement.classList.add("no");
+          if (blocoKey === "[Social]" && key === "rede") {
+            let aElement = document.createElement("a");
+            aElement.textContent = item[key];
+            aElement.href = item["link"];
+            aElement.target = "_blank"; // Abre o link em uma nova aba
+            pElement.appendChild(aElement); // Adiciona o link diretamente ao pElement
+          } else {
+            pElement.textContent = item[key]; // Define o texto do pElement
+          }
         }
-
       });
 
       ul__tag.appendChild(li__tag);
