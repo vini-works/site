@@ -24,31 +24,26 @@
   <meta property="og:type" content="website">
 
   <!-- Sass Compilado -->
-  <link rel="stylesheet" href="./styles/style.css" />
+  <link rel="stylesheet" id="themeStylesheetLink" href="./styles/styleLight.css" />
 </head>
 
 <body>
-  <div id="project__container" class="container__list"></div>
+  <!-- Template Navbar -->
+  <nav id="nav__container"></nav>
 
   <div class="bio__data__container">
-    <div class="bio__data">
-      <p>[bio]</p>
-      <p class="bio__text">Interactive Designer interessado em interfaces, design editorial e sinalização. Busca, com o
-        seu trabalho, usar de pensamentos sistêmicos para criar soluções envolventes e culturalmente orientadas.</p>
-      <p>[Download] <br> CV_vinicius.pdf 1.3mb</p>
-    </div>
-
-    <div id="personal__data__container"></div>
-  </div>
-
-
-  <div id="canvas__container">
-    <div class="canvas__container__disclaimers">
-      <p>Nada sobre coleta de dados, é só um portfólio mesmo.</p>
-      <p>2021 - ano atual</p>
+    <div>
+      <p class="bio__text">CURRENTLY WORKING AT ESTÚDIO GOLE, VINÍCIUS QUEIRÓZ is a non-binary INTERACTIVE DESIGNER BASED
+        IN CUIABÁ → brazil. focused IN INTERFACES, EDITORIAL DESIGN AND SIGNAGE. afford their work with SYSTEMIC THINKING
+        TO CREATE ENGAGING AND CULTURALLY ORIENTED SOLUTIONS.
+      </p>
+      <br>
+      <p>available to work</p>
+      <p>mail to vnsqzs@gmail.com</p>
     </div>
   </div>
 
+  <div id="project__container" class="container__list"></div>
 
   <div id="loader-overlay">
     <div id="child-overlay">
@@ -58,12 +53,12 @@
       <p id="loader">0%</p>
     </div>
   </div>
+
+  <!-- Scripts -->
+  <script src="js/templates/navTemplate.js"></script>
+  <script src="js/templates/homeDataTemplate.js"></script>
+  <script src="js/themeSwitcher.js"></script>
+  <script src="js/loader.js"></script>
 </body>
-
-
-<!-- Scripts -->
-<script src="js/personalDataTemplate.js"></script>
-<script src="js/homeDataTemplate.js"></script>
-<script src="js/loader.js"></script>
 
 </html>

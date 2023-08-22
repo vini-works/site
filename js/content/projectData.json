@@ -1,15 +1,23 @@
 [
     {
-        "year": "[Ano]",
-        "project": "[Projeto]",
-        "type": "[Competências]",
-        "client": "[Estúdio/Agência]",
+        "year": "[year]",
+        "project": "[project]",
+        "type": "[Type]",
+        "client": "[Studio/Agency]",
         "more": "[↓]"
     },
     {
         "year": "2023",
+        "project": "Wish",
+        "type": "App, Digital Design System",
+        "client": "Aprender Design",
+        "link": "/calendario.html",
+        "more": "[→]"
+    },
+    {
+        "year": "2023",
         "project": "Kyraly",
-        "type": "Digital Design System, Website",
+        "type": "Website",
         "client": "estúdio gole"
     },
     {
@@ -27,47 +35,43 @@
     {
         "year": "2023",
         "project": "Sometimes V+V Work",
-        "type": "Identidade Visual, Website",
+        "type": "Visual Identity, Website",
         "client": "[-]"
     },
     {
         "year": "2023",
         "project": "Humans At Computer",
-        "type": "Código, Tipografia, Website",
+        "type": "Code, Typography, Website",
         "client": "[-]"
     },
     {
         "year": "2023",
         "project": "GrupoPlanta",
-        "type": "Identidade Visual, Website",
-        "client": "estúdio gole",
-        "more": "→"
+        "type": "Visual Identity, Website",
+        "client": "estúdio gole"
     },
     {
         "year": "2023",
         "project": "Estúdio Gole",
         "type": "Digital Design System, Website",
-        "client": "estúdio gole",
-        "more": "→"
+        "client": "estúdio gole"
     },
     {
         "year": "2023",
         "project": "Utrail",
-        "type": "Digital Design System, Iconografia, Identidade Visual, Website",
-        "client": "estúdio gole",
-        "more": "→"
+        "type": "Digital Design System, Icons, Website",
+        "client": "estúdio gole"
     },
     {
         "year": "2023",
         "project": "B&B",
         "type": "3d, Website",
-        "client": "Agência B&B",
-        "more": "→"
+        "client": "Agência B&B"
     },
     {
         "year": "2022",
         "project": "Centopeia Vendèe",
-        "type": "E-commerce, Identidade Visual",
+        "type": "E-commerce, Visual Identity",
         "client": "estúdio gole"
     },
     {
@@ -79,21 +83,20 @@
     {
         "year": "2022",
         "project": "GreenKitchen",
-        "type": "Identidade Visual",
+        "type": "Visual Identity",
         "client": "estúdio gole"
     },
     {
         "year": "2022",
         "project": "Fábula: Mundão Miudinho",
-        "type": "Campanha, Key Visual",
+        "type": "Campaign, Key Visual",
         "client": "estúdio biabum"
     },
     {
         "year": "2021",
         "project": "Yas",
-        "type": "Identidade Visual",
-        "client": "[-]",
-        "more": "→"
+        "type": "Visual Identity",
+        "client": "Aprender Design"
     },
     {
         "year": "2021",
@@ -104,20 +107,20 @@
     {
         "year": "2021",
         "project": "Turbo",
-        "type": "Identidade Visual",
+        "type": "Visual Identity",
         "client": "[-]"
     },
     {
         "year": "2021",
         "project": "Calendário",
-        "type": "Projeto gráfico",
+        "type": "Graphic Project",
         "client": "[-]",
         "link": "/calendario",
-        "more": "→",
+        "more": "[→]",
         "info": {
             "descrição": {
                 "block": "Inspirado no trabalho de Heinrich Fleischhacker, que frequentemente utilizava números binários, código Baudot e impressora de impacto (dot matrix printer) em suas peças.",
-                "block-2": "O material utiliza os elementos tradicionais de um calendário (datas, feriados e dias da semana), somados ao uso da orientação vertical e horizontal, o calendário propõe um ruído visual e utilização não convencional. Cada pontinho amarelo representa um dos 12 feriados nacionais para o ano de 2022."
+                "block-2": "O material utiliza os elementos tradicionais de um calendário (datas, feriados e dias da semana), somados ao uso da orientação vertical e horizontal, o calendário propõe um ruído visual junto de utilização não convencional. Cada círculo amarelo representa um dos 12 feriados nacionais para o ano de 2022."
             },
             "créditos": {
                 "type": "Tipo em uso: Neue Montreal por Pangram Pangram"

@@ -20,11 +20,15 @@
     <link rel="manifest" href="favicon/site.webmanifest" />
 
     <!-- Sass Compilado -->
-    <link rel="stylesheet" href="/styles/style.css" />
+    <link rel="stylesheet" id="themeStylesheetLink" href="/styles/styleLight.css" />
 
 </head>
 
 <body>
+
+    <nav id="nav__container"></nav>
+
+
     <!-- Informações do case -->
     <div id="caseData"></div>
     <div id="caseDataInfo"></div>
@@ -45,8 +49,10 @@
     <div id="project__container"></div>
 
     <!-- Scripts -->
-    <script src="js/template/caseDataTemplate.js"></script>
-    <script src="/js/homeDataTemplate.js"></script>
+    <script src="js/templates/navTemplate.js"></script>
+    <script src="js/templates/caseDataTemplate.js"></script>
+    <script src="/js/templates/homeDataTemplate.js"></script>
+    <script src="js/themeSwitcher.js"></script>
 
     <!-- Chamando a função e atribuíndo um valor ao (projectKeyIdentifier) como argumento -->
     <script>jsonKey("Calendário")</script>

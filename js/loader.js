@@ -29,3 +29,4 @@ function startLoader() {
   // Chame a função startLoader para iniciar o carregamento imediatamente
   startLoader();
   
+  

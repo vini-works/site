@@ -36,6 +36,10 @@ function renderTemplate__Personal(data) {
             pElement.classList.add("no");
           }
 
+          if (key === "project") {
+            pElement.classList.add("no");
+          }
+
           if (blocoKey === "[Social]" && key === "rede") {
             let aElement = document.createElement("a");
             aElement.textContent = item[key];
@@ -56,7 +60,7 @@ function renderTemplate__Personal(data) {
   });
 }
 
-fetch('js/content/exp.json')
+fetch('js/content/personalData.json')
   .then(response => response.json())
   .then(data => {
     // Chamar a função para renderizar o template com os dados do JSON

@@ -57,11 +57,11 @@
 
     "[Reconhecimentos]": [
         {
-            "project": "GreenKitchen",
+            "project": "[GreenKitchen]",
             "awards": "LAD Finalist, Shortlist BDA"
         },
         {
-            "project": "Centopeia Vendèe",
+            "project": "[Centopeia Vendèe]",
             "awards": "Destaque no Behance"
         }
     ],
@@ -72,19 +72,19 @@
     "[Social]" : [
         {
             "rede": "Instagram",
-            "link": "instagram.com/vviniciusqueiroz"
+            "link": "https://instagram.com/vviniciusqueiroz"
         },
         {
             "rede": "LinkedIn",
-            "link": ""
+            "link": "https://linkedin.com/in/vviniciusqueiroz"
         },
         {
             "rede": "Github",
-            "link": ""
+            "link": "https://github.com/vini-works"
         },
         {
-            "rede": "Figma Profile",
-            "link": ""
+            "rede": "Figma",
+            "link": "https://www.figma.com/@vvinicius"
         },
         {
             "rede": "vnsqzs@gmail.com",

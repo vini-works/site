@@ -39,7 +39,7 @@ function renderTemplate(data) {
 }
 
 // Carregar o arquivo JSON usando o método fetch
-fetch('js/content/projects.json')
+fetch('js/content/projectData.json')
   .then(function (response) {
     return response.json();
   })

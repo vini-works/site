@@ -1,5 +1,5 @@
 function jsonKey(projectKeyIdentifier) {
-    fetch('js/content/projects.json')
+    fetch('js/content/projectData.json')
         .then(response => response.json())
         .then(jsonData => {
             var foundedKey = jsonData.find(item => item.project === projectKeyIdentifier);
