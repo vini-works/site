@@ -1,23 +1,23 @@
 {
-    "[Experiência]": [
+    "├── Experience": [
         {
             "period": "[Mar.2022] até [Presente]",
-            "position": "Designer de Interação",
+            "position": "Interactive Designer",
             "company": "Estúdio Gole"
         },
         {
             "period": "[Jun.2021] até [Fev.2022]",
-            "position": "Designer Visual",
+            "position": "Visual Designer",
             "company": "Freelancing"
         },
         {
             "period": "[Out.2019] até [Mai.2021]",
-            "position": "Estágio em Direção de Arte",
+            "position": "Art Direciton Internship",
             "company": "Instituto Euvaldo Lodi"
         },
         {
             "period": "[Ago.2018] até [Ago.2019]",
-            "position": "Estágio em Desenvolvimento Front-end",
+            "position": "Front-end Developer Intern",
             "company": "Código5 Web Software House"
         }
     ],
@@ -29,16 +29,16 @@
 
 
 
-    "[Educação]": [
+    "├── Education": [
         {
             "period": "[Mai.2023]",
             "course": "Base - Design de produtos digitais",
-            "school": "Aprender Design"
+            "school": "Aprender Design School"
         },
         {
             "period": "[Ago.2021]",
             "course": "Decodificando Identidades",
-            "school": "Aprender Design"
+            "school": "Aprender Design School"
         },
         {
             "period": "[Jun.2021]",
@@ -50,46 +50,5 @@
             "course": "Bacharel em Sistemas de Informação",
             "school": "Universidade Federal do Estado de Mato Grosso"
         }
-    ],
-
-
-
-
-    "[Reconhecimentos]": [
-        {
-            "project": "[GreenKitchen]",
-            "awards": "LAD Finalist, Shortlist BDA"
-        },
-        {
-            "project": "[Centopeia Vendèe]",
-            "awards": "Destaque no Behance"
-        }
-    ],
-
-
-
-    
-    "[Social]" : [
-        {
-            "rede": "Instagram",
-            "link": "https://instagram.com/vviniciusqueiroz"
-        },
-        {
-            "rede": "LinkedIn",
-            "link": "https://linkedin.com/in/vviniciusqueiroz"
-        },
-        {
-            "rede": "Github",
-            "link": "https://github.com/vini-works"
-        },
-        {
-            "rede": "Figma",
-            "link": "https://www.figma.com/@vvinicius"
-        },
-        {
-            "rede": "vnsqzs@gmail.com",
-            "link": "mailto:vnsqzs@gmail.com"
-        }
-        
     ]
 }

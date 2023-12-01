@@ -1,64 +1,42 @@
-%dividers__gap
+@mixin dividers__gap
     border-top: 0.5px solid $border-color
     padding: 0.6rem 0
     background-color: $cor-principal
+    
 
-//CONTEÚDO DE PROJETOS ↓
 #project__container
     .project__list
-        @extend %dividers__gap
+        @include dividers__gap
         display: grid
-        grid-template-columns: 1fr 2fr 4fr 2fr 1fr
+        grid-template-columns: 2fr 3fr
+
+        & .item__project__list__client, .item__project__list__type
+            display: none
 
         &:first-child
             color: invert($cor-principal) !important
             position: sticky
             top: 0
 
-        .item__project__list__more
-            display: flex
-            justify-content: flex-end
-
         .item__project__list__info
             display: none
-            
-    @media (max-width: 600px)
-        .project__list
-            grid-template-columns: 1fr 2fr 2fr
+        
 
-            .item__project__list__client, .item__project__list__more, .item__project__list__info
+@media screen and (min-width: 720px)
+    #project__container
+        .project__list
+            @include dividers__gap
+            display: grid
+            grid-template-columns: 1fr 3fr 4fr 3fr
+
+            & .item__project__list__client, .item__project__list__type
+                display: block !important
+
+            &:first-child
+                color: invert($cor-principal) !important
+                position: sticky
+                top: 0
+
+            .item__project__list__info
                 display: none
 
-//CONTEÚDO DE INFORMAÇÕES PESSOAS ↓
-.child__personal__data
-    @extend %dividers__gap
-    display: grid
-    grid-template-columns: 1fr 4fr
-
-    & > *
-        grid-column-start: 2
-
-    .block__name
-        padding-bottom: 2rem
-
-.bio__data__container
-    padding: 0.6rem 0
-    margin-bottom: 40vh
-    display: grid
-    grid-template-columns: 3fr 4fr 3fr
-    z-index: -1
-      
-
-
-nav
-    @extend %dividers__gap
-    display: grid
-    grid-template-columns: 3fr 4fr 2fr 1fr
-    border-bottom: 0.5px solid $border-color
-    position: sticky
-    top: 0
-
-    & :last-child
-        display: flex
-        justify-content: flex-end        
-    

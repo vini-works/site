@@ -9,70 +9,63 @@ function jsonKey(projectKeyIdentifier) {
                 var divData = document.createElement('div');
                 divData.classList.add("display__grid__descricao");
 
+                // Obtenha todas as chaves do objeto foundedKey, exceto "info" e "credits"
+                var keys = Object.keys(foundedKey).filter(key => key !== "info" && key !== "credits" && key !== "link");
+
                 // Adicionar as informações de descrição do projeto na divData
-                for (var key in foundedKey) {
-                    if (foundedKey.hasOwnProperty(key) && key !== "link" && key !== "more" && foundedKey[key] !== "" && key !== "info" && key !== "credits") {
-                        var value = foundedKey[key];
-                        var element = document.createElement('p');
-                        element.textContent = value;
-                        divData.appendChild(element);
-                    }
-                }
+                keys.forEach((key, index) => {
+                    var value = foundedKey[key];
+                    var element = document.createElement('p');
+                    element.textContent = index === keys.length - 1 ? "└── " + value : "├── " + value;
+                    divData.appendChild(element);
+                });
+
+
+
 
                 // Criar uma div para as informações de "info" do projeto
                 var divInfo = document.createElement("div");
-                divInfo.classList.add("display__grid__info");
+                divInfo.classList.add("child__case__info");
 
                 // Verificar se a key "info" existe e não é vazia
                 if (foundedKey["info"] && foundedKey["info"] !== "" && foundedKey["info"] !== "[-]") {
                     var infoValue = foundedKey["info"];
-                    
-                    // Criar uma div para a key "info"
-                    var infoElement = document.createElement("p");
-                    infoElement.textContent = "[info]";
-                    divInfo.appendChild(infoElement);
 
-                    // Criar uma div para agrupar as informações de "description" e "credits"
-                    var divDescriptionAndCredits = document.createElement("div");
-                    divDescriptionAndCredits.classList.add("display__grid__credits__descrip");
-
-
-                    // Loop para adicionar as informações de "description" e "credits" à divDescriptionAndCredits, se existirem
-                    var subKeys = ["descrição", "créditos"];
-                    for (var i = 0; i < subKeys.length; i++) {
-                        var subKey = subKeys[i];
-                        if (infoValue[subKey] && infoValue[subKey] !== "" && infoValue[subKey] !== "[-]") {
+                    for (var subKey in infoValue) {
+                        if (infoValue.hasOwnProperty(subKey) && infoValue[subKey] !== "") {
                             var subValue = infoValue[subKey];
                             var divSection = document.createElement("div");
-                            divSection.classList.add("display__grid__info__block");
+                            divSection.classList.add("child__block");
+
+                            // Criar uma UL para as informações de "subKey"
+                            var ul__tag = document.createElement("ul");
 
                             for (var subSubKey in subValue) {
                                 if (subValue.hasOwnProperty(subSubKey) && subValue[subSubKey] !== "") {
                                     var subSubValue = subValue[subSubKey];
-                                    var subElement = document.createElement('p');
-                                    subElement.textContent = subSubValue;
-                                    divSection.appendChild(subElement);
+                                    var li__tag = document.createElement("li");
+                                    li__tag.classList.add("block__list");
+                                    var pElement = document.createElement("p");
+                                    pElement.textContent = subSubValue;
+                                    li__tag.appendChild(pElement);
+                                    ul__tag.appendChild(li__tag);
                                 }
                             }
 
-                            if (divSection.childNodes.length > 0) {
+                            if (ul__tag.childNodes.length > 0) {
                                 var subKeyElement = document.createElement("p");
-                                subKeyElement.textContent = "[" + subKey + "]";
-                                divSection.insertBefore(subKeyElement, divSection.firstChild);
-                                divDescriptionAndCredits.appendChild(divSection);
+                                subKeyElement.textContent = "├── " + subKey;
+                                divSection.appendChild(subKeyElement);
+                                divSection.appendChild(ul__tag);
+                                divInfo.appendChild(divSection);
                             }
                         }
                     }
-
-                    // Adicionar a divDescriptionAndCredits à divInfo, se houver algum conteúdo
-                    if (divDescriptionAndCredits.childNodes.length > 0) {
-                        divInfo.appendChild(divDescriptionAndCredits);
-                    }
                 }
 
-                // Atualizar o conteúdo das divs com os IDs "caseData" e "caseDataInfo"
-                var elementData = document.getElementById("caseData");
-                var elementDataInfo = document.getElementById("caseDataInfo");
+                // Atualizar o conteúdo das divs com os IDs "caseData" e "caseInfo"
+                var elementData = document.getElementById("case__data");
+                var elementDataInfo = document.getElementById("case__info");
                 elementData.innerHTML = '';
                 elementDataInfo.innerHTML = '';
                 elementData.appendChild(divData);

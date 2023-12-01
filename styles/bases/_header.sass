@@ -1,0 +1,36 @@
+.block__list
+    padding-top: 0.6rem
+
+.child__personal__data,
+.child__case__info > .child__block,
+.bio__text,
+#case__data
+    padding-bottom: 2rem
+
+.bio__data__container
+    padding: 0.6rem 0
+    display: grid
+    grid-template-columns: 1fr
+
+    & > *
+        padding-right: 1.2rem
+
+  
+
+@media screen and (min-width: 720px)
+    .block__list
+        padding-top: 0.6rem
+            
+    .child__personal__data
+        padding-bottom: 2rem
+
+    .bio__data__container
+        padding: 0.6rem 0
+        display: grid
+        grid-template-columns: 4fr 4fr 3fr
+
+        & > *
+            grid-column-start: 2
+
+        & > #personal__data__container, #case__info
+            grid-column-start: 3

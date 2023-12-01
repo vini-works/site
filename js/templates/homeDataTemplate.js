@@ -23,7 +23,7 @@ function renderTemplate(data) {
     }
 
     // Criar os elementos HTML usando os dados do JSON e aplicar as classes CSS correspondentes
-    let elements = ['year', 'project', 'type', 'client', 'more', 'info'];
+    let elements = ['year', 'project', 'type', 'client', 'info'];
     for (let j = 0; j < elements.length; j++) {
       let element = document.createElement("p");
       element.textContent = projectList[elements[j]];
