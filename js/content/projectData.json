@@ -7,6 +7,12 @@
     },
     {
         "year": "2023",
+        "project": "B.O.B Bars over bottles [private]",
+        "type": "Campaign, Identity, Key Visual",
+        "client": "estúdio gole"
+    },
+    {
+        "year": "2023",
         "project": "Baú do Bebê",
         "type": "Digital Design System, E-commerce",
         "client": "estúdio gole"
@@ -70,8 +76,7 @@
         "year": "2023",
         "project": "Estúdio Gole",
         "type": "Digital Design System, Website",
-        "client": "estúdio gole",
-        "link": "/estudio-gole"
+        "client": "estúdio gole"
     },
     {
         "year": "2023",
@@ -89,15 +94,13 @@
         "year": "2022",
         "project": "Centopeia Vendèe",
         "type": "Digital Design System, E-commerce, Visual Identity",
-        "client": "estúdio gole",
-        "link": "/centopeia"
+        "client": "estúdio gole"
     },
     {
         "year": "2022",
         "project": "Shakti Yoga",
         "type": "Digital Design System, E-commerce",
-        "client": "estúdio gole",
-        "link": "/shakti-yoga"
+        "client": "estúdio gole"
     },
     {
         "year": "2022",
@@ -134,7 +137,6 @@
         "project": "Calendário 2022",
         "type": "Graphic Project",
         "client": "[-]",
-        "link": "/calendario",
         "info": {
             "description": {
                 "block": "Inspirado no trabalho de Heinrich Fleischhacker, que frequentemente utilizava números binários, código Baudot e impressora de impacto (dot matrix printer) em suas peças.",
