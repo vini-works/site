@@ -1,252 +1,169 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
+    <meta charset="UTF-8" />
+    <meta name="viewdivort" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        #menu {
+            display: inline-block;
+        }
 
-  <meta property="og:title" content="vini — works | Vinícius Queiróz" />
-  <meta property="og:locale" content="pt_br" />
+        #texto-adicional {
+            display: none;
+        }
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Vinícius Queiróz | Visual Designer</title>
+        span {
+            font-family: "Arial Narrow", Arial, sans-serif;
+            font-size: 4rem;
+            color: transparent;
+            background-color: black;
+        }
 
-  <meta name="description" content="Visual Designer e Frontend Developer">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="vini — works | Vinícius Queiróz">
-  <meta name="twitter:description" content="Visual Designer e Frontend Developer">
-  <meta name="twitter:image" content="https://vini.works/images/ogp-home.png">
+        a {
+            color: blue;
+        }
 
-  <meta property="og:locale" content="pt_BR">
-  <meta property="og:title" content="vini — works | Vinícius Queiróz">
-  <meta property="og:description" content="Visual Designer e Frontend Developer">
-  <meta property="og:url" content="https://vini.works/">
-  <meta property="og:image" content="https://vini.works/images/ogp-home.png">
-  <meta property="og:type" content="website">
+        a:hover {
+            color: red;
+        }
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        span:hover {
+            color: black;
+            background-color: white;
+        }
 
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+        body {
+            margin: 0;
+            background-color: #949494;
+            cursor: none !important;
+            -webkit-user-select: none;
+            /* Safari */
+            -ms-user-select: none;
+            /* IE 10 and IE 11 */
+            user-select: none;
+            /* Standard syntax */
+        }
 
-  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.3/dist/js/splide.min.js"></script>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.3/dist/css/splide.min.css">
-  <script
-    src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.5.3/dist/js/splide-extension-auto-scroll.min.js"></script>
-
-  <link rel="stylesheet" href="/styles/style.css" />
-
-  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png" />
-  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png" />
-  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png" />
-  <link rel="manifest" href="favicon/site.webmanifest" />
-
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-180535428-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag("js", new Date());
-    gtag("config", "UA-180535428-1");
-  </script>
+        .custom-cursor {
+            position: fixed;
+            width: 20px;
+            height: 20px;
+            pointer-events: none;
+            /* Garante que o cursor não interfira com os cliques */
+            z-index: 9999;
+            /* Coloca o cursor em cima de todos os outros elementos */
+            transition: transform 0.3s;
+            /* Adiciona uma transição suave para a escala */
+        }
+    </style>
 </head>
 
 <body>
-  <section class="splide">
-    <div class="splide__track">
-      <ul class="splide__list">
-
-        <li class="splide__slide"> <img src="/images/covers/yas.jpg" width="100%" />
-          <figcaption><span></span> Yas [SOON]</figcaption>
-        </li>
-
-        <li class="splide__slide"> <a href="https://www.behance.net/gallery/154269771/GreenKitchen" target="_blank"><img
-              src="/images/covers/gk.jpg.webp" width="100%" />
-            <figcaption><span></span> GreenKitchen [BEHANCE]</figcaption>
-          </a>
-        </li>
-
-        <li class="splide__slide"> <a href="/calendario22"><img src="/images/calendario2022/IMG_1014.webp"
-              width="100%" />
-            <figcaption><span></span> Calendário 2022</figcaption>
-          </a>
-        </li>
-
-        <li class="splide__slide"> <a href="/turbo"><img src="/images/covers/turbo.png" width="100%" />
-            <figcaption><span></span> Turbo</figcaption>
-          </a>
-        </li>
-
-        <li class="splide__slide"> <a href="/arquivo"><img src="/images/covers/lvxz.png" width="100%" />
-            <figcaption><span></span> Arquivo</figcaption>
-          </a>
-        </li>
-
-        <li class="splide__slide"> <a href=""><img src="/images/covers/lab.png" width="100%" />
-            <figcaption><span></span> Ilustrações</figcaption>
-          </a>
-        </li>
-
-        <li class="splide__slide"> <a href="/RR"><img src="/images/covers/studiorr-cover.png" width="100%" />
-            <figcaption><span></span> Studio Ronaldo Rezende</figcaption>
-          </a>
-        </li>
-
-      </ul>
-    </div>
-  </section>
-
-  <div class="fixed__content">
-    <div class="display__grid__2">
-      <section Class="column__1">
-        <h5 class>
-          Vinícius Queiróz é um visual designer
-          que está procurando fazer barulho ao redor.
-          interessado em design editorial, interfaces, branding e tipográfia.
-        </h5>
-      </section>
-
-      <section class="column__3">
-        <div id="about" class="link">
-          <h5><span></span> Sobre</h5>
-          <h5>+ Detalhes</h5>
+    <div id="menu">
+        <div><span>sometimes vve work, sometimes vve don’t.</span></div>
+        <div><span>siamo un duo di designer & kostruttori.</span></div>
+        <div>
+            <span id="cu">tipografia, expografia, editorial, direção criativa e
+                <a id="extend" href="#">+38</a>
+            </span>
         </div>
-
-        <div class="about__content">
-          <br>
-          <a href="https://www.instagram.com/vviniciusqueiroz/" target="_blank"> 
-          <div class="link">
-            <h5>@vviniciusqueiroz</h5>
-          </div>
-        </a>
-        <a href="mailto:vnsqzs@gmail.com"> 
-          <div class="link">
-            <h5>vnsqzs@gmail.com</h5>
-          </div>
-        </a>
-          <br>
-          <h5> Colaborou com <a class="link" target="_blank" href="https://valkiriaic.com.br/">Valkiria Inteligência
-              Criativa</a>, Estúdio Biabum e músicos independentes.</h5>
-          <br>
-          <h5>
-            Desenvolve sua carreira como designer e diretor de arte, além de apoiar-se em conceitos que
-            aprendeu durante a faculdade de Sistemas de Informação pela Universidade Federal de Mato Grosso. Busca,
-            com o seu trabalho, usar de pensamentos sistêmicos para criar soluções visuais envolventes e
-            culturalmente orientadas para projetos transformadores.
-          </h5>
-
-          <br>
-
-          <div>
-            <h5>--------------------------------------------</h5>
-            <h5>EXPERIÊNCIAS</h5>
-            <h5>--------------------------------------------</h5>
-
-
-            <h5>
-              Designer Júnior
-              <br>
-              <a href="https://www.estudiogole.com/" class="link" target="_blank">Estúdio Gole</a>
-              <br>
-              Mar. 2022 até Presente
-              <br>
-              ----
-            </h5>
-
-            <h5>
-              Freelancing
-              <br>
-              Jun. 2021 até Fev. 2022
-              <br>
-              ----
-            </h5>
-
-            <h5>
-              Diretor de Arte (Estágio)
-              <br>
-              Instituto Euvaldo Lodi Mato Grosso
-              <br>
-              Out. 2019 até Mai. 2021
-              <br>
-              ----
-            </h5>
-            <h5>
-              Desenvolvedor Frontend (Júnior)
-              <br>
-              Código5 Web
-              <br>
-              Ago. 2018 até Ago. 2019
-            </h5>
-            <br>
-          </div>
-
-          <div>
-            <h5>--------------------------------------------</h5>
-            <h5>Educação</h5>
-            <h5>--------------------------------------------</h5>
-
-            <h5>
-              Decodificando Identidades
-              <br>
-              Aprender Design
-              <br>
-              Carlos Bocai e Julia B. Aguiar
-              <br>
-              Ago. 2021
-              <br>
-              <a class="link" target="_blank"
-                href="https://www.aprender.design/certificado/c7XXMcJhnaF1hG9PJ74HwL">→Credencial</a>
-              <br>
-              ----
-            </h5>
-
-            <h5>
-              Building an immersive creative website from scratch without frameworks
-              <br>
-              Awwwards Academy
-              <br>
-              Jun. 2021
-              <br>
-              <a class="link" target="_blank"
-                href="https://drive.google.com/file/d/1aNn6M5r0DtNPSDlwLDlpnMw_VP5bxw2N/view">→ Credencial</a>
-              <br>
-              ----
-            </h5>
-            <h5>
-              Sistemas de Informação
-              <br>
-              Universidade Federal do Estado de Mato Grosso
-              <br>
-              Mai. 2019 - Descontinuado
-              <br>
-            </h5>
-          </div>
-          <br>
-          <div>
-            <h5>--------------------------------------------</h5>
-            <h5>Aparições</h5>
-            <h5>--------------------------------------------</h5>
-            <h5>
-              Brasil Design Awards 2022 @Shorlist
-              <br>
-              GreenKitchen
-            </h5>
-          </div>
+        <div>
+            <span>enquiries to
+                <a href="mailto:boasorte@sometimes-vv-work.online">boasorte@sometimes-vv-work.online</a></span>
         </div>
-      </section>
+        <div><span><a href="#">blogspot</a></span></div>
+        <div>
+            <span><a id="zp" href="instagram.com/vvvvworkvvvv">work!!</a></span>
+        </div>
     </div>
-  </div>
+
+    <div class="custom-cursor">
+        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+            x="0px" y="0px" viewBox="0 0 28 28" enable-background="new 0 0 28 28" xml:space="preserve">
+            <polygon fill="#FFFFFF" points="8.2,20.9 8.2,4.9 19.8,16.5 13,16.5 12.6,16.6 " />
+            <polygon fill="#FFFFFF" points="17.3,21.6 13.7,23.1 9,12 12.7,10.5 " />
+            <rect x="12.5" y="13.6" transform="matrix(0.9221 -0.3871 0.3871 0.9221 -5.7605 6.5909)" width="2"
+                height="8" />
+            <polygon points="9.2,7.3 9.2,18.5 12.2,15.6 12.6,15.5 17.4,15.5 " />
+        </svg>
+
+    </div>
+
+    <script>
+        var fada = document.getElementById("extend");
+        var cuz = document.getElementById("cu");
+
+        var textoAdicional =
+            [
+                "estratégia kriativa",
+                "tipografia",
+                "design gráphico",
+                "editorial",
+                "direção criativa",
+                "design de produto digital",
+                "fotographia a.k.a photografia",
+                "curadores de musika",
+                "sinalização & wayfinding",
+                "identidade visual",
+                "bland branding",
+                "motion design",
+                "arquitetos digitæs",
+                "expografia",
+                "código",
+                "guidelines",
+                "embalagem",
+                "naming",
+                "fazedor de imagem",
+                "€ qualquer coisa se você for maluco o suficiente",
+                "tenta a sorte."
+
+            ];
+        var showtimesAsString = textoAdicional.join(', ');
+
+        function changeContent() {
+            cu.innerHTML = "<span>" + showtimesAsString + "</span>";
+        }
+
+        fada.addEventListener("click", changeContent);
 
 
-  <!--  //Html Generation -->
-  <div id="loader__wrapper">
-    <h5>Vini.works</h5>
-  </div>
+        document.getElementById("zp").addEventListener("click", function () {
+            alert("apenas sendo chatao, essa pagina nem ta pronta");
+        });
 
-  <script src="/js/scriptSplide.js"></script>
-  <script src="/js/loader.js"></script>
-  <script src="/js/about.js"></script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var cursor = document.querySelector(".custom-cursor");
+            var timeoutId;
+            var escala = 1;
+
+            function escalarCursor() {
+                escala += 60;
+                cursor.style.transform = "scale(" + escala + ")";
+            }
+
+            function resetarCursor() {
+                clearTimeout(timeoutId);
+                cursor.style.transform = "scale(1)";
+                escala = 1;
+            }
+
+            document.addEventListener("mousemove", function (e) {
+                cursor.style.left = e.clientX + "px";
+                cursor.style.top = e.clientY + "px";
+                resetarCursor();
+                clearTimeout(timeoutId); // Limpa o temporizador a cada movimento do mouse
+                timeoutId = setTimeout(escalarCursor, 3000); // Configura um novo temporizador para escalar o cursor após 3 segundos
+            });
+
+            var timeoutInicial = setTimeout(escalarCursor, 3000); // Começa a escalar o cursor após 3 segundos
+
+            document.addEventListener("mouseout", function () {
+                resetarCursor();
+            });
+        });
+    </script>
 </body>
 
 </html>
