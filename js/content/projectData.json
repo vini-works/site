@@ -1,0 +1,151 @@
+[
+    {
+        "year": "├── year",
+        "project": "├── project",
+        "type": "├── Type",
+        "client": "├── Studio/Agency"
+    },
+    {
+        "year": "2023",
+        "project": "B.O.B Bars over bottles [private]",
+        "type": "Campaign, Identity, Key Visual",
+        "client": "estúdio gole"
+    },
+    {
+        "year": "2023",
+        "project": "Baú do Bebê",
+        "type": "Digital Design System, E-commerce",
+        "client": "estúdio gole"
+    },
+    {
+        "year": "2023",
+        "project": "Wish",
+        "type": "App, Digital Design System",
+        "client": "Aprender Design School",
+        "link": "/wish.html",
+        "info": {
+            "description": {
+                "block": "O trabalho é resultado da atividade final do curso Base. O módulo foi ministrado pelo professor Edgard Kozlowski, do Aprender Design School.",
+                "block-2": "A atividade tem como proposta explorar e aplicar todos os conceitos exibidos durante as classes. Cada grupo recebe um tema e lista de funcionalidades que a aplicação precisa explorar.",
+                "block-3": "WISH TEM COMO OBJETIVO AJUDAR USUÁRIOS A PLANEJAR SUAS FUTURAS COMPRAS CRIANDO WISHLISTS, explorando listas públicas e rebendo alertas promocionais."
+            },
+            "credits": {
+                "group":"Jordy Kuster, Luiza Ongaratto, Meyrele Nascimento e Vinícius Queiróz.",
+                "type": "Mori Grotesk released Pangram Pangram.",
+                "type-2": "IBM Plex mono by Mike Abbink."
+            }
+        }
+    },
+    {
+        "year": "2023",
+        "project": "Kyraly",
+        "type": "Website",
+        "client": "estúdio gole"
+    },
+    {
+        "year": "2023",
+        "project": "Monti Content",
+        "type": "Website",
+        "client": "estúdio gole"
+    },
+    {
+        "year": "2023",
+        "project": "Danki",
+        "type": "Digital Design System, E-commerce",
+        "client": "estúdio gole"
+    },
+    {
+        "year": "2023",
+        "project": "Sometimes V+V Work",
+        "type": "Visual Identity, Website",
+        "client": "[-]"
+    },
+    {
+        "year": "2023",
+        "project": "Humans At Computer",
+        "type": "Code, Typography, Website",
+        "client": "[-]"
+    },
+    {
+        "year": "2023",
+        "project": "GrupoPlanta",
+        "type": "Visual Identity, Website",
+        "client": "estúdio gole"
+    },
+    {
+        "year": "2023",
+        "project": "Estúdio Gole",
+        "type": "Digital Design System, Website",
+        "client": "estúdio gole"
+    },
+    {
+        "year": "2023",
+        "project": "Utrail",
+        "type": "Digital Design System, Icons, Website",
+        "client": "estúdio gole"
+    },
+    {
+        "year": "2023",
+        "project": "B&B",
+        "type": "3d, Website",
+        "client": "Agência B&B"
+    },
+    {
+        "year": "2022",
+        "project": "Centopeia Vendèe",
+        "type": "Digital Design System, E-commerce, Visual Identity",
+        "client": "estúdio gole"
+    },
+    {
+        "year": "2022",
+        "project": "Shakti Yoga",
+        "type": "Digital Design System, E-commerce",
+        "client": "estúdio gole"
+    },
+    {
+        "year": "2022",
+        "project": "GreenKitchen",
+        "type": "Visual Identity",
+        "client": "estúdio gole"
+    },
+    {
+        "year": "2022",
+        "project": "Fábula: Mundão Miudinho",
+        "type": "Campaign, Key Visual",
+        "client": "biabum"
+    },
+    {
+        "year": "2021",
+        "project": "Yas",
+        "type": "Visual Identity",
+        "client": "Aprender Design School"
+    },
+    {
+        "year": "2021",
+        "project": "Ronaldo Rezende Studio",
+        "type": "Website",
+        "client": "Valkiria Inteligência Criativa"
+    },
+    {
+        "year": "2021",
+        "project": "Turbo",
+        "type": "Visual Identity",
+        "client": "[-]"
+    },
+    {
+        "year": "2021",
+        "project": "Calendário 2022",
+        "type": "Graphic Project",
+        "client": "[-]",
+        "info": {
+            "description": {
+                "block": "Inspirado no trabalho de Heinrich Fleischhacker, que frequentemente utilizava números binários, código Baudot e impressora de impacto (dot matrix printer) em suas peças.",
+                "block-2": "O material utiliza os elementos tradicionais de um calendário (datas, feriados e dias da semana), somados ao uso da orientação vertical e horizontal, o calendário propõe um ruído visual junto de utilização não convencional.",
+                "block-3": "Cada círculo amarelo representa um dos 12 feriados nacionais para o ano de 2022."
+            },
+            "credits": {
+                "type": "Tipo em uso: Neue Montreal por Pangram Pangram"
+            }
+        }
+    }
+]
