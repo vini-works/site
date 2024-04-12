@@ -1,0 +1,54 @@
+{
+    "├── Experience": [
+        {
+            "period": "[Mar.2022] até [Presente]",
+            "position": "Interactive Designer",
+            "company": "Estúdio Gole"
+        },
+        {
+            "period": "[Jun.2021] até [Fev.2022]",
+            "position": "Visual Designer",
+            "company": "Freelancing"
+        },
+        {
+            "period": "[Out.2019] até [Mai.2021]",
+            "position": "Art Direciton Internship",
+            "company": "Instituto Euvaldo Lodi"
+        },
+        {
+            "period": "[Ago.2018] até [Ago.2019]",
+            "position": "Front-end Developer Intern",
+            "company": "Código5 Web Software House"
+        }
+    ],
+
+
+
+
+
+
+
+
+    "├── Education": [
+        {
+            "period": "[Mai.2023]",
+            "course": "Base - Design de produtos digitais",
+            "school": "Aprender Design School"
+        },
+        {
+            "period": "[Ago.2021]",
+            "course": "Decodificando Identidades",
+            "school": "Aprender Design School"
+        },
+        {
+            "period": "[Jun.2021]",
+            "course": "Building an immersive creative website from scratch without frameworks",
+            "school": "Awwwards Academy"
+        },
+        {
+            "period": "[Mai.2019 - Descontinuado]",
+            "course": "Bacharel em Sistemas de Informação",
+            "school": "Universidade Federal do Estado de Mato Grosso"
+        }
+    ]
+}

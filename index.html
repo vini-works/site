@@ -1,169 +1,69 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewdivort" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <style>
-        #menu {
-            display: inline-block;
-        }
+  <meta charset="UTF-8" />
 
-        #texto-adicional {
-            display: none;
-        }
+  <meta property="og:title" content="vini — works | Vinícius Queiróz" />
+  <meta property="og:locale" content="pt_br" />
 
-        span {
-            font-family: "Arial Narrow", Arial, sans-serif;
-            font-size: 4rem;
-            color: transparent;
-            background-color: black;
-        }
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vinícius Queiróz | Visual Designer</title>
 
-        a {
-            color: blue;
-        }
+  <meta name="description" content="Interactive Designer e Frontend Developer">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="vini — works | Vinícius Queiróz">
+  <meta name="twitter:description" content="Interactive Designer e Frontend Developer">
+  <meta name="twitter:image" content="https://vini.works/images/ogp-home.png">
 
-        a:hover {
-            color: red;
-        }
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:title" content="vini — works | Vinícius Queiróz">
+  <meta property="og:description" content="Visual Designer e Frontend Developer">
+  <meta property="og:url" content="https://vini.works/">
+  <meta property="og:image" content="https://vini.works/images/ogp-home.png">
+  <meta property="og:type" content="website">
 
-        span:hover {
-            color: black;
-            background-color: white;
-        }
-
-        body {
-            margin: 0;
-            background-color: #949494;
-            cursor: none !important;
-            -webkit-user-select: none;
-            /* Safari */
-            -ms-user-select: none;
-            /* IE 10 and IE 11 */
-            user-select: none;
-            /* Standard syntax */
-        }
-
-        .custom-cursor {
-            position: fixed;
-            width: 20px;
-            height: 20px;
-            pointer-events: none;
-            /* Garante que o cursor não interfira com os cliques */
-            z-index: 9999;
-            /* Coloca o cursor em cima de todos os outros elementos */
-            transition: transform 0.3s;
-            /* Adiciona uma transição suave para a escala */
-        }
-    </style>
+  <!-- Sass Compilado -->
+  <link rel="stylesheet" id="themeStylesheetLink" href="./styles/styleLight.css" />
 </head>
 
 <body>
-    <div id="menu">
-        <div><span>sometimes vve work, sometimes vve don’t.</span></div>
-        <div><span>siamo un duo di designer & kostruttori.</span></div>
-        <div>
-            <span id="cu">tipografia, expografia, editorial, direção criativa e
-                <a id="extend" href="#">+38</a>
-            </span>
-        </div>
-        <div>
-            <span>enquiries to
-                <a href="mailto:boasorte@sometimes-vv-work.online">boasorte@sometimes-vv-work.online</a></span>
-        </div>
-        <div><span><a href="#">blogspot</a></span></div>
-        <div>
-            <span><a id="zp" href="instagram.com/vvvvworkvvvv">work!!</a></span>
-        </div>
+  <!-- Template Navbar -->
+
+  <nav id="nav__container"></nav>
+
+  <div class="bio__data__container">
+    <div class="bio__text">
+      <p>VINÍCIUS QUEIRÓZ is a INTERACTIVE DESIGNER BASED
+        IN CUIABÁ → brazil. focused IN INTERFACES, EDITORIAL DESIGN AND SIGNAGE. afford their work with SYSTEMIC THINKING
+        TO CREATE ENGAGING AND CULTURALLY ORIENTED SOLUTIONS.
+      </p>
+      <br>
+      <p>available to work</p>
+      <p>mail to vnsqzs@gmail.com</p>
     </div>
 
-    <div class="custom-cursor">
-        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-            x="0px" y="0px" viewBox="0 0 28 28" enable-background="new 0 0 28 28" xml:space="preserve">
-            <polygon fill="#FFFFFF" points="8.2,20.9 8.2,4.9 19.8,16.5 13,16.5 12.6,16.6 " />
-            <polygon fill="#FFFFFF" points="17.3,21.6 13.7,23.1 9,12 12.7,10.5 " />
-            <rect x="12.5" y="13.6" transform="matrix(0.9221 -0.3871 0.3871 0.9221 -5.7605 6.5909)" width="2"
-                height="8" />
-            <polygon points="9.2,7.3 9.2,18.5 12.2,15.6 12.6,15.5 17.4,15.5 " />
-        </svg>
+    <div id="personal__data__container"></div>
 
+  </div>
+
+  <div id="project__container" class="container__list"></div>
+
+  <div id="loader-overlay">
+    <div id="child-overlay">
+      <p>Vinícius</p>
+      <p>Queiróz</p>
+      <p>Loading</p>
+      <p id="loader">0%</p>
     </div>
+  </div>
 
-    <script>
-        var fada = document.getElementById("extend");
-        var cuz = document.getElementById("cu");
-
-        var textoAdicional =
-            [
-                "estratégia kriativa",
-                "tipografia",
-                "design gráphico",
-                "editorial",
-                "direção criativa",
-                "design de produto digital",
-                "fotographia a.k.a photografia",
-                "curadores de musika",
-                "sinalização & wayfinding",
-                "identidade visual",
-                "bland branding",
-                "motion design",
-                "arquitetos digitæs",
-                "expografia",
-                "código",
-                "guidelines",
-                "embalagem",
-                "naming",
-                "fazedor de imagem",
-                "€ qualquer coisa se você for maluco o suficiente",
-                "tenta a sorte."
-
-            ];
-        var showtimesAsString = textoAdicional.join(', ');
-
-        function changeContent() {
-            cu.innerHTML = "<span>" + showtimesAsString + "</span>";
-        }
-
-        fada.addEventListener("click", changeContent);
-
-
-        document.getElementById("zp").addEventListener("click", function () {
-            alert("apenas sendo chatao, essa pagina nem ta pronta");
-        });
-
-        document.addEventListener("DOMContentLoaded", function () {
-            var cursor = document.querySelector(".custom-cursor");
-            var timeoutId;
-            var escala = 1;
-
-            function escalarCursor() {
-                escala += 60;
-                cursor.style.transform = "scale(" + escala + ")";
-            }
-
-            function resetarCursor() {
-                clearTimeout(timeoutId);
-                cursor.style.transform = "scale(1)";
-                escala = 1;
-            }
-
-            document.addEventListener("mousemove", function (e) {
-                cursor.style.left = e.clientX + "px";
-                cursor.style.top = e.clientY + "px";
-                resetarCursor();
-                clearTimeout(timeoutId); // Limpa o temporizador a cada movimento do mouse
-                timeoutId = setTimeout(escalarCursor, 3000); // Configura um novo temporizador para escalar o cursor após 3 segundos
-            });
-
-            var timeoutInicial = setTimeout(escalarCursor, 3000); // Começa a escalar o cursor após 3 segundos
-
-            document.addEventListener("mouseout", function () {
-                resetarCursor();
-            });
-        });
-    </script>
+  <!-- Scripts -->
+  <script src="js/templates/navTemplate.js"></script>
+  <script src="js/templates/homeDataTemplate.js"></script>
+  <script src="js/templates/personalDataTemplate.js"></script>
+  <script src="js/themeSwitcher.js"></script>
+  <script src="js/loader.js"></script>
 </body>
 
 </html>

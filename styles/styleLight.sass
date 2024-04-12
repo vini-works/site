@@ -1,0 +1,48 @@
+*
+  padding: 0
+  margin: 0
+  vertical-align: baseline
+  list-style: none
+  border: 0
+
+@import './helpers/_variablesLight'
+
+@import './bases/_navbar'
+@import './bases/_header'
+@import './bases/_text'
+@import './bases/_grids'
+@import './bases/_video'
+@import './bases/_loader'
+@import './bases/_footer'
+@import './bases/_cases'
+@import './bases/_toggle'
+
+body
+  background-color: $cor-principal
+  color: invert($cor-principal)
+  font-family: 'basier_square_monoregular'
+  margin: 0 0.6rem 0.6rem 0.6rem
+  overflow-y: scroll
+
+@font-face
+  font-family: 'basier_square_monoregular'
+  src: url('bases/basiersquaremono-regular-webfont-webfont.woff2') format('woff2'), url('bases/basiersquaremono-regular-webfont-webfont.woff') format('woff')
+  font-weight: normal
+  font-style: normal
+
+@media screen and (prefers-reduced-motion: no-preference)
+  html
+    scroll-behavior: smooth
+
+::-webkit-scrollbar
+  display: none
+  -ms-overflow-style: none // IE and Edge
+  scrollbar-width: none // Firefox
+
+::-moz-selection // Code for Firefox
+    color: $cor-principal
+    background: $selection
+
+::selection
+  color: $cor-principal
+  background: $selection
