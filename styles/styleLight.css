@@ -15,6 +15,7 @@ nav {
   border-bottom: 0.5px solid #e6e6e6;
   position: sticky;
   top: 0;
+  z-index: 0 !important;
 }
 nav div {
   height: 0.656rem;
@@ -261,11 +262,64 @@ video {
   transform: translateX(9.5px);
 }
 
+#trailEffect {
+  height: 85vh;
+  overflow: hidden;
+  background-color: #f2f2f2;
+  margin-top: 0.3rem;
+}
+
+.content {
+  height: 300px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  isolation: isolate;
+}
+
+.content__img {
+  max-width: var(--img-maxwidth);
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  will-change: transform;
+  filter: var(--filter-img);
+}
+
+.js .loading::before {
+  content: "";
+  position: fixed;
+  z-index: 100000;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--color-bg);
+}
+
+.js .loading::after {
+  content: "";
+  position: fixed;
+  z-index: 100000;
+  top: 50%;
+  left: 50%;
+  width: 60px;
+  height: 60px;
+  margin: -30px 0 0 -30px;
+  pointer-events: none;
+  border-radius: 50%;
+  opacity: 0.4;
+  background: var(--color-link);
+  animation: loaderAnim 0.7s linear infinite alternate forwards;
+}
+
 body {
   background-color: #ffffff;
   color: black;
   font-family: "basier_square_monoregular";
-  margin: 0 0.6rem 0.6rem 0.6rem;
+  margin: 0 0.3rem 0.3rem 0.3rem;
   overflow-y: scroll;
 }
 
