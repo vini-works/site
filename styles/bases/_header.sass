@@ -15,6 +15,34 @@
     & > *
         padding-right: 1.2rem
 
+// TRAIL EFFECT
+#trail 
+  height: 90vh
+  overflow: hidden
+  background-color: $trail-background
+  margin-top: 0.6rem
+
+.trail__content
+  height: 300px
+  position: relative
+  display: flex
+  justify-content: center
+  align-items: center
+  isolation: isolate
+
+.trail__content__img
+  max-width: var(--img-maxwidth)
+  position: absolute
+  top: 0
+  left: 0
+  opacity: 0
+  will-change: transform
+  filter: var(--filter-img)
+  border-radius: 3px
+
+// END TRAIL EFFECT
+
+
 @media screen and (min-width: 720px)
     .block__list
         padding-top: 0.6rem

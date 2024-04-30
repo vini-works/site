@@ -1,6 +1,6 @@
 {
-    // Get the reference to the trailEffect div
-    const trailEffect = document.getElementById('trailEffect');
+    // Get the reference to the trail div
+    const trail = document.getElementById('trail');
 
     // Helper functions
     const MathUtils = {
@@ -8,18 +8,18 @@
         distance: (x1, y1, x2, y2) => Math.hypot(x2 - x1, y2 - y1)
     };
 
-    // Get the mouse position relative to the trailEffect div
+    // Get the mouse position relative to the trail div
     const getMousePos = (ev) => {
         let posx = 0;
         let posy = 0;
         if (!ev) ev = window.event;
         if (ev.pageX || ev.pageY) {
-            posx = ev.pageX - trailEffect.offsetLeft;
-            posy = ev.pageY - trailEffect.offsetTop;
+            posx = ev.pageX - trail.offsetLeft;
+            posy = ev.pageY - trail.offsetTop;
         }
         else if (ev.clientX || ev.clientY) {
-            posx = ev.clientX + trailEffect.scrollLeft + docEl.scrollLeft - trailEffect.offsetLeft;
-            posy = ev.clientY + trailEffect.scrollTop + docEl.scrollTop - trailEffect.offsetTop;
+            posx = ev.clientX + trail.scrollLeft + docEl.scrollLeft - trail.offsetLeft;
+            posy = ev.clientY + trail.scrollTop + docEl.scrollTop - trail.offsetTop;
         }
         return { x: posx, y: posy };
     };
@@ -29,7 +29,7 @@
     let docEl = document.documentElement;
 
     // Update the mouse position
-    trailEffect.addEventListener('mousemove', ev => mousePos = getMousePos(ev));
+    trail.addEventListener('mousemove', ev => mousePos = getMousePos(ev));
 
     // Get the distance from the current mouse position to the last recorded mouse position
     const getMouseDistance = () => MathUtils.distance(mousePos.x, mousePos.y, lastMousePos.x, lastMousePos.y);
@@ -65,7 +65,7 @@
     // ImageTrail class
     class ImageTrail {
         constructor() {
-            this.DOM = { content: trailEffect.querySelector('.content') };
+            this.DOM = { content: trail.querySelector('.trail__content') };
             this.images = [];
             [...this.DOM.content.querySelectorAll('img')].forEach(img => this.images.push(new Image(img)));
             this.imagesTotal = this.images.length;
@@ -139,7 +139,7 @@
 
     const preloadImages = () => {
         return new Promise((resolve, reject) => {
-            imagesLoaded(trailEffect.querySelectorAll('.content__img'), resolve);
+            imagesLoaded(trail.querySelectorAll('.trail__content__img'), resolve);
         });
     };
 
