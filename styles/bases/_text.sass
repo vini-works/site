@@ -6,13 +6,18 @@ a:hover
     color: $secundary-color
     text-decoration: none
 
-p, a
+p, a, figcaption
     font-size: $font-size
     letter-spacing: 0.03em
     text-transform: uppercase
     margin-bottom: 0px
     line-height: 150%
     display: block
+
+figcaption
+    padding-top: 0.6vh
+    padding-bottom: 2vh
+    max-width: 90vw
 
 .no__link
     color: $disabled_link !important
@@ -29,3 +34,7 @@ p, a
     display: flex
     justify-content: space-between
     width: 100%
+
+@media screen and (min-width: 720px)
+    figcaption
+        max-width: 40vw

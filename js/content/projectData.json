@@ -6,7 +6,25 @@
         "client": "├── Studio/Agency"
     },
     {
-        "year": "2023",
+        "year": "2024",
+        "project": "Trânsito impedido",
+        "type": "Code, Typography",
+        "client": "[-]"
+    },
+    {
+        "year": "2024",
+        "project": "AI Q T",
+        "type": "Graphic Project, Independent Publication",
+        "client": "[-]"
+    },
+    {
+        "year": "2024",
+        "project": "B&Partners",
+        "type": "Product Concept, Visual Design",
+        "client": "Meiuca"
+    },
+    {
+        "year": "2024",
         "project": "B.O.B Bars over bottles [private]",
         "type": "Campaign, Identity, Key Visual",
         "client": "estúdio gole"
@@ -22,7 +40,6 @@
         "project": "Wish",
         "type": "App, Digital Design System",
         "client": "Aprender Design School",
-        "link": "/wish.html",
         "info": {
             "description": {
                 "block": "O trabalho é resultado da atividade final do curso Base. O módulo foi ministrado pelo professor Edgard Kozlowski, do Aprender Design School.",
@@ -137,15 +154,15 @@
         "project": "Calendário 2022",
         "type": "Graphic Project",
         "client": "[-]",
+        "link": "/2022",
         "info": {
             "description": {
-                "block": "Inspirado no trabalho de Heinrich Fleischhacker, que frequentemente utilizava números binários, código Baudot e impressora de impacto (dot matrix printer) em suas peças.",
-                "block-2": "O material utiliza os elementos tradicionais de um calendário (datas, feriados e dias da semana), somados ao uso da orientação vertical e horizontal, o calendário propõe um ruído visual junto de utilização não convencional.",
-                "block-3": "Cada círculo amarelo representa um dos 12 feriados nacionais para o ano de 2022."
+                "block": "Inspirado no trabalho de Heinrich Fleischhacker, que frequentemente utilizava números binários, código Baudot e impressora de impacto (dot matrix printer) em suas peças."
             },
             "credits": {
-                "type": "Tipo em uso: Neue Montreal por Pangram Pangram"
+                "type": "[1]__Tipo em uso: Neue Montreal por @pangram.pangram [2]__Formato: 297mm x 420mm [3]__Papel: Couché Fosco 300g/m2 [4]__Impressão: Digital com laminação fosca [5]__Cores: Preto e Amarelo CYMK"
             }
         }
     }
 ]
+

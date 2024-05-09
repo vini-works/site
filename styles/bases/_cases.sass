@@ -1,5 +1,8 @@
 
-
+%grid__settings__large
+        display: grid
+        grid-gap: 0.6rem
+        
 //GRID DE EXIBIÇÃO DAS PÁGINAS DE CASES
 .display__grid__100,
 .display__grid__50_50,
@@ -9,10 +12,6 @@
     @extend %grid__settings__large
 
 @media screen and ( min-width: 720px)
-    %grid__settings__large
-        display: grid
-        grid-gap: 0.6rem
-
     .display__grid__100
         @extend %grid__settings__large
         grid-template-columns: 1fr

@@ -6,6 +6,66 @@
   border: 0;
 }
 
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+html, body, div, span, object, iframe, figure, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, code, em, img, small, strike, strong, sub, sup, tt, b, u, i, ol, ul, li, fieldset, form, label, table, caption, tbody, tfoot, thead, tr, th, td, main, canvas, embed, footer, header, nav, section, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: none;
+     -moz-text-size-adjust: none;
+          text-size-adjust: none;
+}
+
+footer, header, nav, section, main {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+input {
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+
+figure {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+figure img {
+  display: block;
+  height: auto;
+  width: 100%;
+}
+
 nav {
   border-top: 0.5px solid #e6e6e6;
   padding: 0.6rem 0;
@@ -96,13 +156,19 @@ a:hover {
   text-decoration: none;
 }
 
-p, a {
+p, a, figcaption {
   font-size: 10px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   margin-bottom: 0px;
   line-height: 150%;
   display: block;
+}
+
+figcaption {
+  padding-top: 0.6vh;
+  padding-bottom: 2vh;
+  max-width: 90vw;
 }
 
 .no__link {
@@ -125,6 +191,11 @@ p, a {
   width: 100%;
 }
 
+@media screen and (min-width: 720px) {
+  figcaption {
+    max-width: 40vw;
+  }
+}
 #project__container .project__list {
   border-top: 0.5px solid #e6e6e6;
   padding: 0.6rem 0;
@@ -231,17 +302,18 @@ video {
 .display__grid__50_50,
 .display__grid__descricao,
 .page__content {
+  display: grid;
+  grid-gap: 0.6rem;
+}
+
+.display__grid__100,
+.display__grid__50_50,
+.display__grid__descricao,
+.page__content {
   grid-template-columns: 1fr;
 }
 
 @media screen and (min-width: 720px) {
-  .display__grid__100,
-  .display__grid__50_50,
-  .display__grid__descricao,
-  .page__content {
-    display: grid;
-    grid-gap: 0.6rem;
-  }
   .display__grid__100 {
     grid-template-columns: 1fr;
   }
@@ -292,7 +364,7 @@ body {
   background-color: #ffffff;
   color: black;
   font-family: "basier_square_monoregular";
-  margin: 0 0.6rem 0.6rem 0.6rem;
+  margin: 0 0.6rem;
   overflow-y: scroll;
 }
 
