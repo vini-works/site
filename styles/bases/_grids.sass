@@ -2,7 +2,6 @@
     border-top: 0.5px solid $border-color
     padding: 0.6rem 0
     background-color: $cor-principal
-    
 
 #project__container
     .project__list
@@ -13,14 +12,15 @@
         & .item__project__list__client, .item__project__list__type
             display: none
 
-        &:nth-child(2)
-            color: invert($cor-principal) !important
-            position: sticky
-            top: 0
-
         .item__project__list__info
             display: none
-        
+
+    .sticky
+        color: invert($cor-principal) !important
+        position: sticky
+        top: 0
+        z-index: 9999
+
 .project__container__title
     padding-top: 2rem
     padding-bottom: 0.6rem
@@ -37,4 +37,3 @@
 
             .item__project__list__info
                 display: none
-

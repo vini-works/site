@@ -206,13 +206,14 @@ figcaption {
 #project__container .project__list .item__project__list__client, #project__container .project__list .item__project__list__type {
   display: none;
 }
-#project__container .project__list:nth-child(2) {
+#project__container .project__list .item__project__list__info {
+  display: none;
+}
+#project__container .sticky {
   color: black !important;
   position: sticky;
   top: 0;
-}
-#project__container .project__list .item__project__list__info {
-  display: none;
+  z-index: 9999;
 }
 
 .project__container__title {

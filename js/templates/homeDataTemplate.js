@@ -22,6 +22,11 @@ function renderTemplate(data) {
       }, false);
     }
 
+    if (i === 0) {
+      wrapperElement.classList.add('sticky')
+    }
+
+
     // Criar os elementos HTML usando os dados do JSON e aplicar as classes CSS correspondentes
     let elements = ['year', 'project', 'type', 'client', 'info']
     for (let j = 0; j < elements.length; j++) {
