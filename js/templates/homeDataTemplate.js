@@ -1,20 +1,20 @@
 // Função para renderizar o template
 function renderTemplate(data) {
-  let container = document.getElementById("project__container")
+  let container = document.getElementById('project__container')
 
   // Laço de repetição para percorrer os dados do JSON
   for (let i = 0; i < data.length; i++) {
     let projectList = data[i]
 
-    // Criar um elemento div para cada projectList e adicionar a classe "projectList"
-    let wrapperElement = document.createElement("a")
-    wrapperElement.classList.add("project__list")
+    // Criar um elemento div para cada projectList e adicionar a classe 'projectList'
+    let wrapperElement = document.createElement('a')
+    wrapperElement.classList.add('project__list')
 
-    // Verificar se a propriedade "link" está presente no objeto JSON
+    // Verificar se a propriedade 'link' está presente no objeto JSON
     if (projectList.link) {
       wrapperElement.href = projectList.link;
     } else {
-      wrapperElement.classList.add("no__link");
+      wrapperElement.classList.add('no__link');
       wrapperElement.addEventListener('click', function (e) {
         e.preventDefault()
         e.stopPropagation()
@@ -30,7 +30,7 @@ function renderTemplate(data) {
     // Criar os elementos HTML usando os dados do JSON e aplicar as classes CSS correspondentes
     let elements = ['year', 'project', 'type', 'client', 'info']
     for (let j = 0; j < elements.length; j++) {
-      let element = document.createElement("p")
+      let element = document.createElement('p')
       element.textContent = projectList[elements[j]]
       wrapperElement.appendChild(element);
 
