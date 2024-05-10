@@ -206,13 +206,18 @@ figcaption {
 #project__container .project__list .item__project__list__client, #project__container .project__list .item__project__list__type {
   display: none;
 }
-#project__container .project__list:first-child {
+#project__container .project__list:nth-child(2) {
   color: black !important;
   position: sticky;
   top: 0;
 }
 #project__container .project__list .item__project__list__info {
   display: none;
+}
+
+.project__container__title {
+  padding-top: 2rem;
+  padding-bottom: 0.6rem;
 }
 
 @media screen and (min-width: 720px) {
@@ -225,11 +230,6 @@ figcaption {
   }
   #project__container .project__list .item__project__list__client, #project__container .project__list .item__project__list__type {
     display: block !important;
-  }
-  #project__container .project__list:first-child {
-    color: black !important;
-    position: sticky;
-    top: 0;
   }
   #project__container .project__list .item__project__list__info {
     display: none;
@@ -278,26 +278,6 @@ video {
     visibility: hidden;
   }
 }
-#canvas-container {
-  min-height: 100vh;
-  display: flex;
-  justify-content: start;
-  align-items: flex-end;
-  position: relative;
-}
-
-.canvas-container-social {
-  position: absolute;
-  top: 50%;
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-}
-
-.canvas-container-disclaimers {
-  align-items: flex-end;
-}
-
 .display__grid__100,
 .display__grid__50_50,
 .display__grid__descricao,

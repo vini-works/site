@@ -13,7 +13,7 @@
         & .item__project__list__client, .item__project__list__type
             display: none
 
-        &:first-child
+        &:nth-child(2)
             color: invert($cor-principal) !important
             position: sticky
             top: 0
@@ -21,6 +21,9 @@
         .item__project__list__info
             display: none
         
+.project__container__title
+    padding-top: 2rem
+    padding-bottom: 0.6rem
 
 @media screen and (min-width: 720px)
     #project__container
@@ -31,11 +34,6 @@
 
             & .item__project__list__client, .item__project__list__type
                 display: block !important
-
-            &:first-child
-                color: invert($cor-principal) !important
-                position: sticky
-                top: 0
 
             .item__project__list__info
                 display: none
