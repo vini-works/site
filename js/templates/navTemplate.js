@@ -2,10 +2,22 @@ function createNav() {
     let container = document.getElementById('nav__container');
 
     const homePath = document.createElement('a');
-    const switcher = document.createElement('div');
+
 
     homePath.href = '/';
     homePath.textContent = 'Vinícius Queiróz';
+
+    const ig = document.createElement('div');
+
+    ig.innerHTML = `
+    <div class=''>
+       <a href="mailto:vnsqzs@gmail.com">
+        contact
+       </a>
+    </div>
+`
+    
+
 
     /*
     works.textContent = '[works]';
@@ -13,19 +25,17 @@ function createNav() {
         works.href = '#project__container';
     }
 
-    link2.href = '/';
-    link2.textContent = '[about]';
-    */
+    const switcher = document.createElement('div');
 
     switcher.innerHTML = `
     <div class='toggle-container'>
         <input type='checkbox' id='themeToggle' class='ios-toggle'>
         <label for='themeToggle' class='toggle-label'></label>
     </div>
-`;
+` */;
 
     container.appendChild(homePath);
-    container.appendChild(switcher);
+    container.appendChild(ig);
 
 }
 

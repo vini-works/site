@@ -32,9 +32,9 @@ function renderTemplate__Personal(data) {
           pElement.classList.add('item__list');
           li__tag.appendChild(pElement);
 
-          if (key === 'period') {
-            pElement.classList.add('no');
-          }
+          //if (key === 'period') {
+           // pElement.classList.add('no');
+          //}
 
           if (key === 'project') {
             pElement.classList.add('no');

@@ -1,9 +1,22 @@
 [
     {
-        "year": "├── year",
-        "project": "├── project",
-        "type": "├── Type",
-        "client": "├── Studio/Agency"
+        "year": "[year]",
+        "project": "[project]",
+        "type": "[Type]",
+        "client": "[studio/Agency]"
+    },
+    {
+        "year": "current",
+        "project": "Lab",
+        "type": "Code",
+        "client": "[-]",
+        "link": "/lab"
+    },
+    {
+        "year": "2024",
+        "project": "Mude Health",
+        "type": "Product Concept, Visual Design",
+        "client": "Meiuca"
     },
     {
         "year": "2024",
@@ -25,7 +38,7 @@
     },
     {
         "year": "2024",
-        "project": "B.O.B Bars over bottles [private]",
+        "project": "B.O.B aka Bars over bottles",
         "type": "Campaign, Identity, Key Visual",
         "client": "estúdio gole"
     },
