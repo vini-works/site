@@ -90,12 +90,14 @@ nav div {
   padding-bottom: 2rem;
 }
 
-.bio__data__container {
+.bio__data__container,
+.bio__text {
   padding: 0.6rem 0;
   display: grid;
   grid-template-columns: 1fr;
 }
-.bio__data__container > * {
+.bio__data__container > *,
+.bio__text > * {
   padding-right: 1.2rem;
 }
 
@@ -109,7 +111,7 @@ nav div {
   .bio__data__container {
     padding: 0.6rem 0;
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
   }
 }
 a {
@@ -122,13 +124,13 @@ a:hover {
   text-decoration: none;
 }
 
-p, a, figcaption {
+p, a, figcaption, input {
   font-size: 10px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   margin-bottom: 0px;
   line-height: 150%;
-  display: block;
+  display: inline-block;
 }
 
 figcaption {
@@ -175,6 +177,9 @@ figcaption {
 #project__container .project__list .item__project__list__info {
   display: none;
 }
+#project__container .project__list:last-child {
+  border-bottom: 0.5px solid #191919;
+}
 #project__container .sticky {
   color: #efefef !important;
   position: sticky;
@@ -185,6 +190,18 @@ figcaption {
 .project__container__title {
   padding-top: 2rem;
   padding-bottom: 0.6rem;
+}
+
+input {
+  border-top: 0.5px solid #191919;
+  padding: 0.6rem 0;
+  background-color: #101010;
+  width: 100%;
+  font-family: "basier_square_monoregular";
+}
+
+input:focus {
+  outline: none;
 }
 
 @media screen and (min-width: 720px) {
@@ -251,7 +268,7 @@ video {
 .display__grid__descricao,
 .page__content {
   display: grid;
-  grid-gap: 0.6rem;
+  grid-gap: 0.4rem;
 }
 
 .display__grid__100,

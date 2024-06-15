@@ -15,6 +15,9 @@
         .item__project__list__info
             display: none
 
+    .project__list:last-child
+        border-bottom: 0.5px solid $border-color
+
     .sticky
         color: invert($cor-principal) !important
         position: sticky
@@ -24,6 +27,14 @@
 .project__container__title
     padding-top: 2rem
     padding-bottom: 0.6rem
+
+input
+    @include dividers__gap
+    width: 100%
+    font-family: 'basier_square_monoregular'
+
+input:focus
+  outline: none
 
 @media screen and (min-width: 720px)
     #project__container
