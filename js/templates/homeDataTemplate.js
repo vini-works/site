@@ -46,15 +46,6 @@ function renderTemplate(data) {
   function getCurrentPathaname() {
     return window.location.pathname
   }
-  
-  // Caso seja diferente, adiciona um bloco
-  let pathname = getCurrentPathaname()
-  if (pathname != '/') {
-    let related = document.createElement('p')
-    related.textContent = 'Keep exploring'
-    related.classList.add('project__container__title')
-    container.insertBefore(related, container.firstChild)
-  }
 }
 
 // Carregar o arquivo JSON usando o método fetch
