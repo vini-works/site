@@ -16,7 +16,11 @@ function jsonKey(projectKeyIdentifier) {
                 keys.forEach((key, index) => {
                     var value = foundedKey[key];
                     var element = document.createElement('p');
-                    element.textContent = index === keys.length - 1 ? '└── ' + value : '├── ' + value;
+                    element.classList.add('temp__temp');
+                
+                    // Adiciona '├── ' apenas para o primeiro item, nenhum prefixo para os outros
+                    element.textContent = index === -1 ? '├── ' + value : value;
+                
                     divData.appendChild(element);
                 });
 
@@ -55,6 +59,7 @@ function jsonKey(projectKeyIdentifier) {
                             if (ul__tag.childNodes.length > 0) {
                                 var subKeyElement = document.createElement('p');
                                 subKeyElement.textContent = '├── ' + subKey;
+                                subKeyElement.classList.add('block__list')
                                 divSection.appendChild(subKeyElement);
                                 divSection.appendChild(ul__tag);
                                 divInfo.appendChild(divSection);

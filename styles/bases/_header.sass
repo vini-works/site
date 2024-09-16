@@ -1,30 +1,35 @@
 .block__list
     padding-top: 0.6rem
+    @include dividers__gap
+    width: 100%
+    display: grid
+    grid-template-columns: 1fr 2fr
+        
+    p
+        grid-column-start: 2
+    
+.child__block
 
-.child__personal__data,
-.child__case__info > .child__block,
-#case__data
-    padding-bottom: 2rem
+    p:first-child
+        display: grid
+        grid-template-columns: 1fr
 
 .bio__data__container, 
 .bio__text
-    padding: 0.6rem 0
     display: grid
     grid-template-columns: 1fr
 
-    & > *
-        padding-right: 1.2rem
 
 @media screen and (min-width: 720px)
     .block__list
         padding-top: 0.6rem
-            
+        grid-template-columns: 1fr 3fr 4fr 2fr
+
+
     .child__personal__data
         padding-bottom: 2rem
 
     .bio__data__container
-        padding: 0.6rem 0
         display: grid
-        grid-template-columns: 1fr 1fr
 
     

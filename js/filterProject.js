@@ -57,7 +57,7 @@ function displayProjects(projects) {
     const pathname = window.location.pathname;
     if (pathname !== '/') {
         const related = document.createElement('p');
-        related.textContent = 'Keep exploring ┐';
+        related.textContent = 'Keep exploring';
         related.classList.add('project__container__title');
         projectContainer.insertBefore(related, projectContainer.firstChild);
     }

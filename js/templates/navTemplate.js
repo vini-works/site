@@ -7,16 +7,12 @@ function createNav() {
     homePath.href = '/';
     homePath.textContent = 'Vinícius Queiróz';
 
-    const ig = document.createElement('div');
-
-    ig.innerHTML = `
-    <div class=''>
-       <a href="mailto:vnsqzs@gmail.com">
-        contact
-       </a>
-    </div>
-`
+    const contact = document.createElement('a');
+    contact.href = 'mailto:vnsqzs@gmail.com';
+    contact.textContent= 'Contact'
     
+    container.appendChild(homePath);
+    container.appendChild(contact);
 
 
     /*
@@ -33,9 +29,6 @@ function createNav() {
         <label for='themeToggle' class='toggle-label'></label>
     </div>
 ` */;
-
-    container.appendChild(homePath);
-    container.appendChild(ig);
 
 }
 

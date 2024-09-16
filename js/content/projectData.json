@@ -6,29 +6,34 @@
         "client": "[studio/Agency]"
     },
     {
-        "year": "current",
-        "project": "Lab",
-        "type": "Code",
-        "client": "[-]",
-        "link": "/lab"
+        "year": "2024",
+        "project": "Prego",
+        "type": "Graphic Project",
+        "client": "Sometimes V+V Work"
+    },
+    {
+        "year": "2024",
+        "project": "Estapar",
+        "type": "Digital Design System, Product Concept, Visual Design, Website",
+        "client": "Meiuca"
     },
     {
         "year": "2024",
         "project": "Mude Health",
-        "type": "Product Concept, Visual Design, App",
+        "type": "App, Product Concept, Visual Design",
         "client": "Meiuca"
     },
     {
         "year": "2024",
         "project": "Trânsito impedido",
         "type": "Code, Typography",
-        "client": "[-]"
+        "client": "Sometimes V+V Work"
     },
     {
         "year": "2024",
         "project": "AI Q T",
         "type": "Graphic Project, Independent Publication",
-        "client": "V+V"
+        "client": "Sometimes V+V Work"
     },
     {
         "year": "2024",
@@ -40,7 +45,21 @@
         "year": "2024",
         "project": "B.O.B aka Bars over bottles",
         "type": "Campaign, Identity, Key Visual",
-        "client": "estúdio gole"
+        "client": "estúdio gole",
+        "link": "/bob",
+        "info": {
+            "Project Information": {
+                "block": "We were invited by B.O.B to develop an institutional campaign aimed at increasing brand recognition and boosting sales for both the high-end target audience and new segments.",
+                "block-3": "Our task included identifying the key communication channels, creating the campaign narrative and storytelling, and devising the launch strategy. Part of our challenge was also to analyze the brand's strength relative to its competitors and define a strategic positioning for the brand through this campaign."
+            },
+            "credits": {
+                "dir":"Creative direction —— Gabriel Miranda",
+                "design": "Design —— Caio Couto, Gabriel Miranda & Vinícius Queiróz",
+                "motion": "Motion design —— Caio Couto, Rodrigo Tavares & Vinícius Queiróz",
+                "strategy": "Tone of voice —— Gabriel Miranda, Louis Vidovix & Thamires Crepaldi",
+                "manegament": "Project Management —— Thamires Crepaldi"
+            }
+        }
     },
     {
         "year": "2023",
@@ -54,7 +73,7 @@
         "type": "App, Digital Design System",
         "client": "Aprender Design School",
         "info": {
-            "description": {
+            "Project Information": {
                 "block": "O trabalho é resultado da atividade final do curso Base. O módulo foi ministrado pelo professor Edgard Kozlowski, do Aprender Design School.",
                 "block-2": "A atividade tem como proposta explorar e aplicar todos os conceitos exibidos durante as classes. Cada grupo recebe um tema e lista de funcionalidades que a aplicação precisa explorar.",
                 "block-3": "WISH TEM COMO OBJETIVO AJUDAR USUÁRIOS A PLANEJAR SUAS FUTURAS COMPRAS CRIANDO WISHLISTS, explorando listas públicas e rebendo alertas promocionais."
@@ -106,7 +125,20 @@
         "year": "2023",
         "project": "Estúdio Gole",
         "type": "Digital Design System, Website",
-        "client": "estúdio gole"
+        "client": "estúdio gole",
+        "link": "/gole",
+        "info": {
+            "Project Information": {
+                "block": "The layout was designed to reflect the essence of Gole Studio, a boutique design firm that forms strategic partnerships with companies seeking greatness. The minimalist design prioritizes content, highlighting projects in a clear and impactful manner. Each element is carefully crafted to ensure a smooth and intuitive visual experience, allowing the brands created by the studio to stand out without distractions.",
+                "block-3": "The layout structure is intended to create a clean, modern, and sophisticated interface that communicates the studio’s signature high-impact approach while maintaining a focus on the visual storytelling of each project. The design system follows the same principles of simplicity and efficiency, ensuring consistency and ease of use throughout all phases, from creation to the final handoff."
+            },
+            "credits": {
+                "dir":"Creative direction —— Gabriel Miranda & Vinícius Queiróz",
+                "design system": "Vinícius Queiróz",
+                "motion": "Motion design —— Caio Couto & Vinícius Queiróz",
+                "manegament": "Project Management —— Gabriel Miranda"
+            }
+        }
     },
     {
         "year": "2023",
@@ -152,6 +184,12 @@
     },
     {
         "year": "2021",
+        "project": "Terrá",
+        "type": "Website",
+        "client": "Valkiria Inteligência Criativa"
+    },
+    {
+        "year": "2021",
         "project": "Ronaldo Rezende Studio",
         "type": "Website",
         "client": "Valkiria Inteligência Criativa"
@@ -169,11 +207,14 @@
         "client": "[-]",
         "link": "/2022",
         "info": {
-            "description": {
-                "block": "Inspirado no trabalho de Heinrich Fleischhacker, que frequentemente utilizava números binários, código Baudot e impressora de impacto (dot matrix printer) em suas peças."
+            "Project Information": {
+                "block": "Inspired by the work of Heinrich Fleischhacker, who frequently used binary numbers, Baudot code, and impact printers (dot matrix printers) in his pieces.",
+                "block-2": "The material incorporates the traditional elements of a calendar (dates, holidays, and days of the week) combined with both vertical and horizontal orientations, creating a visual noise and an unconventional use."
             },
-            "credits": {
-                "type": "[1]__Tipo em uso: Neue Montreal por @pangram.pangram [2]__Formato: 297mm x 420mm [3]__Papel: Couché Fosco 300g/m2 [4]__Impressão: Digital com laminação fosca [5]__Cores: Preto e Amarelo CYMK"
+            "Print details": {
+                "type": "Type in use —— Neue Montreal by @pangram.pangram",
+                "size":"Size —— 297mm x 420mm",
+                "print":" Paper and Colors —— Couché 300g/m2, 100% Yellow and 100% Black on CYMK Scale"
             }
         }
     }
