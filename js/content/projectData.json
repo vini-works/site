@@ -7,6 +7,18 @@
     },
     {
         "year": "2024",
+        "project": "part of me, part of you and part of everyone",
+        "type": "Painting",
+        "client": "[-]"
+    },
+    {
+        "year": "2024",
+        "project": "Galeria.earth",
+        "type": "Graphic Project, Painting, Website",
+        "client": "[-]"
+    },
+    {
+        "year": "2024",
         "project": "Prego",
         "type": "Graphic Project",
         "client": "Sometimes V+V Work"
@@ -46,11 +58,27 @@
         "project": "B.O.B aka Bars over bottles",
         "type": "Campaign, Identity, Key Visual",
         "client": "estúdio gole",
-        "link": "/bob",
+        "images": [
+            "/images/bob/lip-balm-lettering.mp4",
+            "/images/bob/cores.png",
+            "/images/bob/novas_cores.png",
+            "images/bob/bob-case-ooh-horizontal.mp4",
+            "images/bob/bob-case-ooh-vertical.mp4",
+            "/images/bob/bob_case_stories.mp4",
+            "/images/bob/enzo.avif",
+            "/images/bob/trio-012.avif",
+            "/images/bob/trio-011.avif",
+            "/images/bob/trio-014.avif",
+            "/images/bob/ad-promote-campaign.mp4",
+            "images/bob/static-ooh-bob.avif",
+            "images/bob/achieve.gif"
+          ],
         "info": {
             "Project Information": {
                 "block": "We were invited by B.O.B to develop an institutional campaign aimed at increasing brand recognition and boosting sales for both the high-end target audience and new segments.",
-                "block-3": "Our task included identifying the key communication channels, creating the campaign narrative and storytelling, and devising the launch strategy. Part of our challenge was also to analyze the brand's strength relative to its competitors and define a strategic positioning for the brand through this campaign."
+                "block-3": "Our task included identifying the key communication channels, creating the campaign narrative and storytelling, and devising the launch strategy. Part of our challenge was also to analyze the brand's strength relative to its competitors and define a strategic positioning for the brand through this campaign.",
+                "block-4": "Two new colors have been added to the brand's color scheme. The intention behind this addition is to evoke a sense of novelty for the consumer without losing familiarity. We call them Argila and Abóbora.",
+                "block-5": "Enzo Celulari was chosen as the face of the campaign due to his highly engaged audience on social issues. The label associated with Enzo, Social Entrepreneur, aligns perfectly with the campaign’s theme and Bars over bottles ambition to reach new audiences."
             },
             "credits": {
                 "dir":"Creative direction —— Gabriel Miranda",
@@ -126,7 +154,14 @@
         "project": "Estúdio Gole",
         "type": "Digital Design System, Website",
         "client": "estúdio gole",
-        "link": "/gole",
+        "images": [
+            "/images/gole/ds.png",
+            "/images/gole/gole-home.png",
+            "/images/gole/gole-mobile.png",
+            "images/gole/gole-mockup.png",
+            "/images/gole/gole.mp4",
+            "images/gole/mobile-breakpoint.png"
+        ],
         "info": {
             "Project Information": {
                 "block": "The layout was designed to reflect the essence of Gole Studio, a boutique design firm that forms strategic partnerships with companies seeking greatness. The minimalist design prioritizes content, highlighting projects in a clear and impactful manner. Each element is carefully crafted to ensure a smooth and intuitive visual experience, allowing the brands created by the studio to stand out without distractions.",

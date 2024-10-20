@@ -69,3 +69,5 @@ function filterProjects(keyword) {
 
     displayProjects(filteredProjects);
 }
+
+

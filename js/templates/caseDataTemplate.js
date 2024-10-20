@@ -25,8 +25,6 @@ function jsonKey(projectKeyIdentifier) {
                 });
 
 
-
-
                 // Criar uma div para as informações de 'info' do projeto
                 var divInfo = document.createElement('div');
                 divInfo.classList.add('child__case__info');
@@ -82,3 +80,4 @@ function jsonKey(projectKeyIdentifier) {
         })
         .catch(error => console.log(error));
 }
+
