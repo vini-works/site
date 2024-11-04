@@ -131,7 +131,6 @@ p, a, figcaption, input {
 figcaption {
   padding-top: 0 !important;
   padding-bottom: 0.6rem;
-  max-width: 60vw;
 }
 
 .no__link {

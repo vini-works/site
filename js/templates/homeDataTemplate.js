@@ -41,8 +41,8 @@ document.addEventListener('DOMContentLoaded', () => {
             });
 
             const projectDetails = projectElement.querySelector('.project__details');
-            projectDetails.style.padding = matches ? '0.6rem 0' : '0.3rem 0'; // Ajuste de padding
-            projectDetails.style.transition = 'padding 0.3s ease'; // Transição para padding
+            projectDetails.style.padding = matches ? '0.6rem 0' : '0.3rem 0'; // Adjust padding
+            projectDetails.style.transition = 'padding 0.3s ease'; // Transition for padding
         });
     });
 
@@ -56,7 +56,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             if (projectList.images && projectList.images.length > 0) {
                 wrapperElement.addEventListener('click', () => {
-                    if (projectList.link) {
+                    if (!isMobile && projectList.link) {
                         window.location.href = projectList.link;
                     }
                 });
@@ -101,38 +101,40 @@ document.addEventListener('DOMContentLoaded', () => {
                     const figure = document.createElement('figure');
                     let mediaElement;
                     const mediaName = mediaUrl.split('/').pop();
-                
+
                     if (mediaUrl.endsWith('.mp4')) {
                         mediaElement = document.createElement('video');
                         mediaElement.src = mediaUrl;
                         mediaElement.autoplay = true;
                         mediaElement.loop = true;
                         mediaElement.muted = true;
-                        mediaElement.setAttribute('playsinline', ''); // Mantém o vídeo inline em mobile
+                        mediaElement.setAttribute('playsinline', ''); // Ensure video plays inline on mobile
                         mediaElement.style.maxWidth = '100%';
                     } else {
                         mediaElement = document.createElement('img');
                         mediaElement.src = mediaUrl;
                         mediaElement.style.maxWidth = '100%';
                     }
-                
+
                     const figcaption = document.createElement('figcaption');
                     figcaption.textContent = mediaName;
-                
+
                     figure.appendChild(mediaElement);
                     figure.appendChild(figcaption);
-                
-                    // Verifica se não está em mobile para adicionar o evento de clique
-                    if (window.innerWidth >= 728) {
-                        figure.addEventListener('click', (e) => {
+
+                    // Add click event only for desktop
+                    figure.addEventListener('click', (e) => {
+                        if (window.innerWidth >= 728) { // Only allow clicking for desktop
                             e.stopPropagation();
                             openCarousel(projectMediaElements, projectMediaElements.indexOf(mediaElement));
-                        });
-                    }
-                
+                        } else {
+                            e.preventDefault(); // Prevent default behavior on mobile
+                        }
+                    });
+
                     galleryContainer.appendChild(figure);
+                    projectMediaElements.push(mediaElement); // Store media elements for carousel
                 });
-                
 
                 const totalFigures = projectList.images.length;
                 const remainder = totalFigures % 5;
@@ -151,10 +153,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
             wrapperElement.addEventListener('click', function (e) {
                 if (e.target.closest('figure')) {
-                    return;
+                    return; // Prevent toggling accordion if a figure is clicked
                 }
                 e.preventDefault();
-                accordionContent.classList.toggle('show'); 
+                accordionContent.classList.toggle('show');
 
                 if (accordionContent.classList.contains('show')) {
                     accordionContent.style.height = `${accordionContent.scrollHeight}px`; 
