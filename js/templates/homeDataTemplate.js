@@ -101,7 +101,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     const figure = document.createElement('figure');
                     let mediaElement;
                     const mediaName = mediaUrl.split('/').pop();
-
+                
                     if (mediaUrl.endsWith('.mp4')) {
                         mediaElement = document.createElement('video');
                         mediaElement.src = mediaUrl;
@@ -115,22 +115,24 @@ document.addEventListener('DOMContentLoaded', () => {
                         mediaElement.src = mediaUrl;
                         mediaElement.style.maxWidth = '100%';
                     }
-
-                    projectMediaElements.push(mediaElement);
-
+                
                     const figcaption = document.createElement('figcaption');
                     figcaption.textContent = mediaName;
-
+                
                     figure.appendChild(mediaElement);
                     figure.appendChild(figcaption);
-
-                    figure.addEventListener('click', (e) => {
-                        e.stopPropagation();  
-                        openCarousel(projectMediaElements, projectMediaElements.indexOf(mediaElement));
-                    });
-
+                
+                    // Verifica se não está em mobile para adicionar o evento de clique
+                    if (window.innerWidth >= 728) {
+                        figure.addEventListener('click', (e) => {
+                            e.stopPropagation();
+                            openCarousel(projectMediaElements, projectMediaElements.indexOf(mediaElement));
+                        });
+                    }
+                
                     galleryContainer.appendChild(figure);
                 });
+                
 
                 const totalFigures = projectList.images.length;
                 const remainder = totalFigures % 5;
