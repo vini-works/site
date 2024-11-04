@@ -108,6 +108,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         mediaElement.autoplay = true;
                         mediaElement.loop = true;
                         mediaElement.muted = true;
+                        mediaElement.setAttribute('playsinline', ''); // Mantém o vídeo inline em mobile
                         mediaElement.style.maxWidth = '100%';
                     } else {
                         mediaElement = document.createElement('img');
@@ -151,11 +152,12 @@ document.addEventListener('DOMContentLoaded', () => {
                     return;
                 }
                 e.preventDefault();
-                accordionContent.classList.toggle('show'); // Adiciona/remova a classe show
+                accordionContent.classList.toggle('show'); 
+
                 if (accordionContent.classList.contains('show')) {
-                    accordionContent.style.height = `${accordionContent.scrollHeight}px`; // Define a altura para abrir
+                    accordionContent.style.height = `${accordionContent.scrollHeight}px`; 
                 } else {
-                    accordionContent.style.height = '0'; // Define a altura para fechar
+                    accordionContent.style.height = '0'; 
                 }
             });
 
