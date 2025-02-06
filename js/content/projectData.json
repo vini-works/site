@@ -7,7 +7,7 @@
     },
     {
         "year": "2024",
-        "project": "Meiuca.org",
+        "project": "Meio powered by Meiuca",
         "type": "Product Concept, Visual Design, Website",
         "client": "Meiuca"
     },
@@ -39,7 +39,16 @@
         "year": "2024",
         "project": "Mude Health",
         "type": "App, Product Concept, Visual Design",
-        "client": "Meiuca"
+        "client": "Meiuca",
+        "images": [
+            "/images/mude/comp__1.mp4",
+            "/images/mude/mudeasset_7.png",
+            "images/mude/home-concept.png",
+            "images/mude/scrolling-exp.png",
+            "images/mude/dynamic-island.png",
+            "images/mude/cards-sizes.gif",
+            "/images/mude/mudeasset_23.png"
+          ]
     },
     {
         "year": "2024",
@@ -221,7 +230,11 @@
         "year": "2021",
         "project": "Yas",
         "type": "Visual Identity",
-        "client": "Aprender Design School"
+        "client": "Aprender Design School",
+        "images": [
+            "/images/yas/yas1.png",
+            "/images/yas/yas2.png"
+        ]
     },
     {
         "year": "2021",

@@ -160,7 +160,7 @@ nav {
 .bio__text {
   display: grid;
   grid-template-columns: 2fr 3fr;
-  padding: 0.6rem 0 6rem;
+  padding: 0 0.6rem 6rem;
 }
 .bio__text .column__4 {
   padding-top: 0.6rem;
@@ -177,7 +177,6 @@ nav {
 @media screen and (min-width: 728px) {
   .bio__text {
     grid-template-columns: 1fr 1fr 2fr 1fr;
-    padding-bottom: 0.6rem;
   }
   .bio__text .column__4 {
     padding: 0;
@@ -239,8 +238,7 @@ figcaption {
 
 #project__container .project__details {
   border-top: 0.5px solid #191919;
-  padding: 0.6rem 0;
-  background-color: #101010;
+  padding: 0.6rem;
   display: grid;
   grid-template-columns: 2fr 3fr;
   transition: padding 0.6s ease;
@@ -258,9 +256,6 @@ figcaption {
 #project__container .project__details .item__project__list__type {
   display: none;
 }
-#project__container .project__list:last-child {
-  border-bottom: 0.5px solid #191919;
-}
 #project__container .sticky {
   color: #efefef !important;
   position: sticky;
@@ -275,8 +270,7 @@ figcaption {
 
 input {
   border-top: 0.5px solid #191919;
-  padding: 0.6rem 0;
-  background-color: #101010;
+  padding: 0.6rem;
   width: 100%;
   font-family: "basier_square_monoregular";
 }
@@ -308,8 +302,9 @@ input:focus {
 .clickable {
   cursor: pointer;
 }
-.clickable:hover {
-  color: #b7b7b7;
+.clickable .project__details:hover {
+  color: #101010;
+  background: #fff000;
 }
 
 .accordion__content {
@@ -321,11 +316,15 @@ input:focus {
   height: auto;
 }
 
+.empty__lines {
+  border-top: 0.5px solid #191919;
+  padding: 0.3rem;
+}
+
 @media screen and (min-width: 728px) {
   #project__container .project__details {
     border-top: 0.5px solid #191919;
-    padding: 0.6rem 0;
-    background-color: #101010;
+    padding: 0.6rem;
     display: grid;
     grid-template-columns: 1fr 1fr 2fr 1fr;
   }

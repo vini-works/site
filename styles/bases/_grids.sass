@@ -1,7 +1,6 @@
 @mixin dividers__gap
     border-top: 0.5px solid $border-color
-    padding: 0.6rem 0
-    background-color: $cor-principal
+    padding: 0.6rem
 
 .project__list
     width: 100%
@@ -25,9 +24,6 @@
         & .item__project__list__client,
         .item__project__list__type
             display: none
-
-    .project__list:last-child
-        border-bottom: 0.5px solid $border-color
 
     .sticky
         color: invert($cor-principal) !important
@@ -69,8 +65,9 @@ input:focus
 .clickable
     cursor: pointer
 
-    &:hover
-        color: $secundary-color
+    .project__details:hover
+        color: $cor-principal
+        background: $selection
 
 .accordion__content
     overflow: hidden
@@ -79,6 +76,12 @@ input:focus
 
     &.show
         height: auto
+
+        
+.empty__lines
+    border-top: 0.5px solid $border-color
+    padding: 0.3rem
+
 
 @media screen and (min-width: 728px)
     #project__container
