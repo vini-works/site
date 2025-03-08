@@ -172,7 +172,7 @@ nav {
 .info__text {
   display: grid;
   grid-template-columns: 2fr 3fr;
-  padding: 0 0 0.6rem 0;
+  padding: 0 0.6rem 0.6rem;
 }
 .info__text .column__4 {
   padding-top: 0.6rem;
