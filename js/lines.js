@@ -1,39 +1,37 @@
+// Linhas
 document.addEventListener("DOMContentLoaded", () => {
-    // Primeiro container: 200 divs
-    const container1 = document.getElementById("divider__container__200");
-    if (container1) {
-        container1.style.display = "flex";
-        container1.style.flexDirection = "column";
+    document.querySelectorAll("[data-lines]").forEach(container => {
+        const lineCount = parseInt(container.getAttribute("data-lines"), 10);
 
-        for (let i = 0; i < 70; i++) {
-            const line = document.createElement("div");
-            line.classList.add("empty__lines");
-            container1.appendChild(line);
+        if (!isNaN(lineCount)) {
+            container.style.display = "flex";
+            container.style.flexDirection = "column";
+
+            for (let i = 0; i < lineCount; i++) {
+                const line = document.createElement("div");
+                line.classList.add("empty__lines");
+                container.appendChild(line);
+            }
         }
-    }
-
-    // Segundo container: 3 divs
-    const container2 = document.getElementById("divider__container__5");
-    if (container2) {
-        container2.style.display = "flex";
-        container2.style.flexDirection = "column";
-
-        for (let i = 0; i < 3; i++) {
-            const line = document.createElement("div");
-            line.classList.add("empty__lines");
-            container2.appendChild(line);
-        }
-    }
-
-    const container3 = document.getElementById("divider__container__6");
-    if (container3) {
-        container3.style.display = "flex";
-        container3.style.flexDirection = "column";
-
-        for (let i = 0; i < 6; i++) {
-            const line = document.createElement("div");
-            line.classList.add("empty__lines");
-            container3.appendChild(line);
-        }
-    }
+    });
 });
+
+// Dispositivo
+document.getElementById('device-info').textContent = (() => {
+    const ua = navigator.userAgent;
+    const device = /mobile/i.test(ua) ? 'Mobile' : /tablet/i.test(ua) ? 'Tablet' : 'Desktop';
+    const browser = /chrome/i.test(ua) ? 'Google Chrome' : /firefox/i.test(ua) ? 'Mozilla Firefox' : /safari/i.test(ua) ? 'Safari' : /edge/i.test(ua) ? 'Microsoft Edge' : /msie/i.test(ua) || /trident/i.test(ua) ? 'Internet Explorer' : 'Desconhecido';
+    const os = /windows/i.test(ua) ? 'Windows' : /macintosh|mac os x/i.test(ua) ? 'macOS' : /linux/i.test(ua) ? 'Linux' : /android/i.test(ua) ? 'Android' : /iphone|ipad|ipod/i.test(ua) ? 'iOS' : 'Desconhecido';
+
+    return `[device → ${device}], [browser → ${browser}], [Operational System → ${os}]`;
+  })();
+
+// Relógio
+function updateClock() {
+    const now = new Date();
+    const timeString = now.toLocaleTimeString();
+    document.getElementById('clock').textContent = timeString;
+  }
+
+  setInterval(updateClock, 1000);
+  updateClock(); // Chamada inicial para evitar atraso de 1s

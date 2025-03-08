@@ -75,8 +75,6 @@
         "client": "estúdio gole",
         "images": [
             "/images/bob/lip-balm-lettering.mp4",
-            "/images/bob/cores.png",
-            "/images/bob/novas_cores.png",
             "images/bob/bob-case-ooh-horizontal.mp4",
             "images/bob/bob-case-ooh-vertical.mp4",
             "/images/bob/bob_case_stories.mp4",
@@ -150,7 +148,22 @@
         "year": "2023",
         "project": "Sometimes V+V Work",
         "type": "Visual Identity, Website",
-        "client": "[-]"
+        "client": "[-]",
+        "images": [
+            "/images/sometimesvvwork/0.avif",
+            "/images/sometimesvvwork/portraitstudio.avif",
+            "/images/sometimesvvwork/compressedimage.avif",
+            "/images/sometimesvvwork/cursor-sized.avif",
+            "/images/sometimesvvwork/Slide_16_9_5.avif",
+            "/images/sometimesvvwork/Slide_16_9_3.avif",
+            "/images/sometimesvvwork/live-interaction.mp4",
+            "/images/sometimesvvwork/temp11.gif",
+            "/images/sometimesvvwork/logovv87.avif",
+            "/images/sometimesvvwork/feliz.avif",
+            "/images/sometimesvvwork/6.gif",
+            "/images/sometimesvvwork/releasereel.mp4",
+            "/images/sometimesvvwork/logovv37.avif"
+        ]
     },
     {
         "year": "2023",

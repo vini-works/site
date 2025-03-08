@@ -1,7 +1,12 @@
 .bio__text
     display: grid
     grid-template-columns: 2fr 3fr
-    padding: 0 0.6rem 6rem
+    padding: 0 0.6rem 20vh
+
+.info__text
+    display: grid
+    grid-template-columns: 2fr 3fr
+    padding: 0 0 0.6rem 0 
 
     .column__4
         padding-top: 0.6rem
@@ -14,15 +19,14 @@
         display: flex
         flex-direction: column
 
+.ref__text
+    padding: 0 0.6rem 0.6rem
+    display: grid
+    grid-template-columns: 1fr 1fr 3fr
+
+    p
+        grid-column-start: 3
 
 @media screen and (min-width: 728px)
-    .bio__text
-        grid-template-columns: 1fr 1fr 2fr 1fr
-
-        .column__4
-            padding: 0
-            display: flex
-            justify-content: space-between
-
-        .toggle-container
-            padding: 0
+    .bio__text, .info__text
+        grid-template-columns:  1fr 1fr 2fr 1fr

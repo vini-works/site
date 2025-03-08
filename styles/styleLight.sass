@@ -8,17 +8,19 @@
 @import './helpers/_variablesLight'
 @import './helpers/_reset'
 
+@import './bases/_skeleton'
 @import './bases/_navbar'
 @import './bases/_header'
 @import './bases/_text'
 @import './bases/_grids'
 @import './bases/_video'
 @import './bases/_loader'
-@import './bases/_toggle'
+@import './bases/_carousel'
+
 
 body
-  background-color: $cor-principal
-  color: invert($cor-principal)
+  background-color: $primary-color
+  color: invert($primary-color)
   font-family: 'basier_square_monoregular'
   overflow-y: scroll
 
@@ -38,82 +40,11 @@ body
   scrollbar-width: none // Firefox
 
 ::-moz-selection // Code for Firefox
-  color: $cor-principal
+  color: $primary-color
   background: $selection
 
 ::selection, .highlight
-  color: $cor-principal
+  color: $primary-color
   background: $selection
-
-
-
-.carousel-modal
-  display: none
-  position: fixed
-  z-index: 10
-  left: 0
-  top: 0
-  width: 100%
-  height: 100%
-  background-color: rgba(0, 0, 0, 0.9)
-  justify-content: center
-  align-items: center
-
-.carousel-content
-  position: relative
-
-.carousel-controls button,
-.close
-  background-color: transparent
-  border: none
-  color: white
-  font-size: 2rem
-  cursor: pointer
-
-/* Estilo para o modal */
-.carousel-modal
-  user-select: none
-  display: none
-  position: fixed
-  top: 0
-  left: 0
-  width: 100vw
-  height: 100vh
-  background: #FFFFFF
-  justify-content: center
-  align-items: center
-  z-index: 9999
-  overflow: hidden
-
-/* Área clicável à esquerda */
-.carousel-modal:before,
-.carousel-modal:after
-  content: ""
-  position: absolute
-  top: 0
-  bottom: 0
-  width: 50%
-  z-index: 1
-
-/* Cursor para a área esquerda */
-.carousel-modal:before
-  left: 0
-  cursor: w-resize
-
-/* Cursor para a área direita */
-.carousel-modal:after
-  right: 0
-  cursor: e-resize
-
-.close-modal
-  position: absolute
-  top: 20px
-  right: 20px
-  background: transparent
-  border: none
-  color: black
-  font-size: 24px
-  cursor: pointer
-  z-index: 1000
 
  

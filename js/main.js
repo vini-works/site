@@ -1,7 +1,8 @@
 import { fetchProjectsData } from './fetchData.js';
 import { setupSearch } from './search.js';
 import { renderProjects } from './renderProjects.js';
-import { openCarousel, closeCarousel, prevMedia, nextMedia, setupCarouselModal } from './carousel.js';
+import { setupCarouselModal } from './carousel.js';
+
 
 document.addEventListener('DOMContentLoaded', async () => {
     const searchInput = document.getElementById('searchInput');
