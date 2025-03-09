@@ -278,6 +278,8 @@ input:focus {
 
 .gallery-container {
   border-top: 0.5px solid #eaeaea;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 .gallery-container figure {
   border-left: 0.5px solid #eaeaea;
@@ -322,6 +324,16 @@ input:focus {
   padding: 0.3rem;
 }
 
+.fade-in {
+  filter: blur(5px);
+  opacity: 0.7;
+  transition: filter 1s ease-in-out;
+}
+.fade-in.loaded {
+  opacity: 1;
+  filter: blur(0px);
+}
+
 @media screen and (min-width: 728px) {
   #project__container .project__details {
     border-top: 0.5px solid #eaeaea;
@@ -348,16 +360,6 @@ input:focus {
     grid-template-columns: 1fr 2fr 1fr 1fr 3fr 1fr 1fr;
   }
 }
-.fade-in {
-  filter: blur(5px);
-  opacity: 0.7;
-  transition: filter 1s ease-in-out;
-}
-.fade-in.loaded {
-  opacity: 1;
-  filter: blur(0px);
-}
-
 video {
   width: 100%;
   display: flex;
