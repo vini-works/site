@@ -8,10 +8,14 @@ let selectedProjectMedia = []; // Armazena as mídias (imagens/vídeos) do proje
  * @param {number} index - Índice da mídia selecionada
  */
 export function openCarousel(projectMediaElements, index) {
-    currentIndex = index; // Atualiza o índice da mídia
-    selectedProjectMedia = projectMediaElements; // Armazena as mídias do projeto
-    document.getElementById('carouselModal').style.display = 'flex'; // Exibe o modal
-    loadCarousel(); // Carrega as mídias no carousel
+    currentIndex = index;
+    selectedProjectMedia = projectMediaElements;
+    document.getElementById('carouselModal').style.display = 'flex';
+    document.body.style.overflow = 'hidden'; // Desabilita o scroll da página
+    loadCarousel();
+
+    // Adiciona o evento para fechar com Esc
+    document.addEventListener('keydown', handleEscKey);
 }
 
 /**
@@ -62,7 +66,15 @@ export function loadCarousel() {
  * Fecha o modal do carousel
  */
 export function closeCarousel() {
-    document.getElementById('carouselModal').style.display = 'none'; // Oculta o modal
+    const modal = document.getElementById('carouselModal');
+    modal.classList.remove('show'); // Remove a classe para ativar a saída suave
+
+    setTimeout(() => {
+        modal.style.display = 'none'; // Após a animação, esconde o modal
+        document.body.style.overflow = ''; // Restaura o scroll da página
+    }, 400); // O tempo precisa ser o mesmo da transição CSS
+
+    document.removeEventListener('keydown', handleEscKey);
 }
 
 /**
@@ -78,7 +90,7 @@ export function setupCarouselModal() {
         carouselModal.classList.add('carousel-modal');
         carouselModal.innerHTML = `
             <div id="carouselMedia" class="carousel-media"></div>
-            <button id="closeModal" class="close-modal">X</button>
+            <p id="closeModal" class="close-modal">Close [ESC]</p>
         `;
         document.body.appendChild(carouselModal); // Adiciona o modal ao corpo da página
     }
@@ -90,4 +102,11 @@ export function setupCarouselModal() {
 
     // Inicializa o modal fechado
     carouselModal.style.display = 'none';
+}
+
+// Fecha o modal ao pressionar a tecla Esc
+function handleEscKey(event) {
+    if (event.key === 'Escape') {
+        closeCarousel();
+    }
 }

@@ -452,6 +452,23 @@ video {
      object-fit: contain;
 }
 
+.close-modal {
+  margin: 0.6rem;
+  padding: 0.4rem;
+  -webkit-backdrop-filter: blur(7px);
+          backdrop-filter: blur(7px);
+  opacity: 0.8;
+  border-radius: 0.1rem;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #eaeaea;
+}
+.close-modal ::hover {
+  color: #6d6d6d;
+}
+
 body {
   background-color: #ffffff;
   color: black;

@@ -12,7 +12,9 @@ export function setupSearch(searchInput, projectsData) {
                 projectData[field] && projectData[field].toLowerCase().includes(keyword)
             );
 
-            projectElement.style.display = 'block';
+            // O primeiro item sempre fica visível
+            const shouldDisplay = matches || index === 0;
+            projectElement.style.display = shouldDisplay ? 'block' : 'none';
 
             const textElements = projectElement.querySelectorAll(
                 '.item__project__list__year, ' +
@@ -25,13 +27,13 @@ export function setupSearch(searchInput, projectsData) {
                 if (isMobile && (textEl.classList.contains('item__project__list__type') || textEl.classList.contains('item__project__list__client'))) {
                     textEl.style.display = 'none';
                 } else {
-                    textEl.style.display = matches || index === 0 ? 'block' : 'none';
+                    textEl.style.display = shouldDisplay ? 'block' : 'none';
                 }
             });
 
             const projectDetails = projectElement.querySelector('.project__details');
-            projectDetails.style.padding = matches ? '0.6rem 0' : '0.3rem 0'; // Ajuste de padding
-            projectDetails.style.transition = 'padding 0.3s ease'; // Transição para padding
+            projectDetails.style.padding = shouldDisplay ? '0.6rem' : '0.3rem 0.6rem'; 
+            projectDetails.style.transition = 'padding 0.3s ease';
         });
     });
 }
