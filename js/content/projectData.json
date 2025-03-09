@@ -6,6 +6,12 @@
         "client": "[studio/Agency]"
     },
     {
+        "year": "2025",
+        "project": "Rejane Carvalho Leite",
+        "type": "Coding, Product Concept, Visual Design, Website",
+        "client": "[-]"
+    },
+    {
         "year": "2024",
         "project": "Meio powered by Meiuca",
         "type": "Product Concept, Visual Design, Website",
@@ -53,7 +59,7 @@
     {
         "year": "2024",
         "project": "Trânsito impedido",
-        "type": "Code, Typography",
+        "type": "Coding, Typography",
         "client": "Sometimes V+V Work"
     },
     {
@@ -84,7 +90,7 @@
             "/images/bob/trio-014.avif",
             "/images/bob/ad-promote-campaign.mp4",
             "images/bob/static-ooh-bob.avif",
-            "images/bob/achieve.gif"
+            "images/bob/early-concepts.gif"
           ],
         "info": {
             "Project Information": {
@@ -168,7 +174,7 @@
     {
         "year": "2023",
         "project": "Humans At Computer",
-        "type": "Code, Typography, Website",
+        "type": "Coding, Typography, Website",
         "client": "[-]"
     },
     {

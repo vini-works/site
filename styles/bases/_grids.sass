@@ -38,9 +38,10 @@ input:focus
     outline: none
 
 .gallery-container
+    border-top: 0.5px solid $border-color
+
     figure
         border-left: 0.5px solid $border-color
-        border-top: 0.5px solid $border-color
         align-items: center
 
     *:hover
@@ -49,9 +50,12 @@ input:focus
         transition: 0.4s
         color: black
 
-    img, video, figcaption
-        padding: 0.4rem
+    img, video
+        padding: 0.4rem 0.4rem 0.2rem
         object-fit: contain
+
+    figcaption
+        padding: 0 0.4rem 0.4rem
 
     .empty-figure
         cursor: default
@@ -100,3 +104,11 @@ input:focus
             display: grid
             grid-template-columns: 1fr 2fr 1fr 1fr 3fr 1fr 1fr
 
+.fade-in
+    filter: blur(5px)
+    opacity: 0.7
+    transition: filter 1s ease-in-out
+
+    &.loaded
+        opacity: 1
+        filter: blur(0px)

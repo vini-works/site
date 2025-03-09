@@ -46,9 +46,7 @@ export function renderProjects(data, container) {
 
         const accordionContent = document.createElement('div');
         accordionContent.classList.add('accordion__content');
-        // Transição suave para a altura do accordion
-        accordionContent.style.transition = 'height 0.3s ease';
-
+        
         const galleryContainer = document.createElement('div');
         galleryContainer.classList.add('gallery-container');
         accordionContent.appendChild(galleryContainer);
@@ -147,18 +145,16 @@ export function renderProjects(data, container) {
     });
 }
 
-/**
- * Carrega imagens e vídeos que usam lazy loading e atualiza a altura do container conforme os assets são carregados.
- */
+// Carrega imagens e vídeos que usam lazy loading e atualiza a altura do container conforme os assets são carregados.
 function loadMedia(containerElement) {
     const lazyMedia = containerElement.querySelectorAll('img[data-src], video[data-src]');
     lazyMedia.forEach((media) => {
+        media.classList.add('fade-in'); // Adiciona a classe de transição
         const dataSrc = media.getAttribute('data-src');
         media.setAttribute('src', dataSrc);
         media.removeAttribute('data-src');
 
         if (media.tagName.toLowerCase() === 'video') {
-            // Força o carregamento do vídeo
             media.preload = 'auto';
             media.load();
 
@@ -166,15 +162,16 @@ function loadMedia(containerElement) {
                 containerElement.style.height = `${containerElement.scrollHeight}px`;
             });
 
-            // Remove o placeholder assim que o vídeo puder ser reproduzido
             media.addEventListener('canplaythrough', () => {
                 if (media.parentElement) {
                     media.parentElement.classList.remove('media-placeholder');
+                    media.classList.add('loaded'); // Ativa a transição
                 }
             });
         } else {
             media.addEventListener('load', () => {
                 containerElement.style.height = `${containerElement.scrollHeight}px`;
+                media.classList.add('loaded'); // Ativa a transição
             });
         }
     });
