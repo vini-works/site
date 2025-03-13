@@ -271,7 +271,16 @@
         "year": "2021",
         "project": "Turbo",
         "type": "Visual Identity",
-        "client": "[-]"
+        "client": "[-]",
+        "images": [
+            "/images/turbo/cover.avif",
+            "/images/turbo/backflip-cover.avif",
+            "/images/turbo/title03.avif",
+            "/images/turbo/title17.avif",
+            "/images/turbo/jvalberton.avif",
+            "/images/turbo/promopost.avif",
+            "/images/turbo/promoflashcardss.avif"
+        ]
     },
     {
         "year": "2021",
