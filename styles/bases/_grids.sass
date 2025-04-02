@@ -52,9 +52,17 @@ input:focus
         transition: 0.4s
         color: black
 
-    img, video
+    img, iframe
+        border-radius: 4px
         padding: 0.4rem 0.4rem 0.2rem
         object-fit: contain
+        display: flex
+        flex-direction: column
+        gap: 0
+        align-items: start
+
+    iframe
+        aspect-ratio: 52250/34833
 
     figcaption
         padding: 0 0.4rem 0.4rem
@@ -79,7 +87,6 @@ input:focus
 .empty__lines
     border-top: 0.5px solid $border-color
     padding: 0.3rem
-
 
 .fade-in
     filter: blur(5px)

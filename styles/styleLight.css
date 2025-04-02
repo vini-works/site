@@ -211,7 +211,7 @@ a:hover {
 }
 
 p, a, figcaption, input {
-  font-size: 8px;
+  font-size: 9px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   margin-bottom: 0px;
@@ -291,10 +291,18 @@ input:focus {
   transition: 0.4s;
   color: black;
 }
-.gallery-container img, .gallery-container video {
+.gallery-container img, .gallery-container iframe {
+  border-radius: 4px;
   padding: 0.4rem 0.4rem 0.2rem;
   -o-object-fit: contain;
      object-fit: contain;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  align-items: start;
+}
+.gallery-container iframe {
+  aspect-ratio: 52250/34833;
 }
 .gallery-container figcaption {
   padding: 0 0.4rem 0.4rem;
@@ -436,22 +444,11 @@ video {
   justify-content: flex-start;
   align-items: center;
   overflow-y: auto;
-  max-height: 80vh;
-  width: 100%;
   padding: 0.6rem;
-  gap: 0.6rem;
 }
-.carousel-media img {
-  max-width: 100%;
-  max-height: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
-}
-.carousel-media video {
-  max-width: 100%;
-  max-height: 90vh;
-  -o-object-fit: contain;
-     object-fit: contain;
+.carousel-media img, .carousel-media video {
+  max-height: 80vh;
+  width: auto;
 }
 
 .close-modal {

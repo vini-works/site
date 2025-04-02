@@ -47,7 +47,7 @@
         "type": "App, Product Concept, Visual Design",
         "client": "Meiuca",
         "images": [
-            "/images/mude/comp__1.mp4",
+            "https://player.vimeo.com/video/1071641976",
             "/images/mude/mudeasset_7.png",
             "images/mude/home-concept.png",
             "images/mude/scrolling-exp.png",
@@ -80,15 +80,16 @@
         "type": "Campaign, Identity, Key Visual",
         "client": "estúdio gole",
         "images": [
-            "/images/bob/lip-balm-lettering.mp4",
-            "images/bob/bob-case-ooh-horizontal.mp4",
-            "images/bob/bob-case-ooh-vertical.mp4",
-            "/images/bob/bob_case_stories.mp4",
+            "https://player.vimeo.com/video/1071260585",
+            "https://player.vimeo.com/video/1071260614",
+            "https://player.vimeo.com/video/1071260633",
+            "https://player.vimeo.com/video/1071260682",
+            "https://player.vimeo.com/video/1071260707",
+            "https://player.vimeo.com/video/1071260458",
             "/images/bob/enzo.avif",
             "/images/bob/trio-012.avif",
             "/images/bob/trio-011.avif",
             "/images/bob/trio-014.avif",
-            "/images/bob/ad-promote-campaign.mp4",
             "images/bob/static-ooh-bob.avif",
             "images/bob/early-concepts.gif"
           ],
@@ -162,12 +163,12 @@
             "/images/sometimesvvwork/cursor-sized.avif",
             "/images/sometimesvvwork/Slide_16_9_5.avif",
             "/images/sometimesvvwork/Slide_16_9_3.avif",
-            "/images/sometimesvvwork/live-interaction.mp4",
+            "https://player.vimeo.com/video/1071642813",
             "/images/sometimesvvwork/temp11.gif",
             "/images/sometimesvvwork/logovv87.avif",
             "/images/sometimesvvwork/feliz.avif",
             "/images/sometimesvvwork/6.gif",
-            "/images/sometimesvvwork/releasereel.mp4",
+            "https://player.vimeo.com/video/1071642875",
             "/images/sometimesvvwork/logovv37.avif"
         ]
     },
@@ -193,7 +194,6 @@
             "/images/gole/gole-home.png",
             "/images/gole/gole-mobile.png",
             "images/gole/gole-mockup.png",
-            "/images/gole/gole.mp4",
             "images/gole/mobile-breakpoint.png"
         ],
         "info": {

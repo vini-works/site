@@ -46,7 +46,7 @@ export function renderProjects(data, container) {
 
         const accordionContent = document.createElement('div');
         accordionContent.classList.add('accordion__content');
-        
+
         const galleryContainer = document.createElement('div');
         galleryContainer.classList.add('gallery-container');
         accordionContent.appendChild(galleryContainer);
@@ -59,29 +59,38 @@ export function renderProjects(data, container) {
                 figure.classList.add('media-placeholder');
 
                 let mediaElement;
-                const mediaName = mediaUrl.split('/').pop();
+                let mediaName = mediaUrl.split('/').pop();
 
-                if (mediaUrl.endsWith('.mp4')) {
-                    mediaElement = document.createElement('video');
-                    // Usa data-src para carregamento sob demanda
-                    mediaElement.setAttribute('data-src', mediaUrl);
-                    mediaElement.autoplay = true;
-                    mediaElement.loop = true;
-                    mediaElement.muted = true;
-                    mediaElement.setAttribute('playsinline', '');
-                    // Pré-carregamento evitado; será modificado para "auto" ao carregar
-                    mediaElement.preload = 'none';
-                    mediaElement.style.maxWidth = '100%';
+                if (mediaUrl.includes('vimeo.com')) {
+                    if (mediaUrl.includes('vimeo.com')) {
+                        mediaElement = document.createElement('iframe');
+                        mediaElement.setAttribute('data-src', `${mediaUrl}?autoplay=1&loop=1&muted=1&controls=0&title=0&byline=0&portrait=0&playsinline=1&dnt=1`);
+                        mediaElement.setAttribute('frameborder', '0');
+                        mediaElement.setAttribute('allow', 'autoplay; fullscreen; picture-in-picture');
+                        mediaElement.setAttribute('referrerpolicy', 'origin');
+                        mediaElement.style.width = '100%';   // Forçar a largura para 100%
+                        mediaElement.style.height = 'auto';  // Forçar a altura para 100%
 
-                    mediaElement.addEventListener('canplaythrough', () => {
-                        // Remove o placeholder assim que o vídeo estiver pronto
+                        mediaElement.setAttribute('loading', 'lazy'); // Lazy loading do iframe
+                        mediaName += 'vimeo.mp4';
+
+                        // Obtém o aspect ratio do vídeo do Vimeo e aplica ao iframe
+                        fetchVimeoAspectRatio(mediaUrl).then((aspectRatio) => {
+                            mediaElement.style.aspectRatio = aspectRatio;
+                        });
+                    }
+
+
+                    // O iframe precisa ser carregado quando estiver visível (lazy loading)
+                    mediaElement.onload = () => {
                         figure.classList.remove('media-placeholder');
                         figure.classList.add('loaded');
-                        mediaElement.classList.add('loaded');
-                    });
+                    };
+
+                    // Carrega o vídeo só quando o iframe estiver visível
+                    mediaElement.setAttribute('src', mediaElement.getAttribute('data-src'));
                 } else {
                     mediaElement = document.createElement('img');
-                    // Usa data-src para carregamento sob demanda
                     mediaElement.setAttribute('data-src', mediaUrl);
                     mediaElement.style.maxWidth = '100%';
                     mediaElement.setAttribute('loading', 'lazy');
@@ -91,6 +100,7 @@ export function renderProjects(data, container) {
                     };
                 }
 
+
                 const figcaption = document.createElement('figcaption');
                 figcaption.textContent = mediaName;
 
@@ -99,7 +109,6 @@ export function renderProjects(data, container) {
 
                 projectMediaElements.push(mediaElement);
 
-                // Abre o carousel ao clicar na mídia, se a largura da tela permitir
                 figure.addEventListener('click', (e) => {
                     if (window.innerWidth >= 728) {
                         e.stopPropagation();
@@ -110,7 +119,6 @@ export function renderProjects(data, container) {
                 galleryContainer.appendChild(figure);
             });
 
-            // Completa o grid, se necessário
             const totalFigures = projectList.images.length;
             const remainder = totalFigures % 10;
             if (remainder !== 0) {
@@ -126,14 +134,12 @@ export function renderProjects(data, container) {
         wrapperElement.appendChild(accordionContent);
 
         wrapperElement.addEventListener('click', function (e) {
-            // Impede o toggle se clicar em uma mídia
             if (e.target.closest('figure')) return;
             e.preventDefault();
 
             accordionContent.classList.toggle('show');
 
             if (accordionContent.classList.contains('show')) {
-                // Carrega os assets somente quando o accordion é aberto
                 loadMedia(accordionContent);
                 accordionContent.style.height = `${accordionContent.scrollHeight}px`;
             } else {
@@ -145,34 +151,33 @@ export function renderProjects(data, container) {
     });
 }
 
-// Carrega imagens e vídeos que usam lazy loading e atualiza a altura do container conforme os assets são carregados.
+
+
+
+async function fetchVimeoAspectRatio(url) {
+    const videoId = url.split('/').pop();
+    const apiUrl = `https://vimeo.com/api/oembed.json?url=https://vimeo.com/${videoId}`;
+    try {
+        const response = await fetch(apiUrl);
+        const data = await response.json();
+        return (data.width / data.height).toFixed(5); // Retorna o aspect ratio com 5 casas decimais
+    } catch (error) {
+        console.error('Erro ao obter aspect ratio do Vimeo:', error);
+        return '16/9'; // Valor padrão
+    }
+}
+
 function loadMedia(containerElement) {
-    const lazyMedia = containerElement.querySelectorAll('img[data-src], video[data-src]');
+    const lazyMedia = containerElement.querySelectorAll('img[data-src]');
     lazyMedia.forEach((media) => {
-        media.classList.add('fade-in'); // Adiciona a classe de transição
+        media.classList.add('fade-in');
         const dataSrc = media.getAttribute('data-src');
         media.setAttribute('src', dataSrc);
         media.removeAttribute('data-src');
 
-        if (media.tagName.toLowerCase() === 'video') {
-            media.preload = 'auto';
-            media.load();
-
-            media.addEventListener('loadedmetadata', () => {
-                containerElement.style.height = `${containerElement.scrollHeight}px`;
-            });
-
-            media.addEventListener('canplaythrough', () => {
-                if (media.parentElement) {
-                    media.parentElement.classList.remove('media-placeholder');
-                    media.classList.add('loaded'); // Ativa a transição
-                }
-            });
-        } else {
-            media.addEventListener('load', () => {
-                containerElement.style.height = `${containerElement.scrollHeight}px`;
-                media.classList.add('loaded'); // Ativa a transição
-            });
-        }
+        media.addEventListener('load', () => {
+            containerElement.style.height = `${containerElement.scrollHeight}px`;
+            media.classList.add('loaded');
+        });
     });
 }

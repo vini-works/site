@@ -27,8 +27,6 @@ export function loadCarousel() {
 
     selectedProjectMedia.forEach((mediaElement, index) => {
         const media = mediaElement.cloneNode(true); // Clona o elemento de mídia
-        media.style.maxHeight = '80vh'; // Define a altura máxima da mídia
-        media.style.objectFit = 'contain'; // Ajusta o tamanho para que a imagem ou vídeo caiba na tela
 
         // Se for um vídeo, configura as propriedades do player
         if (media.tagName === 'VIDEO') {
