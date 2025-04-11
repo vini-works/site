@@ -103,10 +103,8 @@ export function renderProjects(data, container) {
                 projectMediaElements.push(mediaElement);
 
                 figure.addEventListener('click', (e) => {
-                    if (window.innerWidth >= 728) {
-                        e.stopPropagation();
-                        openCarousel(projectMediaElements, projectMediaElements.indexOf(mediaElement));
-                    }
+                    e.stopPropagation();
+                    openCarousel(projectMediaElements, projectMediaElements.indexOf(mediaElement));
                 });
 
                 galleryContainer.appendChild(figure);
@@ -140,10 +138,15 @@ export function renderProjects(data, container) {
                 setupVimeoObservers(accordionContent);
 
                 // Aplica template de grid aleatório apenas uma vez
-                if (!gallery.dataset.gridTemplate) {
-                    gallery.dataset.gridTemplate = generateRandomGridTemplate();
+                if (window.innerWidth >= 728) {
+                    if (!gallery.dataset.gridTemplate) {
+                        gallery.dataset.gridTemplate = generateRandomGridTemplate();
+                    }
+                    gallery.style.gridTemplateColumns = gallery.dataset.gridTemplate;
+                } else {
+                    gallery.style.gridTemplateColumns = ''; // limpa em breakpoints menores
                 }
-                gallery.style.gridTemplateColumns = gallery.dataset.gridTemplate;
+
 
                 // Aguarda dois frames para garantir que layout foi refluído
                 requestAnimationFrame(() => {
@@ -199,9 +202,9 @@ function setupVimeoObservers(scopeElement) {
                 const player = new Vimeo.Player(iframe);
 
                 if (entry.isIntersecting) {
-                    player.play().catch(() => {});
+                    player.play().catch(() => { });
                 } else {
-                    player.pause().catch(() => {});
+                    player.pause().catch(() => { });
                 }
             });
         },
