@@ -48,12 +48,12 @@
         "client": "Meiuca",
         "images": [
             "https://player.vimeo.com/video/1071641976",
-            "/images/mude/mudeasset_7.png",
-            "images/mude/home-concept.png",
-            "images/mude/scrolling-exp.png",
-            "images/mude/dynamic-island.png",
+            "/images/mude/mudeasset_7.avif",
+            "images/mude/home-concept.avif",
+            "images/mude/scrolling-exp.avif",
+            "images/mude/dynamic-island.avif",
             "images/mude/cards-sizes.gif",
-            "/images/mude/mudeasset_23.png"
+            "/images/mude/mudeasset_23.avif"
           ]
     },
     {
@@ -80,7 +80,6 @@
         "type": "Campaign, Identity, Key Visual",
         "client": "estúdio gole",
         "images": [
-            "https://player.vimeo.com/video/1071260585",
             "https://player.vimeo.com/video/1071260614",
             "https://player.vimeo.com/video/1071260633",
             "https://player.vimeo.com/video/1071260682",

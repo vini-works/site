@@ -62,32 +62,26 @@ export function renderProjects(data, container) {
                 let mediaName = mediaUrl.split('/').pop();
 
                 if (mediaUrl.includes('vimeo.com')) {
-                    if (mediaUrl.includes('vimeo.com')) {
-                        mediaElement = document.createElement('iframe');
-                        mediaElement.setAttribute('data-src', `${mediaUrl}?autoplay=1&loop=1&muted=1&controls=0&title=0&byline=0&portrait=0&playsinline=1&dnt=1`);
-                        mediaElement.setAttribute('frameborder', '0');
-                        mediaElement.setAttribute('allow', 'autoplay; fullscreen; picture-in-picture');
-                        mediaElement.setAttribute('referrerpolicy', 'origin');
-                        mediaElement.style.width = '100%';   // Forçar a largura para 100%
-                        mediaElement.style.height = 'auto';  // Forçar a altura para 100%
+                    mediaElement = document.createElement('iframe');
+                    mediaElement.setAttribute('data-src', `${mediaUrl}?autoplay=1&loop=1&muted=1&controls=0&title=0&byline=0&portrait=0&playsinline=1&dnt=1`);
+                    mediaElement.setAttribute('frameborder', '0');
+                    mediaElement.setAttribute('allow', 'autoplay; fullscreen; picture-in-picture');
+                    mediaElement.setAttribute('referrerpolicy', 'origin');
+                    mediaElement.style.width = '100%';
+                    mediaElement.style.height = 'auto';
+                    mediaElement.setAttribute('loading', 'lazy');
 
-                        mediaElement.setAttribute('loading', 'lazy'); // Lazy loading do iframe
-                        mediaName += 'vimeo.mp4';
+                    mediaName += 'vimeo.mp4';
 
-                        // Obtém o aspect ratio do vídeo do Vimeo e aplica ao iframe
-                        fetchVimeoAspectRatio(mediaUrl).then((aspectRatio) => {
-                            mediaElement.style.aspectRatio = aspectRatio;
-                        });
-                    }
+                    fetchVimeoAspectRatio(mediaUrl).then((aspectRatio) => {
+                        mediaElement.style.aspectRatio = aspectRatio;
+                    });
 
-
-                    // O iframe precisa ser carregado quando estiver visível (lazy loading)
                     mediaElement.onload = () => {
                         figure.classList.remove('media-placeholder');
                         figure.classList.add('loaded');
                     };
 
-                    // Carrega o vídeo só quando o iframe estiver visível
                     mediaElement.setAttribute('src', mediaElement.getAttribute('data-src'));
                 } else {
                     mediaElement = document.createElement('img');
@@ -99,7 +93,6 @@ export function renderProjects(data, container) {
                         figure.classList.remove('media-placeholder');
                     };
                 }
-
 
                 const figcaption = document.createElement('figcaption');
                 figcaption.textContent = mediaName;
@@ -135,13 +128,29 @@ export function renderProjects(data, container) {
 
         wrapperElement.addEventListener('click', function (e) {
             if (e.target.closest('figure')) return;
+            if (wrapperElement.classList.contains('no__link')) return;
+
             e.preventDefault();
 
             accordionContent.classList.toggle('show');
+            const gallery = accordionContent.querySelector('.gallery-container');
 
             if (accordionContent.classList.contains('show')) {
                 loadMedia(accordionContent);
-                accordionContent.style.height = `${accordionContent.scrollHeight}px`;
+                setupVimeoObservers(accordionContent);
+
+                // Aplica template de grid aleatório apenas uma vez
+                if (!gallery.dataset.gridTemplate) {
+                    gallery.dataset.gridTemplate = generateRandomGridTemplate();
+                }
+                gallery.style.gridTemplateColumns = gallery.dataset.gridTemplate;
+
+                // Aguarda dois frames para garantir que layout foi refluído
+                requestAnimationFrame(() => {
+                    requestAnimationFrame(() => {
+                        accordionContent.style.height = `${accordionContent.scrollHeight}px`;
+                    });
+                });
             } else {
                 accordionContent.style.height = '0';
             }
@@ -151,19 +160,16 @@ export function renderProjects(data, container) {
     });
 }
 
-
-
-
 async function fetchVimeoAspectRatio(url) {
     const videoId = url.split('/').pop();
     const apiUrl = `https://vimeo.com/api/oembed.json?url=https://vimeo.com/${videoId}`;
     try {
         const response = await fetch(apiUrl);
         const data = await response.json();
-        return (data.width / data.height).toFixed(5); // Retorna o aspect ratio com 5 casas decimais
+        return (data.width / data.height).toFixed(5);
     } catch (error) {
         console.error('Erro ao obter aspect ratio do Vimeo:', error);
-        return '16/9'; // Valor padrão
+        return '16/9';
     }
 }
 
@@ -180,4 +186,53 @@ function loadMedia(containerElement) {
             media.classList.add('loaded');
         });
     });
+}
+
+function setupVimeoObservers(scopeElement) {
+    const iframes = scopeElement.querySelectorAll('iframe[src*="vimeo.com"]');
+    if (!iframes.length) return;
+
+    const observer = new IntersectionObserver(
+        (entries) => {
+            entries.forEach((entry) => {
+                const iframe = entry.target;
+                const player = new Vimeo.Player(iframe);
+
+                if (entry.isIntersecting) {
+                    player.play().catch(() => {});
+                } else {
+                    player.pause().catch(() => {});
+                }
+            });
+        },
+        {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.5,
+        }
+    );
+
+    iframes.forEach((iframe) => observer.observe(iframe));
+}
+
+function generateRandomGridTemplate() {
+    const total = 10;
+    const parts = 7;
+    const cuts = new Set();
+
+    while (cuts.size < parts - 1) {
+        cuts.add(Math.floor(Math.random() * (total - 1)) + 1);
+    }
+
+    const sortedCuts = Array.from(cuts).sort((a, b) => a - b);
+    const segments = [];
+
+    let prev = 0;
+    sortedCuts.forEach((cut) => {
+        segments.push(cut - prev);
+        prev = cut;
+    });
+    segments.push(total - prev);
+
+    return segments.map((n) => `${n}fr`).join(' ');
 }
