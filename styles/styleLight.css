@@ -366,7 +366,7 @@ input:focus {
   }
   .accordion__content .gallery-container {
     display: grid;
-    grid-template-columns: 1fr 2fr 1fr 1fr 3fr 1fr 1fr;
+    grid-template-columns: repeat(20, 1fr);
   }
 }
 video {
@@ -434,7 +434,7 @@ video {
   justify-content: center;
   align-items: flex-start;
   overflow-y: auto;
-  background-color: rgba(255, 255, 255, 0.9490196078);
+  background-color: rgba(255, 255, 255, 0.8078431373);
   -webkit-backdrop-filter: blur(7px);
           backdrop-filter: blur(7px);
 }
