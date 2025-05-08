@@ -7,6 +7,12 @@
     },
     {
         "year": "2025",
+        "project": "Vitor Pêgo",
+        "type": "Coding, Product Concept, Visual Design, Website",
+        "client": "[-]"
+    },
+    {
+        "year": "2025",
         "project": "Jeitto",
         "type": "App, Digital Design System, Product Concept",
         "client": "Meiuca"
@@ -25,7 +31,7 @@
     },
     {
         "year": "2024",
-        "project": "design drops",
+        "project": "Design Drops",
         "type": "Product Concept, Visual Design, Website",
         "client": "Valkiria Inteligência Criativa"
     },
