@@ -10,7 +10,8 @@ export function renderProjects(data, container) {
         const projectDetails = document.createElement('div');
         projectDetails.classList.add('project__details');
 
-        ['year', 'project', 'type', 'client'].forEach((element) => {
+        //'client'
+        ['year', 'project', 'type'].forEach((element) => {
             const el = document.createElement('p');
             el.textContent = projectList[element];
             el.classList.add(`item__project__list__${element}`);

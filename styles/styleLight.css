@@ -166,13 +166,13 @@ nav {
 .bio__text {
   display: grid;
   grid-template-columns: 2fr 3fr;
-  padding: 0 0.6rem 20vh;
+  padding: 0 0.6rem 0.3rem;
 }
 
 .info__text {
   display: grid;
   grid-template-columns: 2fr 3fr;
-  padding: 0 0.6rem 0.6rem;
+  padding: 0 0.6rem 0.3rem;
 }
 .info__text .column__4 {
   padding-top: 0.6rem;
@@ -197,7 +197,7 @@ nav {
 
 @media screen and (min-width: 728px) {
   .bio__text, .info__text {
-    grid-template-columns: 1fr 1fr 2fr 1fr;
+    grid-template-columns: 1fr 4fr;
   }
 }
 a {
@@ -229,19 +229,13 @@ p, a, figcaption, input {
   cursor: default;
 }
 
-.heading__teste {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-}
-
 .project__list {
   width: 100%;
 }
 
 #project__container .project__details {
-  border-top: 0.5px solid #eaeaea;
-  padding: 0.6rem;
+  border-top: 1px dotted #eaeaea;
+  padding: 0.3rem 0.6rem;
   display: grid;
   grid-template-columns: 2fr 3fr;
   transition: padding 0.6s ease;
@@ -262,12 +256,12 @@ p, a, figcaption, input {
 
 .project__container__title {
   padding-top: 2rem;
-  padding-bottom: 0.6rem;
+  padding-bottom: 0.4rem;
 }
 
 input {
-  border-top: 0.5px solid #eaeaea;
-  padding: 0.6rem;
+  border-top: 1px dotted #eaeaea;
+  padding: 0.3rem 0.6rem;
   width: 100%;
   font-family: "basier_square_monoregular";
 }
@@ -328,8 +322,8 @@ input:focus {
 }
 
 .empty__lines {
-  border-top: 0.5px solid #eaeaea;
-  padding: 0.3rem;
+  border-top: 1px dotted #eaeaea;
+  padding: 0.15rem;
 }
 
 .fade-in {
@@ -342,10 +336,28 @@ input:focus {
   filter: blur(0px);
 }
 
+.o21 {
+  font-family: Helvetica, sans-serif;
+  font-size: 2rem;
+  font-weight: 900;
+  text-transform: none;
+  letter-spacing: -0.1ch;
+  line-height: 1;
+  color: gray;
+}
+
 @media screen and (min-width: 728px) {
+  .o21 {
+    font-family: Helvetica, sans-serif;
+    font-size: 4rem;
+    font-weight: 900;
+    text-transform: none;
+    letter-spacing: -0.1ch;
+    line-height: 1;
+  }
   #project__container .project__details {
-    border-top: 0.5px solid #eaeaea;
-    padding: 0.6rem;
+    border-top: 1px dotted #eaeaea;
+    padding: 0.3rem 0.6rem;
     display: grid;
     grid-template-columns: 1fr 1fr 2fr 1fr;
     position: sticky;
@@ -387,8 +399,8 @@ video {
   width: 100vw;
   height: 100vh;
   background-color: rgba(255, 255, 255, 0.8078431373);
-  -webkit-backdrop-filter: blur(2px);
-          backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
   z-index: 9999;
   justify-content: space-between;
 }
