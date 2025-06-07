@@ -5,7 +5,7 @@ import { setupCarouselModal } from './carousel.js';
 
 
 
-// document.addEventListener('DOMContentLoaded', async () => {
+// 'document.addEventListener('DOMContentLoaded', async () => {
 //    const searchInput = document.getElementById('searchInput');
 //    const projectContainer = document.getElementById('project__container');
 //    const projectsData = await fetchProjectsData();
